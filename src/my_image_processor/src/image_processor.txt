@@ -1,0 +1,61 @@
+#include "image_processor.hpp"
+
+ImageProcessor::ImageProcessor() : Node("image_processor") {
+    subscription_ = this->create_subscription<sensor_msgs::msg::Image>(
+        "/image", 10, std::bind(&ImageProcessor::image_callback, this, std::placeholders::_1));
+
+    RCLCPP_INFO(this->get_logger(), "ImageProcessor node started. Waiting for images...");
+}
+
+// void ImageProcessor::image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
+//     try {
+//         // Convert ROS2 Image message to OpenCV format
+//         cv::Mat cv_image = cv_bridge::toCvCopy(msg, "bgr8")->image;
+
+//         // Example: Convert to grayscale
+//         cv::Mat gray_image;
+//         cv::cvtColor(cv_image, gray_image, cv::COLOR_BGR2GRAY);
+
+//         // Display image (for testing)
+//         cv::imshow("Processed Image", gray_image);
+//         cv::waitKey(1);
+//     } catch (const std::exception &e) {
+//         RCLCPP_ERROR(this->get_logger(), "Image processing failed: %s", e.what());
+//     }
+// }
+
+void ImageProcessor::image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
+    try {
+        // Convert ROS2 Image message to OpenCV format
+        cv::Mat cv_image = cv_bridge::toCvCopy(msg, "bgr8")->image;
+
+        // Create an empty image with the same size
+        cv::Mat green_image = cv::Mat::zeros(cv_image.size(), cv_image.type());
+
+        // Extract the green channel
+        std::vector<cv::Mat> channels(3);
+        cv::split(cv_image, channels);  // Split into B, G, R channels
+
+        // Assign the green channel to the new image
+        channels[0] = cv::Mat::zeros(cv_image.size(), CV_8UC1); // Set Blue to 0
+        channels[2] = cv::Mat::zeros(cv_image.size(), CV_8UC1); // Set Red to 0
+
+        // Merge back to get the green-only image
+        cv::merge(channels, green_image);
+
+        // Display the green scale image
+        cv::imshow("Green Scale Image", green_image);
+        cv::waitKey(1);
+    } catch (const std::exception &e) {
+        RCLCPP_ERROR(this->get_logger(), "Image processing failed: %s", e.what());
+    }
+}
+
+
+
+int main(int argc, char **argv) {
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<ImageProcessor>());
+    rclcpp::shutdown();
+    return 0;
+}

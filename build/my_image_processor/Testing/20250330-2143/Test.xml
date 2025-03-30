@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250330-2143-Experimental"
+	Name="Kaikkis01PC"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="13.3.0"
+	OSName="Linux"
+	Hostname="Kaikkis01PC"
+	OSRelease="5.15.167.4-microsoft-standard-WSL2"
+	OSVersion="#1 SMP Tue Nov 5 00:21:55 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="8192"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="2048"
+	TotalPhysicalMemory="7878"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1992"
+	>
+	<Testing>
+		<StartDateTime>Mar 30 23:43 CEST</StartDateTime>
+		<StartTestTime>1743371022</StartTestTime>
+		<TestList>
+			<Test>./cppcheck</Test>
+			<Test>./lint_cmake</Test>
+			<Test>./uncrustify</Test>
+			<Test>./xmllint</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>cppcheck</Name>
+			<Path>.</Path>
+			<FullName>./cppcheck</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/cppcheck.xunit.xml" "--package-name" "my_image_processor" "--output-file" "/home/ubuntu/relBot/build/my_image_processor/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/jazzy/bin/ament_cppcheck" "--xunit-file" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/cppcheck.xunit.xml" "--include_dirs" "/home/ubuntu/relBot/src/my_image_processor/include"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.51593</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/cppcheck.xunit.xml" "--package-name" "my_image_processor" "--output-file" "/home/ubuntu/relBot/build/my_image_processor/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/jazzy/bin/ament_cppcheck" "--xunit-file" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/cppcheck.xunit.xml" "--include_dirs" "/home/ubuntu/relBot/src/my_image_processor/include"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/my_image_processor':
+ - /opt/ros/jazzy/bin/ament_cppcheck --xunit-file /home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/cppcheck.xunit.xml --include_dirs /home/ubuntu/relBot/src/my_image_processor/include
+cppcheck 2.13.0 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/cppcheck.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cppcheck</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="failed">
+			<Name>lint_cmake</Name>
+			<Path>.</Path>
+			<FullName>./lint_cmake</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/lint_cmake.xunit.xml" "--package-name" "my_image_processor" "--output-file" "/home/ubuntu/relBot/build/my_image_processor/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/lint_cmake.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.25402</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/lint_cmake.xunit.xml" "--package-name" "my_image_processor" "--output-file" "/home/ubuntu/relBot/build/my_image_processor/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/lint_cmake.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/my_image_processor':
+ - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/lint_cmake.xunit.xml
+CMakeLists.txt:12: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:13: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:18: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:19: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:23: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:29: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:33: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:34: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:35: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:36: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:37: Line ends in whitespace [whitespace/eol]
+
+
+11 errors
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/lint_cmake.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>lint_cmake</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="failed">
+			<Name>uncrustify</Name>
+			<Path>.</Path>
+			<FullName>./uncrustify</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/uncrustify.xunit.xml" "--package-name" "my_image_processor" "--output-file" "/home/ubuntu/relBot/build/my_image_processor/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/uncrustify.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.346911</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/uncrustify.xunit.xml" "--package-name" "my_image_processor" "--output-file" "/home/ubuntu/relBot/build/my_image_processor/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/uncrustify.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/my_image_processor':
+ - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/uncrustify.xunit.xml
+Code style divergence in file 'include/image_processor.hpp':
+
+--- include/image_processor.hpp
++++ include/image_processor.hpp.uncrustify
+@@ -11 +11 @@
+-    ImageProcessor();
++  ImageProcessor();
+@@ -14,2 +14,2 @@
+-    void image_callback(const sensor_msgs::msg::Image::SharedPtr msg);
+-    rclcpp::Subscription&lt;sensor_msgs::msg::Image&gt;::SharedPtr subscription_;
++  void image_callback(const sensor_msgs::msg::Image::SharedPtr msg);
++  rclcpp::Subscription&lt;sensor_msgs::msg::Image&gt;::SharedPtr subscription_;
+
+Code style divergence in file 'src/image_processor.cpp':
+
+--- src/image_processor.cpp
++++ src/image_processor.cpp.uncrustify
+@@ -3,2 +3,4 @@
+-ImageProcessor::ImageProcessor() : Node("image_processor") {
+-    subscription_ = this-&gt;create_subscription&lt;sensor_msgs::msg::Image&gt;(
++ImageProcessor::ImageProcessor()
++: Node("image_processor")
++{
++  subscription_ = this-&gt;create_subscription&lt;sensor_msgs::msg::Image&gt;(
+@@ -7 +9 @@
+-    RCLCPP_INFO(this-&gt;get_logger(), "ImageProcessor node started. Waiting for images...");
++  RCLCPP_INFO(this-&gt;get_logger(), "ImageProcessor node started. Waiting for images...");
+@@ -27,2 +29,3 @@
+-void ImageProcessor::image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
+-    try {
++void ImageProcessor::image_callback(const sensor_msgs::msg::Image::SharedPtr msg)
++{
++  try {
+@@ -30 +33 @@
+-         cv::Mat cv_image = cv_bridge::toCvCopy(msg, "bgr8")-&gt;image;
++    cv::Mat cv_image = cv_bridge::toCvCopy(msg, "bgr8")-&gt;image;
+@@ -33,3 +36,3 @@
+-         std::vector&lt;cv::Mat&gt; channels(3);
+-         cv::split(cv_image, channels);  // Split into B, G, R
+- 
++    std::vector&lt;cv::Mat&gt; channels(3);
++    cv::split(cv_image, channels);       // Split into B, G, R
++
+@@ -37,3 +40,3 @@
+-         cv::Mat blue_image, green_image, red_image;
+-         cv::Mat zero_channel = cv::Mat::zeros(cv_image.size(), CV_8UC1);
+- 
++    cv::Mat blue_image, green_image, red_image;
++    cv::Mat zero_channel = cv::Mat::zeros(cv_image.size(), CV_8UC1);
++
+@@ -41,4 +44,4 @@
+-         cv::merge(std::vector&lt;cv::Mat&gt;{channels[0], zero_channel, zero_channel}, blue_image);  // Blue image
+-         cv::merge(std::vector&lt;cv::Mat&gt;{zero_channel, channels[1], zero_channel}, green_image); // Green image
+-         cv::merge(std::vector&lt;cv::Mat&gt;{zero_channel, zero_channel, channels[2]}, red_image);   // Red image
+- 
++    cv::merge(std::vector&lt;cv::Mat&gt;{channels[0], zero_channel, zero_channel}, blue_image);       // Blue image
++    cv::merge(std::vector&lt;cv::Mat&gt;{zero_channel, channels[1], zero_channel}, green_image);      // Green image
++    cv::merge(std::vector&lt;cv::Mat&gt;{zero_channel, zero_channel, channels[2]}, red_image);        // Red image
++
+@@ -46,7 +49,7 @@
+-      cv::imshow("Blue Channel", blue_image);
+-      cv::imshow("Green Channel", green_image);
+-      cv::imshow("Red Channel", red_image);
+-      cv::waitKey(1);
+-    } catch (const std::exception &amp;e) {
+-        RCLCPP_ERROR(this-&gt;get_logger(), "Image processing failed: %s", e.what());
+-    }
++    cv::imshow("Blue Channel", blue_image);
++    cv::imshow("Green Channel", green_image);
++    cv::imshow("Red Channel", red_image);
++    cv::waitKey(1);
++  } catch (const std::exception &amp; e) {
++    RCLCPP_ERROR(this-&gt;get_logger(), "Image processing failed: %s", e.what());
++  }
+@@ -56,6 +59,6 @@
+-
+-int main(int argc, char **argv) {
+-    rclcpp::init(argc, argv);
+-    rclcpp::spin(std::make_shared&lt;ImageProcessor&gt;());
+-    rclcpp::shutdown();
+-    return 0;
++int main(int argc, char **argv)
++{
++  rclcpp::init(argc, argv);
++  rclcpp::spin(std::make_shared&lt;ImageProcessor&gt;());
++  rclcpp::shutdown();
++  return 0;
+
+2 files with code style divergence
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/uncrustify.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>uncrustify</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>xmllint</Name>
+			<Path>.</Path>
+			<FullName>./xmllint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/xmllint.xunit.xml" "--package-name" "my_image_processor" "--output-file" "/home/ubuntu/relBot/build/my_image_processor/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/xmllint.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.08665</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/xmllint.xunit.xml" "--package-name" "my_image_processor" "--output-file" "/home/ubuntu/relBot/build/my_image_processor/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/xmllint.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/my_image_processor':
+ - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/xmllint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>xmllint</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Mar 30 23:43 CEST</EndDateTime>
+		<EndTestTime>1743371024</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

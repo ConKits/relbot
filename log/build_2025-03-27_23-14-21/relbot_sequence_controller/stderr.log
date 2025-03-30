@@ -1,0 +1,7 @@
+[01m[K/home/ubuntu/relBot/src/relbot_sequence_controller/src/relbot_sequence_controller.cpp:[m[K In member function ‘[01m[Kvoid SteerRelbot::[01;32m[Kwebcam_topic_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/relBot/src/relbot_sequence_controller/src/relbot_sequence_controller.cpp:112:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_image[m[K’ was not declared in this scope
+  112 |   [01;31m[Kinput_image[m[K = msg_cam_img;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/relbot_sequence_controller.dir/build.make:76: CMakeFiles/relbot_sequence_controller.dir/src/relbot_sequence_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/relbot_sequence_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

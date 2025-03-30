@@ -1,0 +1,6 @@
+cppcheck 2 0.159576
+lint_cmake 2 0.199231
+uncrustify 0 0
+xmllint 2 0.471574
+---
+uncrustify

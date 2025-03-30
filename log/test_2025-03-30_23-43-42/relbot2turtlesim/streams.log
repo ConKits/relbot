@@ -1,0 +1,282 @@
+[0.450s] Invoking command in '/home/ubuntu/relBot/build/relbot2turtlesim': CMAKE_PREFIX_PATH=/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.464s] UpdateCTestConfiguration  from :/home/ubuntu/relBot/build/relbot2turtlesim/CTestConfiguration.ini
+[0.464s] Parse Config file:/home/ubuntu/relBot/build/relbot2turtlesim/CTestConfiguration.ini
+[0.464s]    Site: Kaikkis01PC
+[0.464s]    Build name: (empty)
+[0.465s]  Add coverage exclude regular expressions.
+[0.465s] Create new tag: 20250330-2143 - Experimental
+[0.465s] UpdateCTestConfiguration  from :/home/ubuntu/relBot/build/relbot2turtlesim/CTestConfiguration.ini
+[0.465s] Parse Config file:/home/ubuntu/relBot/build/relbot2turtlesim/CTestConfiguration.ini
+[0.466s] Test project /home/ubuntu/relBot/build/relbot2turtlesim
+[0.466s] Constructing a list of tests
+[0.466s] Done constructing a list of tests
+[0.466s] Updating test list for fixtures
+[0.466s] Added 0 tests to meet fixture requirements
+[0.466s] Checking test dependency graph...
+[0.466s] Checking test dependency graph end
+[0.466s] test 1
+[0.466s]     Start 1: cppcheck
+[0.466s] 
+[0.467s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/cppcheck.xunit.xml" "--package-name" "relbot2turtlesim" "--output-file" "/home/ubuntu/relBot/build/relbot2turtlesim/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/jazzy/bin/ament_cppcheck" "--xunit-file" "/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/cppcheck.xunit.xml" "--include_dirs" "/home/ubuntu/relBot/src/relbot2turtlesim/include"
+[0.467s] 1: Working Directory: /home/ubuntu/relBot/src/relbot2turtlesim
+[0.467s] 1: Test timeout computed to be: 300
+[0.588s] 1: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot2turtlesim':
+[0.588s] 1:  - /opt/ros/jazzy/bin/ament_cppcheck --xunit-file /home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/cppcheck.xunit.xml --include_dirs /home/ubuntu/relBot/src/relbot2turtlesim/include
+[0.900s] 1: cppcheck 2.13.0 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[0.931s] 1: -- run_test.py: return code 0
+[0.931s] 1: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/cppcheck.xunit.xml'
+[0.955s] 1/4 Test #1: cppcheck .........................   Passed    0.49 sec
+[0.955s] test 2
+[0.956s]     Start 2: lint_cmake
+[0.956s] 
+[0.956s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/lint_cmake.xunit.xml" "--package-name" "relbot2turtlesim" "--output-file" "/home/ubuntu/relBot/build/relbot2turtlesim/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/lint_cmake.xunit.xml"
+[0.956s] 2: Working Directory: /home/ubuntu/relBot/src/relbot2turtlesim
+[0.956s] 2: Test timeout computed to be: 60
+[1.053s] 2: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot2turtlesim':
+[1.053s] 2:  - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/lint_cmake.xunit.xml
+[1.166s] 2: 
+[1.166s] 2: No problems found
+[1.184s] 2: -- run_test.py: return code 0
+[1.184s] 2: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/lint_cmake.xunit.xml'
+[1.203s] 2/4 Test #2: lint_cmake .......................   Passed    0.25 sec
+[1.203s] test 3
+[1.203s]     Start 3: uncrustify
+[1.203s] 
+[1.203s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/uncrustify.xunit.xml" "--package-name" "relbot2turtlesim" "--output-file" "/home/ubuntu/relBot/build/relbot2turtlesim/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/uncrustify.xunit.xml"
+[1.203s] 3: Working Directory: /home/ubuntu/relBot/src/relbot2turtlesim
+[1.203s] 3: Test timeout computed to be: 60
+[1.293s] 3: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot2turtlesim':
+[1.294s] 3:  - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/uncrustify.xunit.xml
+[1.527s] 3: Code style divergence in file 'include/convert.hpp':
+[1.527s] 3: 
+[1.527s] 3: --- include/convert.hpp
+[1.527s] 3: +++ include/convert.hpp.uncrustify
+[1.527s] 3: @@ -25 +25 @@
+[1.527s] 3: -    RELbot2Turtlesim();
+[1.529s] 3: +  RELbot2Turtlesim();
+[1.529s] 3: @@ -29,2 +29,2 @@
+[1.530s] 3: -    rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr robot_pose_topic_;
+[1.530s] 3: -    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr turtle_twist_topic_;
+[1.530s] 3: +  rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr robot_pose_topic_;
+[1.530s] 3: +  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr turtle_twist_topic_;
+[1.530s] 3: @@ -33,6 +33,6 @@
+[1.531s] 3: -    float x = 0;
+[1.531s] 3: -    float y = 0;
+[1.531s] 3: -    float theta = 0;
+[1.531s] 3: -    int seconds = 0;
+[1.531s] 3: -    uint nanosec = 0;
+[1.532s] 3: -    
+[1.532s] 3: +  float x = 0;
+[1.532s] 3: +  float y = 0;
+[1.532s] 3: +  float theta = 0;
+[1.532s] 3: +  int seconds = 0;
+[1.532s] 3: +  uint nanosec = 0;
+[1.533s] 3: +
+[1.533s] 3: @@ -40,5 +40,5 @@
+[1.533s] 3: -    float prev_x = 0;
+[1.533s] 3: -    float prev_y = 0;
+[1.533s] 3: -    float prev_theta = 0;
+[1.533s] 3: -    int prev_seconds = 0;
+[1.534s] 3: -    uint prev_nanosec = 0;
+[1.534s] 3: +  float prev_x = 0;
+[1.534s] 3: +  float prev_y = 0;
+[1.534s] 3: +  float prev_theta = 0;
+[1.534s] 3: +  int prev_seconds = 0;
+[1.535s] 3: +  uint prev_nanosec = 0;
+[1.535s] 3: @@ -47,2 +47,2 @@
+[1.535s] 3: -    float x_speed_fixed;
+[1.535s] 3: -    float theta_speed_fixed;
+[1.535s] 3: +  float x_speed_fixed;
+[1.538s] 3: +  float theta_speed_fixed;
+[1.538s] 3: @@ -53 +53 @@
+[1.538s] 3: -    void create_topics();
+[1.538s] 3: +  void create_topics();
+[1.538s] 3: @@ -58 +58 @@
+[1.539s] 3: -     * 
+[1.539s] 3: +     *
+[1.539s] 3: @@ -61 +61 @@
+[1.539s] 3: -    void poseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr pose);
+[1.539s] 3: +  void poseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr pose);
+[1.539s] 3: @@ -65 +65 @@
+[1.540s] 3: -     * 
+[1.540s] 3: +     *
+[1.540s] 3: @@ -68 +68 @@
+[1.540s] 3: -    void savePose(const geometry_msgs::msg::PoseStamped::SharedPtr pose);
+[1.540s] 3: +  void savePose(const geometry_msgs::msg::PoseStamped::SharedPtr pose);
+[1.540s] 3: @@ -73 +73 @@
+[1.540s] 3: -    void poseToVel();
+[1.540s] 3: +  void poseToVel();
+[1.541s] 3: @@ -78 +78 @@
+[1.541s] 3: -    void publishVel();
+[1.541s] 3: +  void publishVel();
+[1.541s] 3: @@ -80 +80 @@
+[1.541s] 3: -#endif /* POSE_TO_TURTLESIM_HPP_ */
+[1.560s] 3: +#endif /* POSE_TO_TURTLESIM_HPP_ */
+[1.560s] 3: 
+[1.589s] 3: Code style divergence in file 'src/convert.cpp':
+[1.589s] 3: 
+[1.589s] 3: --- src/convert.cpp
+[1.589s] 3: +++ src/convert.cpp.uncrustify
+[1.589s] 3: @@ -3,2 +3,4 @@
+[1.590s] 3: -RELbot2Turtlesim::RELbot2Turtlesim() : Node("relbot2turtlesim") {
+[1.590s] 3: -    RCLCPP_INFO(this->get_logger(), "Init");
+[1.590s] 3: +RELbot2Turtlesim::RELbot2Turtlesim()
+[1.590s] 3: +: Node("relbot2turtlesim")
+[1.590s] 3: +{
+[1.591s] 3: +  RCLCPP_INFO(this->get_logger(), "Init");
+[1.591s] 3: @@ -6,2 +8,2 @@
+[1.591s] 3: -    create_topics();
+[1.591s] 3: -    RCLCPP_INFO(this->get_logger(), "Created Topics");
+[1.591s] 3: +  create_topics();
+[1.591s] 3: +  RCLCPP_INFO(this->get_logger(), "Created Topics");
+[1.592s] 3: @@ -10,2 +12,3 @@
+[1.592s] 3: -void RELbot2Turtlesim::create_topics() {
+[1.592s] 3: -    RCLCPP_INFO(this->get_logger(), "Creating topics...");
+[1.592s] 3: +void RELbot2Turtlesim::create_topics()
+[1.592s] 3: +{
+[1.593s] 3: +  RCLCPP_INFO(this->get_logger(), "Creating topics...");
+[1.593s] 3: @@ -13,2 +16,2 @@
+[1.593s] 3: -    RCLCPP_INFO(this->get_logger(), "Creating Publishers");
+[1.593s] 3: -    turtle_twist_topic_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 1);
+[1.593s] 3: +  RCLCPP_INFO(this->get_logger(), "Creating Publishers");
+[1.593s] 3: +  turtle_twist_topic_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 1);
+[1.594s] 3: @@ -16,2 +19,2 @@
+[1.594s] 3: -    RCLCPP_INFO(this->get_logger(), "Creating Subscriptions");
+[1.594s] 3: -    robot_pose_topic_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+[1.594s] 3: +  RCLCPP_INFO(this->get_logger(), "Creating Subscriptions");
+[1.594s] 3: +  robot_pose_topic_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+[1.595s] 3: @@ -20 +23 @@
+[1.595s] 3: -    RCLCPP_INFO(this->get_logger(), "Subscribed to topic /output/robot_pose");
+[1.596s] 3: +  RCLCPP_INFO(this->get_logger(), "Subscribed to topic /output/robot_pose");
+[1.596s] 3: @@ -23 +26,2 @@
+[1.596s] 3: -void RELbot2Turtlesim::poseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr pose) {
+[1.596s] 3: +void RELbot2Turtlesim::poseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr pose)
+[1.596s] 3: +{
+[1.597s] 3: @@ -25 +29 @@
+[1.597s] 3: -    savePose(pose);
+[1.597s] 3: +  savePose(pose);
+[1.599s] 3: @@ -28 +32 @@
+[1.600s] 3: -    poseToVel();
+[1.600s] 3: +  poseToVel();
+[1.600s] 3: @@ -31 +35 @@
+[1.600s] 3: -    publishVel();
+[1.600s] 3: +  publishVel();
+[1.600s] 3: @@ -34 +38,2 @@
+[1.601s] 3: -void RELbot2Turtlesim::savePose(const geometry_msgs::msg::PoseStamped::SharedPtr pose) {
+[1.601s] 3: +void RELbot2Turtlesim::savePose(const geometry_msgs::msg::PoseStamped::SharedPtr pose)
+[1.601s] 3: +{
+[1.601s] 3: @@ -36,5 +41,5 @@
+[1.601s] 3: -    prev_x = x;
+[1.601s] 3: -    prev_y = y;
+[1.602s] 3: -    prev_theta = theta;
+[1.602s] 3: -    prev_seconds = seconds;
+[1.602s] 3: -    prev_nanosec = nanosec;
+[1.602s] 3: +  prev_x = x;
+[1.602s] 3: +  prev_y = y;
+[1.602s] 3: +  prev_theta = theta;
+[1.602s] 3: +  prev_seconds = seconds;
+[1.603s] 3: +  prev_nanosec = nanosec;
+[1.603s] 3: @@ -43,5 +48,5 @@
+[1.603s] 3: -    x = pose->pose.position.x;
+[1.603s] 3: -    y = pose->pose.position.y;
+[1.603s] 3: -    theta = pose->pose.orientation.z;  // in radiants
+[1.604s] 3: -    seconds = pose->header.stamp.sec;
+[1.604s] 3: -    nanosec = pose->header.stamp.nanosec;
+[1.604s] 3: +  x = pose->pose.position.x;
+[1.604s] 3: +  y = pose->pose.position.y;
+[1.604s] 3: +  theta = pose->pose.orientation.z;    // in radiants
+[1.604s] 3: +  seconds = pose->header.stamp.sec;
+[1.605s] 3: +  nanosec = pose->header.stamp.nanosec;
+[1.605s] 3: @@ -50 +55,2 @@
+[1.605s] 3: -void RELbot2Turtlesim::poseToVel() {
+[1.605s] 3: +void RELbot2Turtlesim::poseToVel()
+[1.605s] 3: +{
+[1.605s] 3: @@ -52,4 +58,4 @@
+[1.606s] 3: -    float time = (seconds - prev_seconds) + ((int)nanosec - (int)prev_nanosec) * 0.000000001;
+[1.606s] 3: -    if (time == 0) {
+[1.606s] 3: -        return;
+[1.606s] 3: -    }
+[1.606s] 3: +  float time = (seconds - prev_seconds) + ((int)nanosec - (int)prev_nanosec) * 0.000000001;
+[1.606s] 3: +  if (time == 0) {
+[1.607s] 3: +    return;
+[1.607s] 3: +  }
+[1.607s] 3: @@ -58,3 +64,3 @@
+[1.607s] 3: -    float x_speed = (x - prev_x) / time;
+[1.607s] 3: -    float y_speed = (y - prev_y) / time;
+[1.608s] 3: -    theta_speed_fixed = (theta - prev_theta) / time;
+[1.608s] 3: +  float x_speed = (x - prev_x) / time;
+[1.608s] 3: +  float y_speed = (y - prev_y) / time;
+[1.608s] 3: +  theta_speed_fixed = (theta - prev_theta) / time;
+[1.608s] 3: @@ -64,5 +70,5 @@
+[1.608s] 3: -    if (abs(std::cos(theta)) < abs(std::sin(theta))) {
+[1.608s] 3: -        x_speed_fixed = y_speed / std::sin(theta);
+[1.609s] 3: -    } else {
+[1.609s] 3: -        x_speed_fixed = x_speed / std::cos(theta);
+[1.609s] 3: -    }
+[1.609s] 3: +  if (abs(std::cos(theta)) < abs(std::sin(theta))) {
+[1.612s] 3: +    x_speed_fixed = y_speed / std::sin(theta);
+[1.612s] 3: +  } else {
+[1.612s] 3: +    x_speed_fixed = x_speed / std::cos(theta);
+[1.612s] 3: +  }
+[1.612s] 3: @@ -71 +77,2 @@
+[1.613s] 3: -void RELbot2Turtlesim::publishVel() {
+[1.613s] 3: +void RELbot2Turtlesim::publishVel()
+[1.613s] 3: +{
+[1.613s] 3: @@ -73,4 +80,4 @@
+[1.613s] 3: -    geometry_msgs::msg::Twist twist;
+[1.613s] 3: -    twist.linear.x = x_speed_fixed;
+[1.614s] 3: -    twist.angular.z = theta_speed_fixed;
+[1.614s] 3: -    turtle_twist_topic_->publish(twist);
+[1.614s] 3: +  geometry_msgs::msg::Twist twist;
+[1.614s] 3: +  twist.linear.x = x_speed_fixed;
+[1.614s] 3: +  twist.angular.z = theta_speed_fixed;
+[1.614s] 3: +  turtle_twist_topic_->publish(twist);
+[1.614s] 3: @@ -79,5 +86,6 @@
+[1.614s] 3: -int main(int argc, char *argv[]) {
+[1.615s] 3: -    rclcpp::init(argc, argv);
+[1.615s] 3: -    rclcpp::spin(std::make_shared<RELbot2Turtlesim>());
+[1.615s] 3: -    rclcpp::shutdown();
+[1.615s] 3: -    return 0;
+[1.615s] 3: +int main(int argc, char *argv[])
+[1.615s] 3: +{
+[1.615s] 3: +  rclcpp::init(argc, argv);
+[1.616s] 3: +  rclcpp::spin(std::make_shared<RELbot2Turtlesim>());
+[1.616s] 3: +  rclcpp::shutdown();
+[1.616s] 3: +  return 0;
+[1.616s] 3: 
+[1.616s] 3: 2 files with code style divergence
+[1.620s] 3: -- run_test.py: return code 1
+[1.621s] 3: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/uncrustify.xunit.xml'
+[1.624s] 3/4 Test #3: uncrustify .......................***Failed    0.36 sec
+[1.625s] test 4
+[1.625s]     Start 4: xmllint
+[1.625s] 
+[1.625s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/xmllint.xunit.xml" "--package-name" "relbot2turtlesim" "--output-file" "/home/ubuntu/relBot/build/relbot2turtlesim/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/xmllint.xunit.xml"
+[1.626s] 4: Working Directory: /home/ubuntu/relBot/src/relbot2turtlesim
+[1.626s] 4: Test timeout computed to be: 60
+[1.736s] 4: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot2turtlesim':
+[1.736s] 4:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/xmllint.xunit.xml
+[2.601s] 4: File 'package.xml' is valid
+[2.601s] 4: 
+[2.601s] 4: No problems found
+[2.636s] 4: -- run_test.py: return code 0
+[2.636s] 4: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot2turtlesim/test_results/relbot2turtlesim/xmllint.xunit.xml'
+[2.644s] 4/4 Test #4: xmllint ..........................   Passed    1.07 sec
+[2.645s] 
+[2.645s] 75% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 4
+[2.645s] 
+[2.646s] Label Time Summary:
+[2.646s] cppcheck      =   0.49 sec*proc (1 test)
+[2.647s] lint_cmake    =   0.25 sec*proc (1 test)
+[2.648s] linter        =   2.18 sec*proc (4 tests)
+[2.650s] uncrustify    =   0.36 sec*proc (1 test)
+[2.650s] xmllint       =   1.07 sec*proc (1 test)
+[2.651s] 
+[2.651s] Total Test time (real) =   2.20 sec
+[2.651s] 
+[2.651s] The following tests FAILED:
+[2.652s] 	[0;31m  3 - uncrustify (Failed)[0;0m
+[2.661s] Errors while running CTest
+[2.661s] Output from these tests are in: /home/ubuntu/relBot/build/relbot2turtlesim/Testing/Temporary/LastTest.log
+[2.661s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[2.662s] Invoked command in '/home/ubuntu/relBot/build/relbot2turtlesim' returned '8': CMAKE_PREFIX_PATH=/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

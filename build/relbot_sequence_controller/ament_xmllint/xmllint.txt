@@ -1,0 +1,10 @@
+-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_sequence_controller':
+ - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/xmllint.xunit.xml
+
+File 'package.xml' is valid
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/xmllint.xunit.xml'

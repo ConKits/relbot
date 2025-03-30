@@ -1,0 +1,13 @@
+-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_launch':
+ - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/pep257.xunit.xml
+
+checking ./launch/relbot_cam2image.launch.py
+checking ./launch/relbot_sequence_controller.launch.py
+checking ./launch/relbot_system.launch.py
+checking ./launch/relbot_system_joystick.launch.py
+checking ./launch/relbot_to_turtle.launch.py
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/pep257.xunit.xml'

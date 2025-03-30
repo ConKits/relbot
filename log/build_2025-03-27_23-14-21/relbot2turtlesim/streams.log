@@ -1,0 +1,43 @@
+[0.049s] Invoking command in '/home/ubuntu/relBot/build/relbot2turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/relBot/src/relbot2turtlesim -DCMAKE_INSTALL_PREFIX=/home/ubuntu/relBot/install/relbot2turtlesim
+[0.257s] -- The C compiler identification is GNU 13.3.0
+[1.118s] -- The CXX compiler identification is GNU 13.3.0
+[2.278s] -- Detecting C compiler ABI info
+[2.604s] -- Detecting C compiler ABI info - done
+[2.620s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.620s] -- Detecting C compile features
+[2.621s] -- Detecting C compile features - done
+[2.753s] -- Detecting CXX compiler ABI info
+[3.082s] -- Detecting CXX compiler ABI info - done
+[3.105s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.106s] -- Detecting CXX compile features
+[3.107s] -- Detecting CXX compile features - done
+[3.115s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.348s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.527s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.749s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.784s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.825s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.862s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.003s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.006s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.134s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.325s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.443s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.707s] -- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)
+[4.843s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[4.896s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[5.051s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.051s] -- Configured cppcheck include dirs: /home/ubuntu/relBot/src/relbot2turtlesim/include
+[5.052s] -- Configured cppcheck exclude dirs and/or files: 
+[5.053s] -- Added test 'lint_cmake' to check CMake code style
+[5.055s] -- Added test 'uncrustify' to check C / C++ code style
+[5.055s] -- Configured uncrustify additional arguments: 
+[5.056s] -- Added test 'xmllint' to check XML markup files
+[5.060s] -- Configuring done (5.0s)
+[5.088s] -- Generating done (0.0s)
+[5.093s] -- Build files have been written to: /home/ubuntu/relBot/build/relbot2turtlesim
+[5.106s] Invoked command in '/home/ubuntu/relBot/build/relbot2turtlesim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/relBot/src/relbot2turtlesim -DCMAKE_INSTALL_PREFIX=/home/ubuntu/relBot/install/relbot2turtlesim
+[5.108s] Invoking command in '/home/ubuntu/relBot/build/relbot2turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot2turtlesim -- -j8 -l8
+[5.174s] [ 50%] [32mBuilding CXX object CMakeFiles/relbot2turtlesim.dir/src/convert.cpp.o[0m
+[27.185s] [100%] [32m[1mLinking CXX executable relbot2turtlesim[0m
+[28.195s] [100%] Built target relbot2turtlesim

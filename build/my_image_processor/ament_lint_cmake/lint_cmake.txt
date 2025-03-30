@@ -1,0 +1,21 @@
+-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/my_image_processor':
+ - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/lint_cmake.xunit.xml
+
+CMakeLists.txt:12: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:13: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:18: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:19: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:23: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:29: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:33: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:34: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:35: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:36: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:37: Line ends in whitespace [whitespace/eol]
+
+
+11 errors
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/my_image_processor/test_results/my_image_processor/lint_cmake.xunit.xml'

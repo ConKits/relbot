@@ -1,0 +1,415 @@
+UpdateCTestConfiguration  from :/home/ubuntu/relBot/build/relbot_launch/CTestConfiguration.ini
+Parse Config file:/home/ubuntu/relBot/build/relbot_launch/CTestConfiguration.ini
+   Site: Kaikkis01PC
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20250330-2143 - Experimental
+UpdateCTestConfiguration  from :/home/ubuntu/relBot/build/relbot_launch/CTestConfiguration.ini
+Parse Config file:/home/ubuntu/relBot/build/relbot_launch/CTestConfiguration.ini
+Test project /home/ubuntu/relBot/build/relbot_launch
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: flake8
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/flake8.xunit.xml" "--package-name" "relbot_launch" "--output-file" "/home/ubuntu/relBot/build/relbot_launch/ament_flake8/flake8.txt" "--command" "/opt/ros/jazzy/bin/ament_flake8" "--xunit-file" "/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/flake8.xunit.xml"
+1: Working Directory: /home/ubuntu/relBot/src/relbot_launch
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_launch':
+1:  - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/flake8.xunit.xml
+1: from ament_index_python.packages import get_package_share_directory
+1: ^
+1: def generate_launch_description():
+1: ^
+1:     config_path = os.path.join(
+1:     ^
+1:             parameters=["src/cam2image_vm2ros/config/cam2image.yaml"],  
+1:                         ^
+1:             parameters=["src/cam2image_vm2ros/config/cam2image.yaml"],  
+1:                                                                       ^
+1:             package="my_image_processor",
+1:                     ^
+1:             executable="image_processor"
+1:                        ^
+1:         
+1: ^
+1: 
+1: ^
+1: from ament_index_python.packages import get_package_share_directory
+1: ^
+1: def generate_launch_description():
+1: ^
+1:       )    
+1:        ^
+1:             package="relbot_simulator",
+1:                     ^
+1:             executable="relbot_simulator",
+1:                        ^
+1:             name="relbot_simulator"
+1:                  ^
+1:             package="relbot2turtlesim",
+1:                     ^
+1:             executable="relbot2turtlesim",
+1:                        ^
+1:             name="relbot2turtlesim"
+1:                  ^
+1:             package="turtlesim",
+1:                     ^
+1:             executable="turtlesim_node",
+1:                        ^
+1:             name="turtlesim"
+1:                  ^
+1:             package="relbot_sequence_controller",
+1:                     ^
+1:             executable="relbot_sequence_controller",
+1:                        ^
+1:             name="relbot_sequence_controller"
+1:                  ^
+1:         ),      
+1:           ^
+1:             package="cam2image_vm2ros",
+1:                     ^
+1:             executable="cam2image",
+1:                        ^
+1:             name="fuckyou",
+1:                  ^
+1:         )   
+1:          ^
+1: from launch.substitutions import LaunchConfiguration
+1: ^
+1: from launch.actions import DeclareLaunchArgument
+1: ^
+1: from launch.actions import DeclareLaunchArgument
+1: ^
+1:     #     description="Whether to use Twist command mode. If set to false, uses individual motor command mode.",
+1:                                                                                                    ^
+1:         package="relbot_simulator",
+1:                 ^
+1:         executable="relbot_simulator",
+1:                    ^
+1:         name="relbot_sim",
+1:              ^
+1:         parameters=[{"use_twist_cmd": True}]
+1:                      ^
+1:         package="relbot2turtlesim",
+1:                 ^
+1:         executable="relbot2turtlesim",
+1:                    ^
+1:         name="pose_to_TS"
+1:              ^
+1:         package="turtlesim",
+1:                 ^
+1:         executable="turtlesim_node",
+1:                    ^
+1:         name="robotturtle"
+1:              ^
+1: from launch.substitutions import LaunchConfiguration
+1: ^
+1: from launch.actions import DeclareLaunchArgument
+1: ^
+1: from launch.actions import DeclareLaunchArgument
+1: ^
+1:     #     description="Whether to use Twist command mode. If set to false, uses individual motor command mode.",
+1:                                                                                                    ^
+1:         package="joy",
+1:                 ^
+1:         executable="joy_node",
+1:                    ^
+1:         name="joystick_input_handler"
+1:              ^
+1:     
+1: ^
+1:         package="relbot_joystick",
+1:                 ^
+1:         executable="relbot_joystick",
+1:                    ^
+1:         name="relbot_joystick"
+1:              ^
+1:         package="relbot_simulator",
+1:                 ^
+1:         executable="relbot_simulator",
+1:                    ^
+1:         name="relbot_sim",
+1:              ^
+1:         parameters=[{"use_twist_cmd": True}]
+1:                      ^
+1:         package="relbot2turtlesim",
+1:                 ^
+1:         executable="relbot2turtlesim",
+1:                    ^
+1:         name="pose_to_TS"
+1:              ^
+1:         package="turtlesim",
+1:                 ^
+1:         executable="turtlesim_node",
+1:                    ^
+1:         name="robotturtle"
+1:              ^
+1: def generate_launch_description():
+1: ^
+1:             package="relbot_simulator",
+1:                     ^
+1:             executable="relbot_simulator",
+1:                        ^
+1:             name="relbot_sim"
+1:                  ^
+1:             package="relbot2turtlesim",
+1:                     ^
+1:             executable="relbot2turtlesim",
+1:                        ^
+1:             name="relbot2TS"
+1:                  ^
+1:             package="turtlesim",
+1:                     ^
+1:             executable="turtlesim_node",
+1:                        ^
+1:             name="turtlesim"
+1:                  ^
+1:     ])      ^
+1: 3     E302 expected 2 blank lines, found 1
+1: 2     E501 line too long (112 > 99 characters)
+1: 4     F401 'launch.substitutions.LaunchConfiguration' imported but unused
+1: 1     F841 local variable 'config_path' is assigned to but never used
+1: 2     I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import LaunchConfiguration'
+1: 2     I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+1: 53    Q000 Double quotes found but single quotes preferred
+1: 4     W291 trailing whitespace
+1: 1     W292 no newline at end of file
+1: 2     W293 blank line contains whitespace
+1: 1     W391 blank line at end of file
+1: 
+1: ./launch/relbot_cam2image.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+1: 
+1: ./launch/relbot_cam2image.launch.py:6:1: E302 expected 2 blank lines, found 1
+1: 
+1: ./launch/relbot_cam2image.launch.py:7:5: F841 local variable 'config_path' is assigned to but never used
+1: 
+1: ./launch/relbot_cam2image.launch.py:17:25: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_cam2image.launch.py:17:71: W291 trailing whitespace
+1: 
+1: ./launch/relbot_cam2image.launch.py:20:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_cam2image.launch.py:21:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_cam2image.launch.py:33:1: W293 blank line contains whitespace
+1: 
+1: ./launch/relbot_cam2image.launch.py:36:1: W391 blank line at end of file
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:6:1: E302 expected 2 blank lines, found 1
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:11:8: W291 trailing whitespace
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:14:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:15:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:16:18: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:19:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:20:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:21:18: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:24:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:25:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:26:18: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:29:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:30:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:31:18: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:32:11: W291 trailing whitespace
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:34:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:35:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:36:18: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_sequence_controller.launch.py:38:10: W291 trailing whitespace
+1: 
+1: ./launch/relbot_system.launch.py:2:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused
+1: 
+1: ./launch/relbot_system.launch.py:3:1: I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import LaunchConfiguration'
+1: 
+1: ./launch/relbot_system.launch.py:3:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused
+1: 
+1: ./launch/relbot_system.launch.py:12:100: E501 line too long (112 > 99 characters)
+1: 
+1: ./launch/relbot_system.launch.py:16:17: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:17:20: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:18:14: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:19:22: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:23:17: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:24:20: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:25:14: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:29:17: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:30:20: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system.launch.py:31:14: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:2:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused
+1: 
+1: ./launch/relbot_system_joystick.launch.py:3:1: I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import LaunchConfiguration'
+1: 
+1: ./launch/relbot_system_joystick.launch.py:3:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused
+1: 
+1: ./launch/relbot_system_joystick.launch.py:12:100: E501 line too long (112 > 99 characters)
+1: 
+1: ./launch/relbot_system_joystick.launch.py:16:17: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:17:20: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:18:14: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:20:1: W293 blank line contains whitespace
+1: 
+1: ./launch/relbot_system_joystick.launch.py:22:17: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:23:20: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:24:14: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:28:17: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:29:20: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:30:14: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:31:22: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:35:17: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:36:20: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:37:14: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:41:17: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:42:20: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_system_joystick.launch.py:43:14: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:4:1: E302 expected 2 blank lines, found 1
+1: 
+1: ./launch/relbot_to_turtle.launch.py:7:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:8:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:9:18: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:12:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:13:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:14:18: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:17:21: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:18:24: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:19:18: Q000 Double quotes found but single quotes preferred
+1: 
+1: ./launch/relbot_to_turtle.launch.py:21:7: W292 no newline at end of file
+1: 
+1: 
+1: 5 files checked
+1: 75 errors
+1: 
+1: 'E'-type errors: 5
+1: 'F'-type errors: 5
+1: 'I'-type errors: 4
+1: 'Q'-type errors: 53
+1: 'W'-type errors: 8
+1: 
+1: Checked files:
+1: 
+1: * ./launch/relbot_cam2image.launch.py
+1: * ./launch/relbot_sequence_controller.launch.py
+1: * ./launch/relbot_to_turtle.launch.py
+1: * ./launch/relbot_system_joystick.launch.py
+1: * ./launch/relbot_system.launch.py
+1: -- run_test.py: return code 1
+1: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/flake8.xunit.xml'
+1/4 Test #1: flake8 ...........................***Failed    1.23 sec
+test 2
+    Start 2: lint_cmake
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/lint_cmake.xunit.xml" "--package-name" "relbot_launch" "--output-file" "/home/ubuntu/relBot/build/relbot_launch/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/lint_cmake.xunit.xml"
+2: Working Directory: /home/ubuntu/relBot/src/relbot_launch
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_launch':
+2:  - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/lint_cmake.xunit.xml
+2: 
+2: No problems found
+2: -- run_test.py: return code 0
+2: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/lint_cmake.xunit.xml'
+2/4 Test #2: lint_cmake .......................   Passed    0.27 sec
+test 3
+    Start 3: pep257
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/pep257.xunit.xml" "--package-name" "relbot_launch" "--output-file" "/home/ubuntu/relBot/build/relbot_launch/ament_pep257/pep257.txt" "--command" "/opt/ros/jazzy/bin/ament_pep257" "--xunit-file" "/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/pep257.xunit.xml"
+3: Working Directory: /home/ubuntu/relBot/src/relbot_launch
+3: Test timeout computed to be: 60
+3: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_launch':
+3:  - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/pep257.xunit.xml
+3: checking ./launch/relbot_cam2image.launch.py
+3: checking ./launch/relbot_sequence_controller.launch.py
+3: checking ./launch/relbot_system.launch.py
+3: checking ./launch/relbot_system_joystick.launch.py
+3: checking ./launch/relbot_to_turtle.launch.py
+3: No problems found
+3: -- run_test.py: return code 0
+3: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/pep257.xunit.xml'
+3/4 Test #3: pep257 ...........................   Passed    0.31 sec
+test 4
+    Start 4: xmllint
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/xmllint.xunit.xml" "--package-name" "relbot_launch" "--output-file" "/home/ubuntu/relBot/build/relbot_launch/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/xmllint.xunit.xml"
+4: Working Directory: /home/ubuntu/relBot/src/relbot_launch
+4: Test timeout computed to be: 60
+4: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_launch':
+4:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/xmllint.xunit.xml
+4: File 'package.xml' is valid
+4: 
+4: No problems found
+4: -- run_test.py: return code 0
+4: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_launch/test_results/relbot_launch/xmllint.xunit.xml'
+4/4 Test #4: xmllint ..........................   Passed    0.67 sec
+
+75% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 4
+
+Label Time Summary:
+flake8        =   1.23 sec*proc (1 test)
+lint_cmake    =   0.27 sec*proc (1 test)
+linter        =   2.47 sec*proc (4 tests)
+pep257        =   0.31 sec*proc (1 test)
+xmllint       =   0.67 sec*proc (1 test)
+
+Total Test time (real) =   2.47 sec
+
+The following tests FAILED:
+	[0;31m  1 - flake8 (Failed)[0;0m
+Errors while running CTest
+Output from these tests are in: /home/ubuntu/relBot/build/relbot_launch/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.

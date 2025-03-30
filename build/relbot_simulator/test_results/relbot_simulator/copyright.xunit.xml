@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="relbot_simulator.copyright"
+  tests="18"
+  errors="0"
+  failures="18"
+  time="0.014"
+>
+  <testcase
+    name="common/EulerAngles.cpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/EulerAngles.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/MotionProfiles.cpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/MotionProfiles.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxfuncs.cpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxfuncs.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxinteg.cpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxinteg.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxinverse.cpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxinverse.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxmatrix.cpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxmatrix.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxmodel.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="common/xxtypes.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="include/Plant.h"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="include/relbot_simulator.hpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/Plant.cpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <testcase
+    name="src/relbot_simulator.cpp"
+    classname="relbot_simulator.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <system-out>Checked files:
+* common/EulerAngles.cpp
+* common/EulerAngles.h
+* common/MotionProfiles.cpp
+* common/MotionProfiles.h
+* common/xxfuncs.cpp
+* common/xxfuncs.h
+* common/xxinteg.cpp
+* common/xxinteg.h
+* common/xxinverse.cpp
+* common/xxinverse.h
+* common/xxmatrix.cpp
+* common/xxmatrix.h
+* common/xxmodel.h
+* common/xxtypes.h
+* include/Plant.h
+* include/relbot_simulator.hpp
+* src/Plant.cpp
+* src/relbot_simulator.cpp</system-out>
+</testsuite>

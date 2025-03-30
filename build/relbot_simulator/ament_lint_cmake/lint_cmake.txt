@@ -1,0 +1,16 @@
+-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_simulator':
+ - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/ubuntu/relBot/build/relbot_simulator/test_results/relbot_simulator/lint_cmake.xunit.xml
+
+CMakeLists.txt:31: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:32: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:42: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:43: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:44: Line ends in whitespace [whitespace/eol]
+CMakeLists.txt:45: Line ends in whitespace [whitespace/eol]
+
+
+6 errors
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_simulator/test_results/relbot_simulator/lint_cmake.xunit.xml'

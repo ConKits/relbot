@@ -1,0 +1,321 @@
+UpdateCTestConfiguration  from :/home/ubuntu/relBot/build/relbot_sequence_controller/CTestConfiguration.ini
+Parse Config file:/home/ubuntu/relBot/build/relbot_sequence_controller/CTestConfiguration.ini
+   Site: Kaikkis01PC
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20250330-2144 - Experimental
+UpdateCTestConfiguration  from :/home/ubuntu/relBot/build/relbot_sequence_controller/CTestConfiguration.ini
+Parse Config file:/home/ubuntu/relBot/build/relbot_sequence_controller/CTestConfiguration.ini
+Test project /home/ubuntu/relBot/build/relbot_sequence_controller
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: cppcheck
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/cppcheck.xunit.xml" "--package-name" "relbot_sequence_controller" "--output-file" "/home/ubuntu/relBot/build/relbot_sequence_controller/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/jazzy/bin/ament_cppcheck" "--xunit-file" "/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/cppcheck.xunit.xml" "--include_dirs" "/home/ubuntu/relBot/src/relbot_sequence_controller/include"
+1: Working Directory: /home/ubuntu/relBot/src/relbot_sequence_controller
+1: Test timeout computed to be: 300
+1: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_sequence_controller':
+1:  - /opt/ros/jazzy/bin/ament_cppcheck --xunit-file /home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/cppcheck.xunit.xml --include_dirs /home/ubuntu/relBot/src/relbot_sequence_controller/include
+1: cppcheck 2.13.0 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+1: -- run_test.py: return code 0
+1: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/cppcheck.xunit.xml'
+1/4 Test #1: cppcheck .........................   Passed    0.34 sec
+test 2
+    Start 2: lint_cmake
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/lint_cmake.xunit.xml" "--package-name" "relbot_sequence_controller" "--output-file" "/home/ubuntu/relBot/build/relbot_sequence_controller/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/lint_cmake.xunit.xml"
+2: Working Directory: /home/ubuntu/relBot/src/relbot_sequence_controller
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_sequence_controller':
+2:  - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/lint_cmake.xunit.xml
+2: 
+2: No problems found
+2: -- run_test.py: return code 0
+2: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/lint_cmake.xunit.xml'
+2/4 Test #2: lint_cmake .......................   Passed    0.44 sec
+test 3
+    Start 3: uncrustify
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/uncrustify.xunit.xml" "--package-name" "relbot_sequence_controller" "--output-file" "/home/ubuntu/relBot/build/relbot_sequence_controller/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/uncrustify.xunit.xml"
+3: Working Directory: /home/ubuntu/relBot/src/relbot_sequence_controller
+3: Test timeout computed to be: 60
+3: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_sequence_controller':
+3:  - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/uncrustify.xunit.xml
+3: Code style divergence in file 'include/steering.hpp':
+3: 
+3: --- include/steering.hpp
+3: +++ include/steering.hpp.uncrustify
+3: @@ -30 +30 @@
+3: -    SteerRelbot();
+3: +  SteerRelbot();
+3: @@ -32,2 +32,2 @@
+3: -    const double DEFAULT_SETPOINT_STREAM = 30;  // How often the velocities are published per second
+3: -  
+3: +  const double DEFAULT_SETPOINT_STREAM = 30;    // How often the velocities are published per second
+3: +
+3: @@ -36,2 +36,2 @@
+3: -    rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
+3: -    rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
+3: +  rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
+3: +  rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
+3: @@ -39 +39 @@
+3: -    
+3: +
+3: @@ -41,6 +41,6 @@
+3: -    rclcpp::TimerBase::SharedPtr timer_;
+3: -    
+3: -    // Attributes    
+3: -    double tol = 0.08;
+3: -    double radius=8.0;
+3: -    double wheelDistance=4.0;
+3: +  rclcpp::TimerBase::SharedPtr timer_;
+3: +
+3: +    // Attributes
+3: +  double tol = 0.08;
+3: +  double radius = 8.0;
+3: +  double wheelDistance = 4.0;
+3: @@ -49,3 +49,3 @@
+3: -    double angularVelocity = 1.0; // Angular velocity (v = r * ω)
+3: -    double left_velocity;
+3: -    double right_velocity;
+3: +  double angularVelocity = 1.0;   // Angular velocity (v = r * ω)
+3: +  double left_velocity;
+3: +  double right_velocity;
+3: @@ -53 +53 @@
+3: -    
+3: +
+3: @@ -55,2 +55,2 @@
+3: -    double straight_time=5.0;
+3: -    double turning_time = (M_PI) / (2 * angularVelocity); // Time to turn 90 degrees (angle = ω * time)
+3: +  double straight_time = 5.0;
+3: +  double turning_time = (M_PI) / (2 * angularVelocity);   // Time to turn 90 degrees (angle = ω * time)
+3: @@ -58 +58 @@
+3: -    enum Shape {line, circle, bend, square};
+3: +  enum Shape {line, circle, bend, square};
+3: @@ -60,2 +60,2 @@
+3: -    void moveStraight();
+3: -    void rotate();
+3: +  void moveStraight();
+3: +  void rotate();
+3: @@ -64,3 +64,3 @@
+3: -    void create_topics();
+3: -    void timer_callback();
+3: -    void calculate_velocity();
+3: +  void create_topics();
+3: +  void timer_callback();
+3: +  void calculate_velocity();
+3: @@ -72 +72 @@
+3: -  //void webcam_topic_callback(const sensor_msgs::msg::Image::SharedPtr msg_cam_img);
+3: +   //void webcam_topic_callback(const sensor_msgs::msg::Image::SharedPtr msg_cam_img);
+3: @@ -76 +76 @@
+3: -#endif /*STEER_RELBOT_HPP_*/
+3: +#endif /*STEER_RELBOT_HPP_*/
+3: 
+3: Code style divergence in file 'src/relbot_sequence_controller.cpp':
+3: 
+3: --- src/relbot_sequence_controller.cpp
+3: +++ src/relbot_sequence_controller.cpp.uncrustify
+3: @@ -4,2 +4,4 @@
+3: -SteerRelbot::SteerRelbot() : Node("steer_relbot") {
+3: -    RCLCPP_INFO(this->get_logger(), "Init");
+3: +SteerRelbot::SteerRelbot()
+3: +: Node("steer_relbot")
+3: +{
+3: +  RCLCPP_INFO(this->get_logger(), "Init");
+3: @@ -8,2 +10,2 @@
+3: -    create_topics();
+3: -    RCLCPP_INFO(this->get_logger(), "Created Topics");
+3: +  create_topics();
+3: +  RCLCPP_INFO(this->get_logger(), "Created Topics");
+3: @@ -12 +14 @@
+3: -    timer_ = this->create_wall_timer(std::chrono::duration<double>(1/DEFAULT_SETPOINT_STREAM),
+3: +  timer_ = this->create_wall_timer(std::chrono::duration<double>(1 / DEFAULT_SETPOINT_STREAM),
+3: @@ -16,2 +18,3 @@
+3: -void SteerRelbot::create_topics() {
+3: -    left_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
+3: +void SteerRelbot::create_topics()
+3: +{
+3: +  left_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
+3: @@ -20 +23 @@
+3: -    right_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
+3: +  right_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
+3: @@ -25,4 +28,2 @@
+3: -       
+3: -    
+3: -    
+3: -    
+3: +
+3: +
+3: @@ -30 +31 @@
+3: -// Navigation methods are working with constant FPS. 
+3: +// Navigation methods are working with constant FPS.
+3: @@ -34 +35,2 @@
+3: -void SteerRelbot::moveStraight() {
+3: +void SteerRelbot::moveStraight()
+3: +{
+3: @@ -37,2 +39,2 @@
+3: -    left_velocity = -(angularVelocity * radius);
+3: -    right_velocity = angularVelocity * radius;
+3: +  left_velocity = -(angularVelocity * radius);
+3: +  right_velocity = angularVelocity * radius;
+3: @@ -41 +43,2 @@
+3: -void SteerRelbot::rotate() {
+3: +void SteerRelbot::rotate()
+3: +{
+3: @@ -44,4 +47,4 @@
+3: -    left_velocity = -angularVelocity*(radius - (wheelDistance/2));
+3: -    right_velocity = angularVelocity*(radius + (wheelDistance/2));
+3: -     
+3: -    
+3: +  left_velocity = -angularVelocity * (radius - (wheelDistance / 2));
+3: +  right_velocity = angularVelocity * (radius + (wheelDistance / 2));
+3: +
+3: +
+3: @@ -50 +53,2 @@
+3: -void SteerRelbot::calculate_velocity() {
+3: +void SteerRelbot::calculate_velocity()
+3: +{
+3: @@ -52,2 +56,2 @@
+3: -    static rclcpp::Time last_time = this->get_clock()->now(); // Store the last update time
+3: -    rclcpp::Time current_time = this->get_clock()->now();    // Get the current time
+3: +  static rclcpp::Time last_time = this->get_clock()->now();   // Store the last update time
+3: +  rclcpp::Time current_time = this->get_clock()->now();      // Get the current time
+3: @@ -56 +60 @@
+3: -    double elapsed_time = (current_time - last_time).seconds(); // Convert to seconds
+3: +  double elapsed_time = (current_time - last_time).seconds();   // Convert to seconds
+3: @@ -58 +62 @@
+3: -    Shape shape{square}; //Shape of the robot's path
+3: +  Shape shape{square};   //Shape of the robot's path
+3: @@ -60,2 +64,2 @@
+3: -    switch (shape) {
+3: -        case line:
+3: +  switch (shape) {
+3: +    case line:
+3: @@ -63,2 +67,2 @@
+3: -            moveStraight();
+3: -            break;
+3: +      moveStraight();
+3: +      break;
+3: @@ -66 +70 @@
+3: -        case circle:
+3: +    case circle:
+3: @@ -68,2 +72,2 @@
+3: -            rotate();
+3: -            break;
+3: +      rotate();
+3: +      break;
+3: @@ -71 +75 @@
+3: -        case bend:
+3: +    case bend:
+3: @@ -74,6 +78,6 @@
+3: -            if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
+3: -                rotate();
+3: -            } else {
+3: -                moveStraight();
+3: -            }
+3: -            break;
+3: +      if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
+3: +        rotate();
+3: +      } else {
+3: +        moveStraight();
+3: +      }
+3: +      break;
+3: @@ -81 +85 @@
+3: -        case square:
+3: +    case square:
+3: @@ -84,2 +88,2 @@
+3: -            if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
+3: -                rotate();
+3: +      if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
+3: +        rotate();
+3: @@ -87,9 +91,9 @@
+3: -                if ((elapsed_time - straight_time) >= turning_time - tol) {
+3: -                    last_time = current_time;
+3: -                    break;
+3: -                }
+3: -            } else {
+3: -                moveStraight();
+3: -            }
+3: -            break;
+3: -    }
+3: +        if ((elapsed_time - straight_time) >= turning_time - tol) {
+3: +          last_time = current_time;
+3: +          break;
+3: +        }
+3: +      } else {
+3: +        moveStraight();
+3: +      }
+3: +      break;
+3: +  }
+3: @@ -98 +102,2 @@
+3: -void SteerRelbot::timer_callback() {
+3: +void SteerRelbot::timer_callback()
+3: +{
+3: @@ -103,6 +108,6 @@
+3: -    example_interfaces::msg::Float64 left_wheel;
+3: -    left_wheel.data = left_velocity;
+3: -    example_interfaces::msg::Float64 right_wheel;
+3: -    right_wheel.data = right_velocity;
+3: -    left_wheel_topic_->publish(left_wheel);
+3: -    right_wheel_topic_->publish(right_wheel);
+3: +  example_interfaces::msg::Float64 left_wheel;
+3: +  left_wheel.data = left_velocity;
+3: +  example_interfaces::msg::Float64 right_wheel;
+3: +  right_wheel.data = right_velocity;
+3: +  left_wheel_topic_->publish(left_wheel);
+3: +  right_wheel_topic_->publish(right_wheel);
+3: @@ -115,6 +120,7 @@
+3: -int main(int argc, char *argv[]) {
+3: -    rclcpp::init(argc, argv);
+3: -    rclcpp::spin(std::make_shared<SteerRelbot>());
+3: -    rclcpp::shutdown();
+3: -    return 0;
+3: -}
+3: +int main(int argc, char *argv[])
+3: +{
+3: +  rclcpp::init(argc, argv);
+3: +  rclcpp::spin(std::make_shared<SteerRelbot>());
+3: +  rclcpp::shutdown();
+3: +  return 0;
+3: +}
+3: 
+3: 2 files with code style divergence
+3: -- run_test.py: return code 1
+3: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/uncrustify.xunit.xml'
+3/4 Test #3: uncrustify .......................***Failed    0.56 sec
+test 4
+    Start 4: xmllint
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/xmllint.xunit.xml" "--package-name" "relbot_sequence_controller" "--output-file" "/home/ubuntu/relBot/build/relbot_sequence_controller/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/xmllint.xunit.xml"
+4: Working Directory: /home/ubuntu/relBot/src/relbot_sequence_controller
+4: Test timeout computed to be: 60
+4: -- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_sequence_controller':
+4:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/xmllint.xunit.xml
+4: File 'package.xml' is valid
+4: 
+4: No problems found
+4: -- run_test.py: return code 0
+4: -- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/xmllint.xunit.xml'
+4/4 Test #4: xmllint ..........................   Passed    0.75 sec
+
+75% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 4
+
+Label Time Summary:
+cppcheck      =   0.34 sec*proc (1 test)
+lint_cmake    =   0.44 sec*proc (1 test)
+linter        =   2.09 sec*proc (4 tests)
+uncrustify    =   0.56 sec*proc (1 test)
+xmllint       =   0.75 sec*proc (1 test)
+
+Total Test time (real) =   2.09 sec
+
+The following tests FAILED:
+	[0;31m  3 - uncrustify (Failed)[0;0m
+Errors while running CTest
+Output from these tests are in: /home/ubuntu/relBot/build/relbot_sequence_controller/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.

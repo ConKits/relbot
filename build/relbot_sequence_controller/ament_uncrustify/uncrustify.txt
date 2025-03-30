@@ -1,0 +1,246 @@
+-- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_sequence_controller':
+ - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/uncrustify.xunit.xml
+
+Code style divergence in file 'include/steering.hpp':
+
+--- include/steering.hpp
++++ include/steering.hpp.uncrustify
+@@ -30 +30 @@
+-    SteerRelbot();
++  SteerRelbot();
+@@ -32,2 +32,2 @@
+-    const double DEFAULT_SETPOINT_STREAM = 30;  // How often the velocities are published per second
+-  
++  const double DEFAULT_SETPOINT_STREAM = 30;    // How often the velocities are published per second
++
+@@ -36,2 +36,2 @@
+-    rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
+-    rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
++  rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
++  rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
+@@ -39 +39 @@
+-    
++
+@@ -41,6 +41,6 @@
+-    rclcpp::TimerBase::SharedPtr timer_;
+-    
+-    // Attributes    
+-    double tol = 0.08;
+-    double radius=8.0;
+-    double wheelDistance=4.0;
++  rclcpp::TimerBase::SharedPtr timer_;
++
++    // Attributes
++  double tol = 0.08;
++  double radius = 8.0;
++  double wheelDistance = 4.0;
+@@ -49,3 +49,3 @@
+-    double angularVelocity = 1.0; // Angular velocity (v = r * ω)
+-    double left_velocity;
+-    double right_velocity;
++  double angularVelocity = 1.0;   // Angular velocity (v = r * ω)
++  double left_velocity;
++  double right_velocity;
+@@ -53 +53 @@
+-    
++
+@@ -55,2 +55,2 @@
+-    double straight_time=5.0;
+-    double turning_time = (M_PI) / (2 * angularVelocity); // Time to turn 90 degrees (angle = ω * time)
++  double straight_time = 5.0;
++  double turning_time = (M_PI) / (2 * angularVelocity);   // Time to turn 90 degrees (angle = ω * time)
+@@ -58 +58 @@
+-    enum Shape {line, circle, bend, square};
++  enum Shape {line, circle, bend, square};
+@@ -60,2 +60,2 @@
+-    void moveStraight();
+-    void rotate();
++  void moveStraight();
++  void rotate();
+@@ -64,3 +64,3 @@
+-    void create_topics();
+-    void timer_callback();
+-    void calculate_velocity();
++  void create_topics();
++  void timer_callback();
++  void calculate_velocity();
+@@ -72 +72 @@
+-  //void webcam_topic_callback(const sensor_msgs::msg::Image::SharedPtr msg_cam_img);
++   //void webcam_topic_callback(const sensor_msgs::msg::Image::SharedPtr msg_cam_img);
+@@ -76 +76 @@
+-#endif /*STEER_RELBOT_HPP_*/
++#endif /*STEER_RELBOT_HPP_*/
+
+Code style divergence in file 'src/relbot_sequence_controller.cpp':
+
+--- src/relbot_sequence_controller.cpp
++++ src/relbot_sequence_controller.cpp.uncrustify
+@@ -4,2 +4,4 @@
+-SteerRelbot::SteerRelbot() : Node("steer_relbot") {
+-    RCLCPP_INFO(this->get_logger(), "Init");
++SteerRelbot::SteerRelbot()
++: Node("steer_relbot")
++{
++  RCLCPP_INFO(this->get_logger(), "Init");
+@@ -8,2 +10,2 @@
+-    create_topics();
+-    RCLCPP_INFO(this->get_logger(), "Created Topics");
++  create_topics();
++  RCLCPP_INFO(this->get_logger(), "Created Topics");
+@@ -12 +14 @@
+-    timer_ = this->create_wall_timer(std::chrono::duration<double>(1/DEFAULT_SETPOINT_STREAM),
++  timer_ = this->create_wall_timer(std::chrono::duration<double>(1 / DEFAULT_SETPOINT_STREAM),
+@@ -16,2 +18,3 @@
+-void SteerRelbot::create_topics() {
+-    left_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
++void SteerRelbot::create_topics()
++{
++  left_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
+@@ -20 +23 @@
+-    right_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
++  right_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
+@@ -25,4 +28,2 @@
+-       
+-    
+-    
+-    
++
++
+@@ -30 +31 @@
+-// Navigation methods are working with constant FPS. 
++// Navigation methods are working with constant FPS.
+@@ -34 +35,2 @@
+-void SteerRelbot::moveStraight() {
++void SteerRelbot::moveStraight()
++{
+@@ -37,2 +39,2 @@
+-    left_velocity = -(angularVelocity * radius);
+-    right_velocity = angularVelocity * radius;
++  left_velocity = -(angularVelocity * radius);
++  right_velocity = angularVelocity * radius;
+@@ -41 +43,2 @@
+-void SteerRelbot::rotate() {
++void SteerRelbot::rotate()
++{
+@@ -44,4 +47,4 @@
+-    left_velocity = -angularVelocity*(radius - (wheelDistance/2));
+-    right_velocity = angularVelocity*(radius + (wheelDistance/2));
+-     
+-    
++  left_velocity = -angularVelocity * (radius - (wheelDistance / 2));
++  right_velocity = angularVelocity * (radius + (wheelDistance / 2));
++
++
+@@ -50 +53,2 @@
+-void SteerRelbot::calculate_velocity() {
++void SteerRelbot::calculate_velocity()
++{
+@@ -52,2 +56,2 @@
+-    static rclcpp::Time last_time = this->get_clock()->now(); // Store the last update time
+-    rclcpp::Time current_time = this->get_clock()->now();    // Get the current time
++  static rclcpp::Time last_time = this->get_clock()->now();   // Store the last update time
++  rclcpp::Time current_time = this->get_clock()->now();      // Get the current time
+@@ -56 +60 @@
+-    double elapsed_time = (current_time - last_time).seconds(); // Convert to seconds
++  double elapsed_time = (current_time - last_time).seconds();   // Convert to seconds
+@@ -58 +62 @@
+-    Shape shape{square}; //Shape of the robot's path
++  Shape shape{square};   //Shape of the robot's path
+@@ -60,2 +64,2 @@
+-    switch (shape) {
+-        case line:
++  switch (shape) {
++    case line:
+@@ -63,2 +67,2 @@
+-            moveStraight();
+-            break;
++      moveStraight();
++      break;
+@@ -66 +70 @@
+-        case circle:
++    case circle:
+@@ -68,2 +72,2 @@
+-            rotate();
+-            break;
++      rotate();
++      break;
+@@ -71 +75 @@
+-        case bend:
++    case bend:
+@@ -74,6 +78,6 @@
+-            if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
+-                rotate();
+-            } else {
+-                moveStraight();
+-            }
+-            break;
++      if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
++        rotate();
++      } else {
++        moveStraight();
++      }
++      break;
+@@ -81 +85 @@
+-        case square:
++    case square:
+@@ -84,2 +88,2 @@
+-            if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
+-                rotate();
++      if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
++        rotate();
+@@ -87,9 +91,9 @@
+-                if ((elapsed_time - straight_time) >= turning_time - tol) {
+-                    last_time = current_time;
+-                    break;
+-                }
+-            } else {
+-                moveStraight();
+-            }
+-            break;
+-    }
++        if ((elapsed_time - straight_time) >= turning_time - tol) {
++          last_time = current_time;
++          break;
++        }
++      } else {
++        moveStraight();
++      }
++      break;
++  }
+@@ -98 +102,2 @@
+-void SteerRelbot::timer_callback() {
++void SteerRelbot::timer_callback()
++{
+@@ -103,6 +108,6 @@
+-    example_interfaces::msg::Float64 left_wheel;
+-    left_wheel.data = left_velocity;
+-    example_interfaces::msg::Float64 right_wheel;
+-    right_wheel.data = right_velocity;
+-    left_wheel_topic_->publish(left_wheel);
+-    right_wheel_topic_->publish(right_wheel);
++  example_interfaces::msg::Float64 left_wheel;
++  left_wheel.data = left_velocity;
++  example_interfaces::msg::Float64 right_wheel;
++  right_wheel.data = right_velocity;
++  left_wheel_topic_->publish(left_wheel);
++  right_wheel_topic_->publish(right_wheel);
+@@ -115,6 +120,7 @@
+-int main(int argc, char *argv[]) {
+-    rclcpp::init(argc, argv);
+-    rclcpp::spin(std::make_shared<SteerRelbot>());
+-    rclcpp::shutdown();
+-    return 0;
+-}
++int main(int argc, char *argv[])
++{
++  rclcpp::init(argc, argv);
++  rclcpp::spin(std::make_shared<SteerRelbot>());
++  rclcpp::shutdown();
++  return 0;
++}
+
+2 files with code style divergence
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/uncrustify.xunit.xml'
