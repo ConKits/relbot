@@ -106,7 +106,7 @@ void SteerRelbot::timer_callback() {
 void SteerRelbot::position_callback(const geometry_msgs::msg::Point::SharedPtr cord){
     x_object=cord->x;
     y_object=cord->y;
-    RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", cord->x, cord->y);
+    RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
 
 }
 
@@ -118,13 +118,13 @@ int main(int argc, char *argv[]) {
 }
 /*
 Pseudo Code to control the relbot:
-*Must have two states/modes, the idle mode and action mode.
+-Must have two states/modes, the idle mode and action mode.
 
-*Idle mode: The logic in the idle mode must do with timing of the next values of objects cordinates.
-    Less than a sertain amount of time it should start calculate the error between the actual position and the object's.
+-Idle mode: The logic in the idle mode must do with timing of the next values of objects cordinates.
+    *Less than a sertain amount of time it should start calculate the error between the actual position and the object's.
 
-*Action mode: In this mode the calculations of the wheels velocities are made by the given equations in the manual.
-    The checker is the error between the two spots, and if that equals zero the robot should be in the idle mode.
-    If the error is not equal zero then the robot should be in the action mode.
+-Action mode: In this mode the calculations of the wheels velocities are made by the given equations in the manual.
+    *The checker is the error between the two spots, and if that equals zero the robot should be in the idle mode.
+    *If the error is not equal zero then the robot should be in the action mode.
 
-/*
+*/

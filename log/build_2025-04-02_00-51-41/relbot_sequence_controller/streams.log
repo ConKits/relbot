@@ -1,0 +1,12 @@
+[0.038s] Invoking command in '/home/ubuntu/relBot/build/relbot_sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
+[0.168s] [ 50%] [32mBuilding CXX object CMakeFiles/relbot_sequence_controller.dir/src/relbot_sequence_controller.cpp.o[0m
+[0.762s] [01m[K/home/ubuntu/relBot/src/relbot_sequence_controller/src/relbot_sequence_controller.cpp:130:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcomment-Wcomment]8;;[m[K]
+[0.762s]   130 | /*
+[0.762s]       |  
+[0.762s] [01m[K/home/ubuntu/relBot/src/relbot_sequence_controller/src/relbot_sequence_controller.cpp:119:1:[m[K [01;31m[Kerror: [m[Kunterminated comment
+[0.762s]   119 | [01;31m[K/[m[K*
+[0.762s]       | [01;31m[K^[m[K
+[6.489s] gmake[2]: *** [CMakeFiles/relbot_sequence_controller.dir/build.make:76: CMakeFiles/relbot_sequence_controller.dir/src/relbot_sequence_controller.cpp.o] Error 1
+[6.489s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/relbot_sequence_controller.dir/all] Error 2
+[6.489s] gmake: *** [Makefile:146: all] Error 2
+[6.493s] Invoked command in '/home/ubuntu/relBot/build/relbot_sequence_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
