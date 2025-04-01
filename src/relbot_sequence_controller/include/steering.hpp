@@ -8,11 +8,7 @@
 
 // message type for velocity
 #include "example_interfaces/msg/float64.hpp"
-
-// Sensor message types related to images
-#include "sensor_msgs/msg/image.hpp"
-#include "sensor_msgs/image_encodings.hpp"
-#include "sensor_msgs/fill_image.hpp"
+#include "geometry_msgs/msg/point.hpp"
 
 
 
@@ -31,7 +27,7 @@ private:
     // Topics
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
-    //rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr webcam_topic_;
+    //rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr ;
     
     // Timer
     rclcpp::TimerBase::SharedPtr timer_;
