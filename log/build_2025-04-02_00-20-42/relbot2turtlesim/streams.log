@@ -1,0 +1,22 @@
+[0.034s] Invoking command in '/home/ubuntu/relBot/build/relbot2turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot2turtlesim -- -j8 -l8
+[0.129s] [100%] Built target relbot2turtlesim
+[0.175s] Invoked command in '/home/ubuntu/relBot/build/relbot2turtlesim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot2turtlesim -- -j8 -l8
+[0.177s] Invoking command in '/home/ubuntu/relBot/build/relbot2turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot2turtlesim
+[0.190s] -- Install configuration: ""
+[0.190s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/lib/relbot2turtlesim/relbot2turtlesim
+[0.204s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/ament_index/resource_index/package_run_dependencies/relbot2turtlesim
+[0.204s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/ament_index/resource_index/parent_prefix_path/relbot2turtlesim
+[0.205s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/environment/ament_prefix_path.sh
+[0.205s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/environment/ament_prefix_path.dsv
+[0.205s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/environment/path.sh
+[0.205s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/environment/path.dsv
+[0.205s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/local_setup.bash
+[0.206s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/local_setup.sh
+[0.206s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/local_setup.zsh
+[0.206s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/local_setup.dsv
+[0.206s] -- Installing: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.dsv
+[0.207s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/ament_index/resource_index/packages/relbot2turtlesim
+[0.207s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/cmake/relbot2turtlesimConfig.cmake
+[0.207s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/cmake/relbot2turtlesimConfig-version.cmake
+[0.207s] -- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.xml
+[0.239s] Invoked command in '/home/ubuntu/relBot/build/relbot2turtlesim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot2turtlesim

@@ -103,8 +103,8 @@ void SteerRelbot::timer_callback() {
     right_wheel_topic_->publish(right_wheel);
 }
 
-void SteerRelbot::position_callback(object_cordinates_){
-    RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", msg->x, msg->y);
+void SteerRelbot::position_callback(const geometry_msgs::msg::Point::SharedPtr cord){
+    RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", cord->x, cord->y);
 
 }
 

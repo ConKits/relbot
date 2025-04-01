@@ -1,0 +1,36 @@
+Change Dir: '/home/ubuntu/relBot/build/my_image_processor'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j8 -l8
+/usr/bin/cmake -S/home/ubuntu/relBot/src/my_image_processor -B/home/ubuntu/relBot/build/my_image_processor --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/ubuntu/relBot/build/my_image_processor/CMakeFiles /home/ubuntu/relBot/build/my_image_processor//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/ubuntu/relBot/build/my_image_processor'
+/usr/bin/gmake  -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/depend
+gmake[2]: Entering directory '/home/ubuntu/relBot/build/my_image_processor'
+cd /home/ubuntu/relBot/build/my_image_processor && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/ubuntu/relBot/src/my_image_processor /home/ubuntu/relBot/src/my_image_processor /home/ubuntu/relBot/build/my_image_processor /home/ubuntu/relBot/build/my_image_processor /home/ubuntu/relBot/build/my_image_processor/CMakeFiles/image_processor.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/home/ubuntu/relBot/build/my_image_processor'
+/usr/bin/gmake  -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/build
+gmake[2]: Entering directory '/home/ubuntu/relBot/build/my_image_processor'
+gmake[2]: Nothing to be done for 'CMakeFiles/image_processor.dir/build'.
+gmake[2]: Leaving directory '/home/ubuntu/relBot/build/my_image_processor'
+[100%] Built target image_processor
+gmake[1]: Leaving directory '/home/ubuntu/relBot/build/my_image_processor'
+/usr/bin/cmake -E cmake_progress_start /home/ubuntu/relBot/build/my_image_processor/CMakeFiles 0
+
+-- Install configuration: ""
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/lib/my_image_processor/image_processor
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/package_run_dependencies/my_image_processor
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/parent_prefix_path/my_image_processor
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/path.sh
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/path.dsv
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.bash
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.sh
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.zsh
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.dsv
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/packages/my_image_processor
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/cmake/my_image_processorConfig.cmake
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/cmake/my_image_processorConfig-version.cmake
+-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.xml

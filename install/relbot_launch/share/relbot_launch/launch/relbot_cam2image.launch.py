@@ -19,11 +19,11 @@ def generate_launch_description():
         #     executable="relbot_simulator",
         #     name="relbot_simulator"
         #     ),
-        # Node(
-        #     package="relbot_sequence_controller",
-        #     executable="relbot_sequence_controller",
-        #     name="relbot_sequence_controller"
-        # ),
+        Node(
+            package="relbot_sequence_controller",
+            executable="relbot_sequence_controller",
+            name="relbot_sequence_controller"
+        ),
         
     ])
 
