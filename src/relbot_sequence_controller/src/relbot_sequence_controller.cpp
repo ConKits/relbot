@@ -115,9 +115,14 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 /*
-Pseudo Code to control the relbo:
+Pseudo Code to control the relbot:
 *Must have two states/modes, the idle mode and action mode.
+
 *Idle mode: The logic in the idle mode must do with timing of the next values of objects cordinates.
-    less than a sertain amount of time it should start calculate the error between the actual position and the object's.
-*Action mode: In this mode 
+    Less than a sertain amount of time it should start calculate the error between the actual position and the object's.
+
+*Action mode: In this mode the calculations of the wheels velocities are made by the given equations in the manual.
+    The checker is the error between the two spots, and if that equals zero the robot should be in the idle mode.
+    If the error is not equal zero then the robot should be in the action mode.
+    
 /*
