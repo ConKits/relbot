@@ -137,5 +137,8 @@ Pseudo Code to control the relbot:
 -Action mode: In this mode the calculations of the wheels velocities are made by the given equations in the manual.
     *The checker is the error between the two spots, and if that equals zero the robot should be in the idle mode.
     *If the error is not equal zero then the robot should be in the action mode.
+    *Assuming that the center of the camera/image is the 0,0 origin and then move the robot in such a way to reduce the error
+    close to zero. It will be useful to use tollerance to estimate the positions.
+    *So error=
 
 */
