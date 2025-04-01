@@ -45,7 +45,8 @@ private:
     //Object's cordinates from the image processor.
     double x_object;
     double y_object;
-    
+    bool idleState=true;  
+
     // Times for moving straight and turning
     double straight_time=5.0;
     double turning_time = (M_PI) / (2 * angularVelocity); // Time to turn 90 degrees (angle = ω * time)
