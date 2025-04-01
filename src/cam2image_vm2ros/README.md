@@ -7,10 +7,14 @@ Output:
 /image 
         Type: sensor_msgs/msg/Image
         Published the images received from the UDP stream created by cam2image_host2vm.
+Host machine: run this command at the host terminal, make sure that the 
 
 Run:
         In a terminal run either of the following commands:
         ros2 run cam2image_vm2ros cam2image --ros-args --params-file src/cam2image_vm2ros/config/cam2image.yaml
+
+Launch: In the virtual machine terminal launch this file after the videoserver.py at the host machine.
+        ros2 launch relbot_launch relbot_cam2image.launch.py
 
 Parameters:
         double image_stream_FPS : Sets the output rate of image stream. Default = 30 FPS, which is most webcams
