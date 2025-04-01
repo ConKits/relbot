@@ -42,6 +42,9 @@ private:
     double left_velocity;
     double right_velocity;
 
+    //Object's cordinates from the image processor.
+    double x_object;
+    double y_object;
     
     // Times for moving straight and turning
     double straight_time=5.0;
