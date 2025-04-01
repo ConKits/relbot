@@ -58,7 +58,7 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
         center_msg.x = center.x;
         center_msg.y = center.y;
 
-        cordinateImage_->publish(center_msg);
+        cordinatesImage_->publish(center_msg);
     }
 }
 
