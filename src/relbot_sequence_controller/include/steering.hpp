@@ -14,11 +14,7 @@
 #include "sensor_msgs/image_encodings.hpp"
 #include "sensor_msgs/fill_image.hpp"
 
-// OpenCV imshow
-#include "opencv2/core/mat.hpp"
-#include "opencv2/core.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/videoio.hpp"
+
 
 
 class SteerRelbot : public rclcpp::Node
