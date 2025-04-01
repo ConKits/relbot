@@ -20,6 +20,8 @@ void SteerRelbot::create_topics() {
     right_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
         "/input/right_motor/setpoint_vel", 1);
     
+    object_cordinates_ = this->create_subscription<geometry_msgs::msg::Point>("/green_object_position", 10,
+            std::bind(&SteerRelbot::timer_callback, this, std::placeholders::_1)) ;
 }
 
 
