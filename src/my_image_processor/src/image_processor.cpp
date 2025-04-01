@@ -64,7 +64,13 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
         cv::circle(cv_image, center, 5, cv::Scalar(0, 0, 255), -1);
         int x=center.x, int y=center.y; 
         RCLCPP_INFO(this->get_logger(), "Green object detected at: (%d, %d)", center.x, center.y);
-        
+
+        //Publishing the cordinates:
+        geometry_msgs::msg::Point center_msg;
+        center_msg.x = x;
+        center_msg.y = y;
+
+        cordinateImage_->publish(center_msg);
     }
 }
 
