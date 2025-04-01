@@ -9,21 +9,7 @@ ImageProcessor::ImageProcessor() : Node("image_processor") {
     RCLCPP_INFO(this->get_logger(), "ImageProcessor node started. Waiting for images...");
 }
 
-void ImageProcessor::image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
-    try {
-        // Convert ROS2 Image message to OpenCV format
-        cv::Mat cv_image = cv_bridge::toCvCopy(msg, "bgr8")->image;
 
-        // Process the image to track the green object
-        track_green_object(cv_image);
-
-        // Display the processed image
-        cv::imshow("Green Object Tracking", cv_image);
-        cv::waitKey(1);
-    } catch (const std::exception &e) {
-        RCLCPP_ERROR(this->get_logger(), "Image processing failed: %s", e.what());
-    }
-}
 
 void ImageProcessor::track_green_object(cv::Mat &cv_image) {
     // Convert the image from BGR to HSV color space
@@ -42,6 +28,8 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
     std::vector<std::vector<cv::Point>> contours;
     std::vector<cv::Vec4i> hierarchy;
     cv::findContours(mask, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+    int x=center.x, int y=; 
 
     if (!contours.empty()) {
         // Find the largest contour (assumed to be the greenest object)
@@ -62,7 +50,7 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
         // Mark the center of the detected green object
         cv::Point center(bounding_box.x + bounding_box.width / 2, bounding_box.y + bounding_box.height / 2);
         cv::circle(cv_image, center, 5, cv::Scalar(0, 0, 255), -1);
-        int x=center.x, int y=center.y; 
+        
         RCLCPP_INFO(this->get_logger(), "Green object detected at: (%d, %d)", center.x, center.y);
 
         //Publishing the cordinates:
@@ -71,6 +59,22 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
         center_msg.y = y;
 
         cordinateImage_->publish(center_msg);
+    }
+}
+
+void ImageProcessor::image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
+    try {
+        // Convert ROS2 Image message to OpenCV format
+        cv::Mat cv_image = cv_bridge::toCvCopy(msg, "bgr8")->image;
+
+        // Process the image to track the green object
+        track_green_object(cv_image);
+
+        // Display the processed image
+        cv::imshow("Green Object Tracking", cv_image);
+        cv::waitKey(1);
+    } catch (const std::exception &e) {
+        RCLCPP_ERROR(this->get_logger(), "Image processing failed: %s", e.what());
     }
 }
 
