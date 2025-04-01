@@ -19,18 +19,11 @@ void SteerRelbot::create_topics() {
 
     right_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
         "/input/right_motor/setpoint_vel", 1);
-
-    // webcam_topic_ = this->create_subscription<sensor_msgs::msg::Image>(
-    //     SteerRelbot::"/image", 10, std::bind(&SteerRelbot::timer_callback, this));
-       
-    
-    
     
 }
-// Navigation methods are working with constant FPS. 
-// FPS is used as a time unit.
-// For example, if FPS is 10, then the robot will move straight for 5 seconds.
 
+
+// Navigation methods are working with constant FPS. 
 void SteerRelbot::moveStraight() {
     // Moves the robot straight
     // This method is calculating the velocities for each wheel to move straight.
@@ -107,10 +100,7 @@ void SteerRelbot::timer_callback() {
     left_wheel_topic_->publish(left_wheel);
     right_wheel_topic_->publish(right_wheel);
 }
-// void SteerRelbot::webcam_topic_callback(const sensor_msgs::msg::Image::SharedPtr msg_cam_img)
-// {
-//   input_image = msg_cam_img;
-// }
+
 
 int main(int argc, char *argv[]) {
     rclcpp::init(argc, argv);
