@@ -21,7 +21,7 @@ void SteerRelbot::create_topics() {
         "/input/right_motor/setpoint_vel", 1);
     
     object_cordinates_ = this->create_subscription<geometry_msgs::msg::Point>("/green_object_position", 10,
-            std::bind(&SteerRelbot::timer_callback, this, std::placeholders::_1)) ;
+            std::bind(&SteerRelbot::position_callback, this, std::placeholders::_1)) ;
 }
 
 
@@ -103,6 +103,10 @@ void SteerRelbot::timer_callback() {
     right_wheel_topic_->publish(right_wheel);
 }
 
+void SteerRelbot::position_callback(object_cordinates_){
+    RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", msg->x, msg->y);
+
+}
 
 int main(int argc, char *argv[]) {
     rclcpp::init(argc, argv);

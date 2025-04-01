@@ -56,6 +56,8 @@ private:
     void create_topics();
     void timer_callback();
     void calculate_velocity();
+
+    void position_callback(const geometry_msgs::msg::Point::SharedPtr msg);
   
 };
 
