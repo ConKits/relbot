@@ -114,7 +114,10 @@ int main(int argc, char *argv[]) {
     rclcpp::shutdown();
     return 0;
 }
-
+/*
 Pseudo Code to control the relbo:
 *Must have two states/modes, the idle mode and action mode.
-    *the logic in the idle mode must 
+*Idle mode: The logic in the idle mode must do with timing of the next values of objects cordinates.
+    less than a sertain amount of time it should start calculate the error between the actual position and the object's.
+*Action mode: In this mode 
+/*
