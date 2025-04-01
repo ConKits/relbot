@@ -139,6 +139,8 @@ Pseudo Code to control the relbot:
     *If the error is not equal zero then the robot should be in the action mode.
     *Assuming that the center of the camera/image is the 0,0 origin and then move the robot in such a way to reduce the error
     close to zero. It will be useful to use tollerance to estimate the positions.
-    *So error=
+    *So error=camera_center-object_centre. 
+    ***REMINDER*** Convert object's cordinates from top-rihgt corner origin to the center of the image/camera. 
+                    This can be done by adding the half size of the frame, width and height.
 
 */
