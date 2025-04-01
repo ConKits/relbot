@@ -4,6 +4,8 @@ ImageProcessor::ImageProcessor() : Node("image_processor") {
     receivedImage_ = this->create_subscription<sensor_msgs::msg::Image>(
         "/image", 10, std::bind(&ImageProcessor::image_callback, this, std::placeholders::_1));
 
+    cordinatesImage_=this->create_publisher<geometry_msgs::msg::Point>("/green_object_position")
+
     RCLCPP_INFO(this->get_logger(), "ImageProcessor node started. Waiting for images...");
 }
 

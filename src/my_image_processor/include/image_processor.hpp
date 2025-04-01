@@ -3,7 +3,7 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/image.hpp"
-#include ""
+#include "geometry_msgs/msg/point.hpp"
 #include <cv_bridge/cv_bridge.hpp>
 #include <opencv2/opencv.hpp>
 
@@ -16,7 +16,7 @@ private:
     void track_green_object(cv::Mat &cv_image);
     
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr receivedImage_;
-    rclcpp::Publisher<geometry_msgs::msg::Point>
+    rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr cordinatesImage_;
 };
 
 #endif // IMAGE_PROCESSOR_HPP
