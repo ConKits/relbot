@@ -14,7 +14,7 @@ private:
     void image_callback(const sensor_msgs::msg::Image::SharedPtr msg);
     void track_green_object(cv::Mat &cv_image);
     
-    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscription_;
+    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr receivedImage_;
 };
 
 #endif // IMAGE_PROCESSOR_HPP

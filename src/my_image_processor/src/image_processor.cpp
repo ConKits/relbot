@@ -1,7 +1,7 @@
 #include "image_processor.hpp"
 
 ImageProcessor::ImageProcessor() : Node("image_processor") {
-    subscription_ = this->create_subscription<sensor_msgs::msg::Image>(
+    receivedImage_ = this->create_subscription<sensor_msgs::msg::Image>(
         "/image", 10, std::bind(&ImageProcessor::image_callback, this, std::placeholders::_1));
 
     RCLCPP_INFO(this->get_logger(), "ImageProcessor node started. Waiting for images...");
