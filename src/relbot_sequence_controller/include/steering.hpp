@@ -27,7 +27,7 @@ private:
     // Topics
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
-    //rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr ;
+    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr object_cordinates_;
     
     // Timer
     rclcpp::TimerBase::SharedPtr timer_;
