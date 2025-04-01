@@ -111,7 +111,7 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::Point::SharedPtr c
     double time_object=(current_time_object-last_time_object).seconds();
 
     //Check for valid position data for the idle mode.
-    if (time_object<2.0){
+    if (time_object>2.0){
         idleState=false;
         x_object=cord->x;
         y_object=cord->y;
