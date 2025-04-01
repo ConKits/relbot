@@ -114,3 +114,7 @@ int main(int argc, char *argv[]) {
     rclcpp::shutdown();
     return 0;
 }
+
+Pseudo Code to control the relbo:
+*Must have two states/modes, the idle mode and action mode.
+    *the logic in the idle mode must 
