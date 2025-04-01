@@ -8,6 +8,7 @@ Output:
         Type: sensor_msgs/msg/Image
         Published the images received from the UDP stream created by cam2image_host2vm.
 Host machine: Run this command at the host terminal, make sure that the path directory is correct.
+        cd Documents\cam
         python videoserver.py
 
 Run:
@@ -15,6 +16,8 @@ Run:
         ros2 run cam2image_vm2ros cam2image --ros-args --params-file src/cam2image_vm2ros/config/cam2image.yaml
 
 Launch: In the virtual machine terminal run this command after initializze the video channel.
+        cd relBot
+        source install/setup.bash
         ros2 launch relbot_launch relbot_cam2image.launch.py
 
 Parameters:

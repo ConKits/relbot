@@ -4,7 +4,7 @@ ImageProcessor::ImageProcessor() : Node("image_processor") {
     receivedImage_ = this->create_subscription<sensor_msgs::msg::Image>(
         "/image", 10, std::bind(&ImageProcessor::image_callback, this, std::placeholders::_1));
 
-    cordinatesImage_=this->create_publisher<geometry_msgs::msg::Point>("/green_object_position",10)
+    cordinatesImage_=this->create_publisher<geometry_msgs::msg::Point>("/green_object_position",10);
 
     RCLCPP_INFO(this->get_logger(), "ImageProcessor node started. Waiting for images...");
 }
@@ -29,7 +29,7 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
     std::vector<cv::Vec4i> hierarchy;
     cv::findContours(mask, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-    int x=center.x, int y=; 
+   
 
     if (!contours.empty()) {
         // Find the largest contour (assumed to be the greenest object)

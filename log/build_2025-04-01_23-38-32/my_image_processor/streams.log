@@ -1,0 +1,39 @@
+[0.039s] Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[0.125s] Change Dir: '/home/ubuntu/relBot/build/my_image_processor'
+[0.126s] 
+[0.126s] Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j8 -l8
+[0.141s] /usr/bin/cmake -S/home/ubuntu/relBot/src/my_image_processor -B/home/ubuntu/relBot/build/my_image_processor --check-build-system CMakeFiles/Makefile.cmake 0
+[0.172s] /usr/bin/cmake -E cmake_progress_start /home/ubuntu/relBot/build/my_image_processor/CMakeFiles /home/ubuntu/relBot/build/my_image_processor//CMakeFiles/progress.marks
+[0.181s] /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+[0.185s] gmake[1]: Entering directory '/home/ubuntu/relBot/build/my_image_processor'
+[0.186s] /usr/bin/gmake  -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/depend
+[0.199s] gmake[2]: Entering directory '/home/ubuntu/relBot/build/my_image_processor'
+[0.200s] cd /home/ubuntu/relBot/build/my_image_processor && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/ubuntu/relBot/src/my_image_processor /home/ubuntu/relBot/src/my_image_processor /home/ubuntu/relBot/build/my_image_processor /home/ubuntu/relBot/build/my_image_processor /home/ubuntu/relBot/build/my_image_processor/CMakeFiles/image_processor.dir/DependInfo.cmake "--color="
+[0.231s] gmake[2]: Leaving directory '/home/ubuntu/relBot/build/my_image_processor'
+[0.232s] /usr/bin/gmake  -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/build
+[0.245s] gmake[2]: Entering directory '/home/ubuntu/relBot/build/my_image_processor'
+[0.266s] [ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
+[0.266s] /usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -I/home/ubuntu/relBot/src/my_image_processor/include -isystem /usr/include/opencv4 -isystem /opt/ros/jazzy/include/sensor_msgs -isystem /opt/ros/jazzy/include/rclcpp -isystem /opt/ros/jazzy/include/cv_bridge -isystem /opt/ros/jazzy/include/builtin_interfaces -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/fastcdr -isystem /opt/ros/jazzy/include/rosidl_runtime_cpp -isystem /opt/ros/jazzy/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/jazzy/include/rmw -isystem /opt/ros/jazzy/include/rosidl_dynamic_typesupport -isystem /opt/ros/jazzy/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/jazzy/include/rosidl_typesupport_introspection_c -isystem /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/jazzy/include/libstatistics_collector -isystem /opt/ros/jazzy/include/rcl -isystem /opt/ros/jazzy/include/rcl_interfaces -isystem /opt/ros/jazzy/include/service_msgs -isystem /opt/ros/jazzy/include/rcl_logging_interface -isystem /opt/ros/jazzy/include/rcl_yaml_param_parser -isystem /opt/ros/jazzy/include/type_description_interfaces -isystem /opt/ros/jazzy/include/rcpputils -isystem /opt/ros/jazzy/include/statistics_msgs -isystem /opt/ros/jazzy/include/rosgraph_msgs -isystem /opt/ros/jazzy/include/rosidl_typesupport_cpp -isystem /opt/ros/jazzy/include/rosidl_typesupport_c -isystem /opt/ros/jazzy/include/tracetools -isystem /opt/ros/jazzy/include/geometry_msgs -isystem /opt/ros/jazzy/include/std_msgs -Wall -Wextra -Wpedantic -MD -MT CMakeFiles/image_processor.dir/src/image_processor.cpp.o -MF CMakeFiles/image_processor.dir/src/image_processor.cpp.o.d -o CMakeFiles/image_processor.dir/src/image_processor.cpp.o -c /home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp
+[4.789s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:[m[K In constructor ‘[01m[KImageProcessor::[01;32m[KImageProcessor[m[K()[m[K’:
+[4.789s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:7:100:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kdo[m[K’
+[4.790s]     7 |     cordinatesImage_=this->create_publisher<geometry_msgs::msg::Point>("/green_object_position",10)
+[4.790s]       |                                                                                                    [01;31m[K^[m[K
+[4.790s]       |                                                                                                    [32m[K;[m[K
+[4.810s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::[01;32m[Ktrack_green_object[m[K(cv::Mat&)[m[K’:
+[4.810s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:32:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter[m[K’ was not declared in this scope
+[4.810s]    32 |     int x=[01;31m[Kcenter[m[K.x, int y=;
+[4.810s]       |           [01;31m[K^~~~~~[m[K
+[4.820s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcordinateImage_[m[K’ was not declared in this scope; did you mean ‘[01m[KcordinatesImage_[m[K’?
+[4.820s]    61 |         [01;31m[KcordinateImage_[m[K->publish(center_msg);
+[4.820s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.820s]       |         [32m[KcordinatesImage_[m[K
+[4.821s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:32:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.821s]    32 |     int [01;35m[Kx[m[K=center.x, int y=;
+[4.821s]       |         [01;35m[K^[m[K
+[8.494s] gmake[2]: *** [CMakeFiles/image_processor.dir/build.make:79: CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
+[8.494s] gmake[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/image_processor.dir/all] Error 2
+[8.494s] gmake: *** [Makefile:149: all] Error 2
+[8.494s] gmake[2]: Leaving directory '/home/ubuntu/relBot/build/my_image_processor'
+[8.495s] gmake[1]: Leaving directory '/home/ubuntu/relBot/build/my_image_processor'
+[8.496s] 
+[8.498s] Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
