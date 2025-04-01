@@ -56,13 +56,7 @@ private:
     void create_topics();
     void timer_callback();
     void calculate_velocity();
-   /**
-   * @brief Handles receiving of received webcam images
-   *
-   * @param msg_cam_img webcam image, in sensor_msgs::msg::Image format
-   */
-  //void webcam_topic_callback(const sensor_msgs::msg::Image::SharedPtr msg_cam_img);
-
+  
 };
 
 #endif /*STEER_RELBOT_HPP_*/
