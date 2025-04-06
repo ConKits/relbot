@@ -140,6 +140,13 @@ Pseudo Code to control the relbot:
     ***REMINDER*** Convert object's cordinates from top-rihgt corner origin to the center of the image/camera. 
                     This can be done by adding the half size of the frame, width and height.
 -Navigation Logic: If the idle sate is not true then the robot should be in the action mode.
-    First check the 
+    First check the x_error and turn respectively to position the robot at the center. Then move straight is the area is leass than the threshold.
+    If the area is greater than the threshold then the robot should be in idle state.
+
+-To Do:
+    *Find the correct valus of threshold and minimum area.
+    *Corect the time_constant based on the robot's speed.
+    *Test the code in the simulator.
+    *Test the code in the real robot.
 
 */
