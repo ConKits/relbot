@@ -90,12 +90,11 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
 
         }
         if (area_object> threshold_area) {
-            // Object is detected
-            RCLCPP_INFO(this->get_logger(), "Object detected");
+            // Object is close to the robot
+            
         } else {
-            // Object is not detected
-            RCLCPP_INFO(this->get_logger(), "No object detected");
-        }
+            // Object is far from the robot
+            
 
         RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
     }
