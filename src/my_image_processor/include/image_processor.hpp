@@ -16,7 +16,7 @@ private:
     void track_green_object(cv::Mat &cv_image);
     
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr receivedImage_;
-    rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr cordinatesImage_;
+    rclcpp::Publisher<geometry_msgs::msg::PointStamped>::SharedPtr cordinatesImage_;
 };
 
 #endif // IMAGE_PROCESSOR_HPP

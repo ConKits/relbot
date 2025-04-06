@@ -4,7 +4,7 @@ ImageProcessor::ImageProcessor() : Node("image_processor") {
     receivedImage_ = this->create_subscription<sensor_msgs::msg::Image>(
         "/image", 10, std::bind(&ImageProcessor::image_callback, this, std::placeholders::_1));
 
-    cordinatesImage_=this->create_publisher<geometry_msgs::msg::Point>("/green_object_position",10);
+    cordinatesImage_=this->create_publisher<geometry_msgs::msg::PointStamped>("/green_object_position",10);
 
     RCLCPP_INFO(this->get_logger(), "ImageProcessor node started. Waiting for images...");
 }
@@ -54,7 +54,7 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
         //RCLCPP_INFO(this->get_logger(), "Green object detected at: (%d, %d)", center.x, center.y);
 
         //Publishing the cordinates:
-        geometry_msgs::msg::Point center_msg;
+        geometry_msgs::msg::PointStamped center_msg;
         center_msg.x = center.x;
         center_msg.y = center.y;
 
