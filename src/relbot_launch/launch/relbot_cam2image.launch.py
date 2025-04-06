@@ -14,11 +14,11 @@ def generate_launch_description():
             package="my_image_processor",
             executable="image_processor"
         ),
-        # Node(
-        #     package="relbot_simulator",
-        #     executable="relbot_simulator",
-        #     name="relbot_simulator"
-        #     ),
+        Node(
+            package="relbot_simulator",
+            executable="relbot_simulator",
+            name="relbot_simulator"
+            ),
         Node(
             package="relbot_sequence_controller",
             executable="relbot_sequence_controller",

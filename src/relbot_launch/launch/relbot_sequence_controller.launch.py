@@ -33,7 +33,6 @@ def generate_launch_description():
         Node(
             package="cam2image_vm2ros",
             executable="cam2image",
-            name="fuckyou",
             parameters=[config_path]
         )   
     ])

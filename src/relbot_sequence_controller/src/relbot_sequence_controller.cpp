@@ -51,15 +51,10 @@ void SteerRelbot::rotate(int direction) {
 }
 
 void SteerRelbot::calculate_velocity() {
-    //Signing time attributes to track the time
-    static rclcpp::Time last_time = this->get_clock()->now(); // Store the last update time
-    rclcpp::Time current_time = this->get_clock()->now();    // Get the current time
-
-    // Calculate the elapsed time in seconds
-    double elapsed_time = (current_time - last_time).seconds(); // Convert to seconds
-
-    // Calculate the error between the robot's position and the object's position
+    // Calculate the velocities for each wheel based on the robot's position and the object's position    
+   
     if (idleState==false){   
+        // Calculate the error between the robot's position and the object's position
         x_error = x_object - x_center;
 
             if (x_error > 0) {
@@ -69,7 +64,6 @@ void SteerRelbot::calculate_velocity() {
             } 
             else if (x_error < 0) {
                 // Object is to the left of the center
-                
                 rotate(-1);
             }
             else{
