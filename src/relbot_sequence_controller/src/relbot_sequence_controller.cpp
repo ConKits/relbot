@@ -100,7 +100,7 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
         x_object=cord->point.x;
         y_object=cord->point.y;
         area_object=cord->point.z;
-        RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
+        RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f, area: %.2f", x_object, y_object, area_object);
     }
 
 
