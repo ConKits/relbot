@@ -38,7 +38,7 @@ private:
     double wheelDistance=200; // Distance between the wheels
 
     // Velocity attributes
-    double angularVelocity = 1.0; // Angular velocity (v = r * ω)
+    double angularVelocity = 1/timeConstant; // Angular velocity (v = r * ω)
     double left_velocity;
     double right_velocity;
 
@@ -56,9 +56,8 @@ private:
     bool idleState=true;  
 
     // Times for moving straight and turning
-    double straight_time=5.0;
-    double turning_time = (M_PI) / (2 * angularVelocity); // Time to turn 90 degrees (angle = ω * time)
-
+    double timeConstant=1.0;
+   
     
     //Navigating Methosds. Such as moveStraiaght and rotate.
     void idle();
