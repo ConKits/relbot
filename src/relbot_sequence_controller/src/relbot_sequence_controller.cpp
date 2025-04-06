@@ -100,7 +100,8 @@ void SteerRelbot::timer_callback() {
 // Callback function to receive the position of the green object
 // This function is called when a new message is received on the subscribed topic
 void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::SharedPtr cord){
-
+    // Check if the object is detected
+    RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f, area: %.2f", cord->point.x, cord->point.y, cord->point.z);
     //Check for close green objects.
     if (area_object>minimum_area){
         idleState=false;
