@@ -52,14 +52,19 @@ void SteerRelbot::calculate_velocity() {
     double elapsed_time = (current_time - last_time).seconds(); // Convert to seconds
 
     // Calculate the error between the robot's position and the object's position
+    x_error = x_object - x_center;
+
     if (x_object > x_center) {
         // Object is to the right of the center
-        x_error = x_object - x_center;
+        
     } 
-    else {
+    else if {
         // Object is to the left of the center
-        x_error = x_center - x_object;
+        
 
+    }
+    else{
+        
     }
 
     if (area_object> threshold_area) {
