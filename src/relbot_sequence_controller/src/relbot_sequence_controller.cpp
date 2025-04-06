@@ -87,7 +87,7 @@ void SteerRelbot::calculate_velocity() {
 
 void SteerRelbot::timer_callback() {
     // calculate velocity
-    //calculate_velocity();
+    calculate_velocity();
 
     // publish velocity to simulator
     example_interfaces::msg::Float64 left_wheel;
