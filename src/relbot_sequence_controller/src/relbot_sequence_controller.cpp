@@ -139,5 +139,7 @@ Pseudo Code to control the relbot:
     *So error=camera_center-object_centre. 
     ***REMINDER*** Convert object's cordinates from top-rihgt corner origin to the center of the image/camera. 
                     This can be done by adding the half size of the frame, width and height.
+-Navigation Logic: If the idle sate is not true then the robot should be in the action mode.
+    First check the 
 
 */
