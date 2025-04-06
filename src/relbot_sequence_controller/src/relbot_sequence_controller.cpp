@@ -54,20 +54,23 @@ void SteerRelbot::calculate_velocity() {
     // Calculate the error between the robot's position and the object's position
     x_error = x_object - x_center;
 
-    if (x_object > x_center) {
+    if (x_error > 0) {
         // Object is to the right of the center
+        rotate();
         
     } 
-    else if {
+    else if (x_error < 0) {
         // Object is to the left of the center
         
-
+        rotate();
     }
     else{
-        
+        left_velocity = 0.0;
+        right_velocity= 0.0;
+        idleState=true;  
     }
 
-    if (area_object> threshold_area) {
+    if (area_object< threshold_area) {
         // Object is close to the robot
         
     } 
