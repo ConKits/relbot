@@ -69,18 +69,15 @@ void SteerRelbot::calculate_velocity() {
                 rotate(-1);
             }
             else{
-                idle();  
+                if (area_object< threshold_area) {
+                    // Object is far from the robot
+                    moveStraight();
+                } 
+                else {
+                    // Object is close to the robot
+                    idle();
+                }
             }
-
-            if (area_object< threshold_area) {
-                // Object is far from the robot
-                moveStraight();
-            } 
-            else {
-                // Object is close to the robot
-                idle();
-            }
-
     }
 }
 

@@ -33,7 +33,7 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     
     // Attributes    
-    double x_tol = 10.0; // Tolerance for x-axis error
+    double x_tol = 20.0; // Tolerance for x-axis error
     double radius=100; // Radius of the wheels
     double wheelDistance=200; // Distance between the wheels
 
@@ -48,7 +48,7 @@ private:
     double area_object;
 
     // Thresholds
-    double threshold_area=200.0; // Area threshold for object detection
+    double threshold_area=600.0; // Area threshold for object detection
     double minimum_area=500.0; // Minimum area for object detection
     double x_center=150.0; // Center of the image
     double y_center=100.0; // Center of the image
