@@ -18,7 +18,7 @@ Run:
 Launch: In the virtual machine terminal run this command after initializze the video channel.
         cd relBot
         source install/setup.bash
-        'ros2 launch relbot_launch relbot_cam2image.launch.py'
+        ros2 launch relbot_launch relbot_cam2image.launch.py
 
 Parameters:
         double image_stream_FPS : Sets the output rate of image stream. Default = 30 FPS, which is most webcams

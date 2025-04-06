@@ -1,0 +1,37 @@
+[0.046s] Invoking command in '/home/ubuntu/relBot/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/cam2image_vm2ros -- -j8 -l8
+[0.156s] [ 40%] Built target cam2image
+[0.191s] [100%] Built target cam2image_vm2ros
+[0.246s] Invoked command in '/home/ubuntu/relBot/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/cam2image_vm2ros -- -j8 -l8
+[0.247s] Invoking command in '/home/ubuntu/relBot/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/cam2image_vm2ros
+[0.275s] -- Install configuration: ""
+[0.275s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/lib/cam2image_vm2ros/cam2image
+[0.281s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/lib/libcam2image_vm2ros.so
+[0.281s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros
+[0.282s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros/cam2image.hpp
+[0.282s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros/base64.hpp
+[0.282s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros/visibility_control.h
+[0.283s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros/remote_capture.hpp
+[0.283s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/library_path.sh
+[0.283s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/library_path.dsv
+[0.284s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/ament_index/resource_index/package_run_dependencies/cam2image_vm2ros
+[0.284s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/ament_index/resource_index/parent_prefix_path/cam2image_vm2ros
+[0.284s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/ament_prefix_path.sh
+[0.284s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/ament_prefix_path.dsv
+[0.285s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/path.sh
+[0.285s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/path.dsv
+[0.285s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.bash
+[0.285s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.sh
+[0.286s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.zsh
+[0.287s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.dsv
+[0.287s] -- Installing: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.dsv
+[0.287s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/ament_index/resource_index/packages/cam2image_vm2ros
+[0.288s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/ament_index/resource_index/rclcpp_components/cam2image_vm2ros
+[0.288s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosExport.cmake
+[0.289s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosExport-noconfig.cmake
+[0.299s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_libraries-extras.cmake
+[0.299s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_targets-extras.cmake
+[0.300s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.300s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosConfig.cmake
+[0.300s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosConfig-version.cmake
+[0.301s] -- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.xml
+[0.340s] Invoked command in '/home/ubuntu/relBot/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/cam2image_vm2ros
