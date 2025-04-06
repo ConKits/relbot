@@ -59,12 +59,12 @@ void SteerRelbot::calculate_velocity() {
         // Calculate the error between the robot's position and the object's position
         x_error = x_object - x_center;
 
-            if (x_error > 0) {
+            if (x_error > 0 && std::abs(x_error) > x_tol) {
                 // Object is to the right of the center
                 rotate(1);
                 
             } 
-            else if (x_error < 0) {
+            else if (x_error < 0 && std::abs(x_error) > x_tol) {
                 // Object is to the left of the center
                 rotate(-1);
             }
