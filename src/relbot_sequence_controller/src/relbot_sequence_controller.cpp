@@ -20,7 +20,7 @@ void SteerRelbot::create_topics() {
     right_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
         "/input/right_motor/setpoint_vel", 1);
     
-    object_cordinates_ = this->create_subscription<geometry_msgs::msg::Point>("/green_object_position", 10,
+    object_cordinates_ = this->create_subscription<geometry_msgs::msg::PointStamped>("/green_object_position", 10,
             std::bind(&SteerRelbot::position_callback, this, std::placeholders::_1)) ;
 }
 
@@ -66,7 +66,7 @@ void SteerRelbot::timer_callback() {
     right_wheel_topic_->publish(right_wheel);
 }
 
-void SteerRelbot::position_callback(const geometry_msgs::msg::Point::SharedPtr cord){
+void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::SharedPtr cord){
     
     
     static rclcpp::Time last_time_object = this->get_clock()->now(); // Store the last update time
@@ -76,8 +76,9 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::Point::SharedPtr c
     //Check for valid position data for the idle mode.
     if (time_object>2.0){
         idleState=false;
-        x_object=cord->x;
-        y_object=cord->y;
+        x_object=cord->point.x;
+        y_object=cord->point.y;
+        area=cord->point.z;
         RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
     }
 

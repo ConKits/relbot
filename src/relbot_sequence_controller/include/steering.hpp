@@ -8,7 +8,7 @@
 
 // message type for velocity
 #include "example_interfaces/msg/float64.hpp"
-#include "geometry_msgs/msg/point.hpp"
+#include "geometry_msgs/msg/point_stamped.hpp"
 
 
 
@@ -27,7 +27,7 @@ private:
     // Topics
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
-    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr object_cordinates_;
+    rclcpp::Subscription<geometry_msgs::msg::PointStamped::SharedPtr object_cordinates_;
     
     // Timer
     rclcpp::TimerBase::SharedPtr timer_;

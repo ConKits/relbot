@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
+[100%] [32m[1mLinking CXX executable image_processor[0m
+[100%] Built target image_processor
+-- Install configuration: ""
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/lib/my_image_processor/image_processor
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/relBot/install/my_image_processor/lib/my_image_processor/image_processor" to ""
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/package_run_dependencies/my_image_processor
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/parent_prefix_path/my_image_processor
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/path.sh
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/path.dsv
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.bash
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.sh
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.zsh
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.dsv
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/packages/my_image_processor
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/cmake/my_image_processorConfig.cmake
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/cmake/my_image_processorConfig-version.cmake
+-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.xml

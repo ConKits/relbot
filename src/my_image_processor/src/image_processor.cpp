@@ -60,7 +60,8 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
         geometry_msgs::msg::PointStamped center_msg;
         center_msg.point.x = center.x;
         center_msg.point.y = center.y;
-        center_msg.point.z = bounding_box.area; // This is the area of the bounding box
+        double box_area = bounding_box.area();
+        center_msg.point.z = box_area; // This is the area of the bounding box
         center_msg.header.stamp = this->now();
        
         
