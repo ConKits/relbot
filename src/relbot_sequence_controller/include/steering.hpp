@@ -34,8 +34,8 @@ private:
     
     // Attributes    
     double tol = 0.08;
-    double radius=8.0;
-    double wheelDistance=4.0;
+    double radius=100; // Radius of the wheels
+    double wheelDistance=200; // Distance between the wheels
 
     // Velocity attributes
     double angularVelocity = 1.0; // Angular velocity (v = r * ω)
@@ -63,7 +63,7 @@ private:
     //Navigating Methosds. Such as moveStraiaght and rotate.
     void idle();
     void moveStraight();
-    void rotate(int );
+    void rotate(int direction );
 
     // methods
     void create_topics();
