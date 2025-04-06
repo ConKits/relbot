@@ -1,3 +1,7 @@
+//==
+
+
+
 #include "image_processor.hpp"
 
 ImageProcessor::ImageProcessor() : Node("image_processor") {

@@ -1,3 +1,5 @@
+//==
+
 #ifndef IMAGE_PROCESSOR_HPP
 #define IMAGE_PROCESSOR_HPP
 

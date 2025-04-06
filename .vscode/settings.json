@@ -1,4 +1,20 @@
-{
+{   "doxdocgen.c.commentPrefix": "// ",
+    "doxdocgen.c.firstLine": "//=============================================",
+    "doxdocgen.c.lastLine": "//=============================================",
+    "doxdocgen.c.triggerSequence": "//==",
+    "doxdocgen.generic.authorName": "Konstantinos Kaikkis, Evalds Grava",
+    "doxdocgen.file.fileTemplate": "Filename: {name}",
+    "doxdocgen.generic.authorTag": "Authors: {author}",
+    "doxdocgen.generic.briefTemplate": "Description :",
+    "doxdocgen.file.customTag": [ "Group : 19-SDRF-CBL", "License : N/A" ],
+    "doxdocgen.file.fileOrder": [
+    "file",
+    "author",
+    "custom",
+    "brief"
+    ],
+
+
     "python.autoComplete.extraPaths": [
         "/opt/ros/jazzy/lib/python3.12/site-packages"
     ],
