@@ -1,3 +1,4 @@
+
 #include <cmath>
 #include "steering.hpp"
 
@@ -49,6 +50,27 @@ void SteerRelbot::calculate_velocity() {
 
     // Calculate the elapsed time in seconds
     double elapsed_time = (current_time - last_time).seconds(); // Convert to seconds
+
+    // Calculate the error between the robot's position and the object's position
+    if (x_object > x_center) {
+        // Object is to the right of the center
+        x_error = x_object - x_center;
+    } 
+    else {
+        // Object is to the left of the center
+        x_error = x_center - x_object;
+
+    }
+
+    if (area_object> threshold_area) {
+        // Object is close to the robot
+        
+    } 
+    else {
+        // Object is far from the robot
+    }
+
+
 }
 
     
@@ -72,34 +94,12 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
     // rclcpp::Time current_time_object = this->get_clock()->now();    // Get the current time
     // double time_object=(current_time_object-last_time_object).seconds();
 
-    x_object=cord->point.x;
-    y_object=cord->point.y;
-    area_object=cord->point.z;
-    
-
     //Check for close green objects.
-    if (area_object>threshold_area){
+    if (area_object>minimum_area){
         idleState=false;
-        // Calculate the error between the robot's position and the object's position
-        if (x_object > x_center) {
-            // Object is to the right of the center
-            x_error = x_object - x_center;
-        } 
-        else {
-            // Object is to the left of the center
-            x_error = x_center - x_object;
-
-        }
-
-        if (area_object> threshold_area) {
-            // Object is close to the robot
-            
-        } 
-        else {
-            // Object is far from the robot
-        }
-
-
+        x_object=cord->point.x;
+        y_object=cord->point.y;
+        area_object=cord->point.z;
         RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
     }
 
