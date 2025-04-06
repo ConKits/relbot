@@ -49,7 +49,7 @@ void SteerRelbot::calculate_velocity() {
 
     // Calculate the elapsed time in seconds
     double elapsed_time = (current_time - last_time).seconds(); // Convert to seconds
-
+}
 
     
 
@@ -94,7 +94,7 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
             
         } else {
             // Object is far from the robot
-            
+        }    
 
         RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
     }
