@@ -61,7 +61,7 @@ private:
 
     
     //Navigating Methosds. Such as moveStraiaght and rotate.
-    void idleState();
+    void idle();
     void moveStraight();
     void rotate();
 

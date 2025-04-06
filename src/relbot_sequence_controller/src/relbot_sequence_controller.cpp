@@ -26,6 +26,13 @@ void SteerRelbot::create_topics() {
 }
 
 
+void SteerRelbot::idle() {
+    // Idle state logic
+    // This method is used to set the robot to idle state when no object is detected.
+    left_velocity = 0.0;
+    right_velocity = 0.0;
+    idleState=true;
+}
 
 void SteerRelbot::moveStraight() {
     // Moves the robot straight
@@ -52,32 +59,31 @@ void SteerRelbot::calculate_velocity() {
     double elapsed_time = (current_time - last_time).seconds(); // Convert to seconds
 
     // Calculate the error between the robot's position and the object's position
+    if (idleState==)   
     x_error = x_object - x_center;
 
-    if (x_error > 0) {
-        // Object is to the right of the center
-        rotate();
-        
-    } 
-    else if (x_error < 0) {
-        // Object is to the left of the center
-        
-        rotate();
-    }
-    else{
-        left_velocity = 0.0;
-        right_velocity= 0.0;
-        idleState=true;  
-    }
+        if (x_error > 0) {
+            // Object is to the right of the center
+            rotate();
+            
+        } 
+        else if (x_error < 0) {
+            // Object is to the left of the center
+            
+            rotate();
+        }
+        else{
+            idle();  
+        }
 
-    if (area_object< threshold_area) {
-        // Object is close to the robot
-        moveStraight();
-    } 
-    else {
-        // Object is far from the robot
-        r
-    }
+        if (area_object< threshold_area) {
+            // Object is far from the robot
+            moveStraight();
+        } 
+        else {
+            // Object is close to the robot
+            idle();
+        }
 
 
 }
