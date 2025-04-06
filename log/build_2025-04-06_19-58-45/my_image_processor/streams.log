@@ -1,0 +1,10 @@
+[0.031s] Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[0.152s] [ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
+[3.867s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::[01;32m[Ktrack_green_object[m[K(cv::Mat&)[m[K’:
+[3.867s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:63:43:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Rect_<int>::area[m[K’ from type ‘[01m[Kint (cv::Rect_<int>::)() const[m[K’ to type ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_z_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+[3.867s]    63 |         center_msg.point.z = bounding_box.[01;31m[Karea[m[K; // This is the area of the bounding box
+[3.867s]       |                                           [01;31m[K^~~~[m[K
+[7.384s] gmake[2]: *** [CMakeFiles/image_processor.dir/build.make:76: CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
+[7.385s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/image_processor.dir/all] Error 2
+[7.385s] gmake: *** [Makefile:146: all] Error 2
+[7.389s] Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8

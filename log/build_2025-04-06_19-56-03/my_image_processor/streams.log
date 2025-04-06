@@ -1,0 +1,16 @@
+[0.045s] Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[0.173s] [ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
+[5.405s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::[01;32m[Ktrack_green_object[m[K(cv::Mat&)[m[K’:
+[5.405s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:61:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PointStamped = struct geometry_msgs::msg::PointStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PointStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kx[m[K’
+[5.405s]    61 |         center_msg.[01;31m[Kx[m[K = center.x;
+[5.406s]       |                    [01;31m[K^[m[K
+[5.406s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:62:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PointStamped = struct geometry_msgs::msg::PointStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PointStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ky[m[K’
+[5.406s]    62 |         center_msg.[01;31m[Ky[m[K = center.y;
+[5.406s]       |                    [01;31m[K^[m[K
+[5.406s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:63:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PointStamped = struct geometry_msgs::msg::PointStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PointStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kz[m[K’
+[5.406s]    63 |         center_msg.[01;31m[Kz[m[K = bounding_box.area; // This is the area of the bounding box
+[5.406s]       |                    [01;31m[K^[m[K
+[9.995s] gmake[2]: *** [CMakeFiles/image_processor.dir/build.make:76: CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
+[9.995s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/image_processor.dir/all] Error 2
+[9.996s] gmake: *** [Makefile:146: all] Error 2
+[9.999s] Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8

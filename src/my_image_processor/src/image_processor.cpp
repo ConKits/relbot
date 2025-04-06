@@ -58,9 +58,9 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
 
         //Publishing the cordinates of the detected green object
         geometry_msgs::msg::PointStamped center_msg;
-        center_msg.x = center.x;
-        center_msg.y = center.y;
-        center_msg.z = bounding_box.area; // This is the area of the bounding box
+        center_msg.point.x = center.x;
+        center_msg.point.y = center.y;
+        center_msg.point.z = bounding_box.area; // This is the area of the bounding box
         center_msg.header.stamp = this->now();
        
         

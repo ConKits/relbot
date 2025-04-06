@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
+[01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::[01;32m[Ktrack_green_object[m[K(cv::Mat&)[m[K’:
+[01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:63:43:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Rect_<int>::area[m[K’ from type ‘[01m[Kint (cv::Rect_<int>::)() const[m[K’ to type ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_z_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+   63 |         center_msg.point.z = bounding_box.[01;31m[Karea[m[K; // This is the area of the bounding box
+      |                                           [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/image_processor.dir/build.make:76: CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/image_processor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
