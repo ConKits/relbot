@@ -49,7 +49,7 @@ private:
 
     // Thresholds
     double threshold_area=200.0; // Area threshold for object detection
-    double minimum_area=10.0; // Minimum area for object detection
+    double minimum_area=500.0; // Minimum area for object detection
     double x_center=150.0; // Center of the image
     double y_center=100.0; // Center of the image
     double x_error;

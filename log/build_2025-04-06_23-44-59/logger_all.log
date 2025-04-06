@@ -408,3 +408,62 @@
 [0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.bash'
 [0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.zsh'
 [0.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_simulator/share/colcon-core/packages/relbot_simulator)
+[15.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot_sequence_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
+[15.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot_sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_sequence_controller
+[15.780s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_sequence_controller)
+[15.780s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller' for CMake module files
+[15.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot_sequence_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_sequence_controller
+[15.785s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller' for CMake config files
+[15.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_sequence_controller', 'cmake_prefix_path')
+[15.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.ps1'
+[15.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.dsv'
+[15.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.sh'
+[15.789s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib'
+[15.790s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/bin'
+[15.790s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib/pkgconfig/relbot_sequence_controller.pc'
+[15.791s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib/python3.12/site-packages'
+[15.791s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/bin'
+[15.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.ps1'
+[15.792s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.dsv'
+[15.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.sh'
+[15.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.bash'
+[15.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.zsh'
+[15.796s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_sequence_controller/share/colcon-core/packages/relbot_sequence_controller)
+[15.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_sequence_controller)
+[15.798s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller' for CMake module files
+[15.799s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller' for CMake config files
+[15.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_sequence_controller', 'cmake_prefix_path')
+[15.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.ps1'
+[15.801s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.dsv'
+[15.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.sh'
+[15.804s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib'
+[15.804s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/bin'
+[15.804s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib/pkgconfig/relbot_sequence_controller.pc'
+[15.806s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib/python3.12/site-packages'
+[15.806s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/bin'
+[15.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.ps1'
+[15.809s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.dsv'
+[15.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.sh'
+[15.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.bash'
+[15.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.zsh'
+[15.813s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_sequence_controller/share/colcon-core/packages/relbot_sequence_controller)
+[15.814s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.815s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.816s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.816s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.895s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[15.896s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.896s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.896s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.901s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[15.901s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.901s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.ps1'
+[15.903s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/relBot/install/_local_setup_util_ps1.py'
+[15.904s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.ps1'
+[15.906s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.sh'
+[15.907s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/relBot/install/_local_setup_util_sh.py'
+[15.908s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.sh'
+[15.909s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.bash'
+[15.910s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.bash'
+[15.912s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.zsh'
+[15.912s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.zsh'
