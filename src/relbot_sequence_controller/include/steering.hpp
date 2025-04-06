@@ -46,9 +46,12 @@ private:
     double x_object;
     double y_object;
     double area_object;
+    
+    // Thresholds
     double threshold_area=1000.0; // Area threshold for object detection
-    double x_center=;
-    double y_center;
+    double x_center=150.0; // Center of the image
+    double y_center=100.0; // Center of the image
+    double x_error;
     bool idleState=true;  
 
     // Times for moving straight and turning

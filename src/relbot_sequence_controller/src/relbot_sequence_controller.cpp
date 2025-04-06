@@ -81,8 +81,22 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
     if (area>thresh_area){
         idleState=false;
         // Calculate the error between the robot's position and the object's position
+        if (x_object > x_center) {
+            // Object is to the right of the center
+            x_error = x_object - x_center;
+        } else {
+            // Object is to the left of the center
+            x_error = x_center - x_object;
 
-        
+        }
+        if (area_object> threshold_area) {
+            // Object is detected
+            RCLCPP_INFO(this->get_logger(), "Object detected");
+        } else {
+            // Object is not detected
+            RCLCPP_INFO(this->get_logger(), "No object detected");
+        }
+
         RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
     }
 
