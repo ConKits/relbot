@@ -1,0 +1,11 @@
+[0.054s] Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[0.352s] [ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
+[1.282s] In file included from [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:5[m[K:
+[1.283s] [01m[K/home/ubuntu/relBot/src/my_image_processor/include/image_processor.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/pointstamped.hpp: No such file or directory
+[1.283s]     7 | #include [01;31m[K"geometry_msgs/msg/pointstamped.hpp"[m[K
+[1.283s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.283s] compilation terminated.
+[1.287s] gmake[2]: *** [CMakeFiles/image_processor.dir/build.make:76: CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
+[1.288s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/image_processor.dir/all] Error 2
+[1.288s] gmake: *** [Makefile:146: all] Error 2
+[1.292s] Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
