@@ -27,7 +27,7 @@ private:
     // Topics
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
-    rclcpp::Subscription<geometry_msgs::msg::PointStamped::SharedPtr object_cordinates_;
+    rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr object_cordinates_;
     
     // Timer
     rclcpp::TimerBase::SharedPtr timer_;
@@ -46,7 +46,7 @@ private:
     double x_object;
     double y_object;
     double area_object;
-    
+
     // Thresholds
     double threshold_area=1000.0; // Area threshold for object detection
     double x_center=150.0; // Center of the image
@@ -68,7 +68,7 @@ private:
     void timer_callback();
     void calculate_velocity();
 
-    void position_callback(const geometry_msgs::msg::Point::SharedPtr msg);
+    void position_callback(const geometry_msgs::msg::PointStamped::SharedPtr msg);
   
 };
 

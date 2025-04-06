@@ -74,27 +74,31 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
 
     x_object=cord->point.x;
     y_object=cord->point.y;
-    area=cord->point.z;
-
+    area_object=cord->point.z;
+    
 
     //Check for close green objects.
-    if (area>thresh_area){
+    if (area_object>threshold_area){
         idleState=false;
         // Calculate the error between the robot's position and the object's position
         if (x_object > x_center) {
             // Object is to the right of the center
             x_error = x_object - x_center;
-        } else {
+        } 
+        else {
             // Object is to the left of the center
             x_error = x_center - x_object;
 
         }
+
         if (area_object> threshold_area) {
             // Object is close to the robot
             
-        } else {
+        } 
+        else {
             // Object is far from the robot
-        }    
+        }
+
 
         RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
     }
