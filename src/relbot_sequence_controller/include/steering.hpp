@@ -62,7 +62,7 @@ private:
     //Navigating Methosds. Such as moveStraiaght and rotate.
     void idle();
     void moveStraight();
-    void rotate(int direction);
+    void rotate(double direction);
 
     // methods
     void create_topics();

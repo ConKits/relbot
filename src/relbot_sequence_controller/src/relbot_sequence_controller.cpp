@@ -43,7 +43,7 @@ void SteerRelbot::moveStraight() {
     RCLCPP_INFO(this->get_logger(), "Moving straight");
 }
 
-void SteerRelbot::rotate(int direction) {
+void SteerRelbot::rotate(double direction) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
     left_velocity = direction*(-angularVelocity*(radius - (wheelDistance/2)));
@@ -61,12 +61,12 @@ void SteerRelbot::calculate_velocity() {
 
             if (x_error > 0 && std::abs(x_error) > x_tol) {
                 // Object is to the right of the center
-                rotate(1);
+                rotate(1.0);
                 
             } 
             else if (x_error < 0 && std::abs(x_error) > x_tol) {
                 // Object is to the left of the center
-                rotate(-1);
+                rotate(-1.0);
             }
             else{
                 if (area_object< threshold_area) {
