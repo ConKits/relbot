@@ -1,2 +1,0 @@
-Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
-Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8

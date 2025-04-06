@@ -1,8 +1,0 @@
-In file included from [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:1[m[K:
-[01m[K/home/ubuntu/relBot/src/my_image_processor/include/image_processor.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
-    6 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/image_processor.dir/build.make:79: CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/image_processor.dir/all] Error 2
-gmake: *** [Makefile:149: all] Error 2

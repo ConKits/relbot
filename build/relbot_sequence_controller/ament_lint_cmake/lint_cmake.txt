@@ -1,9 +1,0 @@
--- run_test.py: invoking following command in '/home/ubuntu/relBot/src/relbot_sequence_controller':
- - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/lint_cmake.xunit.xml
-
-
-No problems found
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/ubuntu/relBot/build/relbot_sequence_controller/test_results/relbot_sequence_controller/lint_cmake.xunit.xml'

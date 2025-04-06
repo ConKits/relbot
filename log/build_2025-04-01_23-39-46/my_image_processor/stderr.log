@@ -1,8 +1,0 @@
-[01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::[01;32m[Ktrack_green_object[m[K(cv::Mat&)[m[K’:
-[01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcordinateImage_[m[K’ was not declared in this scope; did you mean ‘[01m[KcordinatesImage_[m[K’?
-   61 |         [01;31m[KcordinateImage_[m[K->publish(center_msg);
-      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
-      |         [32m[KcordinatesImage_[m[K
-gmake[2]: *** [CMakeFiles/image_processor.dir/build.make:79: CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/image_processor.dir/all] Error 2
-gmake: *** [Makefile:149: all] Error 2
