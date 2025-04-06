@@ -116,7 +116,7 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
         x_object=0.0;
         y_object=0.0;
         //area_object=0.0;
-        RCLCPP_INFO(this->get_logger(), "No Green Object Detected");
+        //RCLCPP_INFO(this->get_logger(), "No Green Object Detected");
     }
 }
 
