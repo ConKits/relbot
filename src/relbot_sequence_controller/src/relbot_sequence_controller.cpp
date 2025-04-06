@@ -26,7 +26,7 @@ void SteerRelbot::create_topics() {
 }
 
 
-// Navigation methods are working with constant FPS. 
+
 void SteerRelbot::moveStraight() {
     // Moves the robot straight
     // This method is calculating the velocities for each wheel to move straight.
@@ -72,10 +72,11 @@ void SteerRelbot::calculate_velocity() {
 
     if (area_object< threshold_area) {
         // Object is close to the robot
-        
+        moveStraight();
     } 
     else {
         // Object is far from the robot
+        r
     }
 
 
@@ -96,11 +97,9 @@ void SteerRelbot::timer_callback() {
     right_wheel_topic_->publish(right_wheel);
 }
 
+// Callback function to receive the position of the green object
+// This function is called when a new message is received on the subscribed topic
 void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::SharedPtr cord){
-    
-    // static rclcpp::Time last_time_object = this->get_clock()->now(); // Store the last update time
-    // rclcpp::Time current_time_object = this->get_clock()->now();    // Get the current time
-    // double time_object=(current_time_object-last_time_object).seconds();
 
     //Check for close green objects.
     if (area_object>minimum_area){
@@ -110,8 +109,13 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
         area_object=cord->point.z;
         RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f, area: %.2f", x_object, y_object, area_object);
     }
-
-
+    else{
+        idleState=true;
+        x_object=0.0;
+        y_object=0.0;
+        area_object=0.0;
+        RCLCPP_INFO(this->get_logger(), "No Green Object Detected");
+    }
 }
 
 int main(int argc, char *argv[]) {

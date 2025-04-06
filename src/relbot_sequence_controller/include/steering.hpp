@@ -59,8 +59,9 @@ private:
     double straight_time=5.0;
     double turning_time = (M_PI) / (2 * angularVelocity); // Time to turn 90 degrees (angle = ω * time)
 
-    enum Shape {line, circle, bend, square};
+    
     //Navigating Methosds. Such as moveStraiaght and rotate.
+    void idleState();
     void moveStraight();
     void rotate();
 
