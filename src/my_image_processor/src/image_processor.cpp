@@ -29,8 +29,7 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
     std::vector<cv::Vec4i> hierarchy;
     cv::findContours(mask, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-   
-
+    // Draw contours on the original image (for visualization)
     if (!contours.empty()) {
         // Find the largest contour (assumed to be the greenest object)
         size_t largest_contour_idx = 0;
@@ -53,10 +52,14 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
         
         //RCLCPP_INFO(this->get_logger(), "Green object detected at: (%d, %d)", center.x, center.y);
 
-        //Publishing the cordinates:
+        //Publishing the cordinates of the detected green object
         geometry_msgs::msg::PointStamped center_msg;
         center_msg.x = center.x;
         center_msg.y = center.y;
+        center_msg.z = 0.0; // This is the area of the bounding box
+        center_msg.header.stamp = this->now();
+       
+        
 
         cordinatesImage_->publish(center_msg);
     }
