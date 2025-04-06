@@ -1,7 +1,7 @@
 {   "doxdocgen.c.commentPrefix": "// ",
     "doxdocgen.c.firstLine": "//=============================================",
     "doxdocgen.c.lastLine": "//=============================================",
-    "doxdocgen.c.triggerSequence": "//==",
+    "doxdocgen.c.triggerSequence": "//==+",
     "doxdocgen.generic.authorName": "Konstantinos Kaikkis, Evalds Grava",
     "doxdocgen.file.fileTemplate": "Filename: {name}",
     "doxdocgen.generic.authorTag": "Authors: {author}",
