@@ -50,45 +50,8 @@ void SteerRelbot::calculate_velocity() {
     // Calculate the elapsed time in seconds
     double elapsed_time = (current_time - last_time).seconds(); // Convert to seconds
 
-    Shape shape{square}; //Shape of the robot's path
-    //Switching between different shapes
-    switch (shape) {
-        case line:
-            //Creates a straight line
-            moveStraight();
-            break;
 
-        case circle:
-            //Creates a circle
-            rotate();
-            break;
-
-        case bend:
-            //Creates a bend
-            //The if statement shifts between rotate to straight to create a bend based on the turning time
-            if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
-                rotate();
-            } else {
-                moveStraight();
-            }
-            break;
-
-        case square:
-            //Creates a square
-            //The if statement shifts between rotate to straight to create a square based on the turning time
-            if (elapsed_time > straight_time && elapsed_time <= (turning_time + straight_time)) {
-                rotate();
-                //Overide the last time for the next cycle of bending
-                if ((elapsed_time - straight_time) >= turning_time - tol) {
-                    last_time = current_time;
-                    break;
-                }
-            } else {
-                moveStraight();
-            }
-            break;
-    }
-}
+    
 
 void SteerRelbot::timer_callback() {
     // calculate velocity

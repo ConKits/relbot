@@ -1,0 +1,41 @@
+[0.081s] Invoking command in '/home/ubuntu/relBot/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/relBot/src/cam2image_vm2ros -DCMAKE_INSTALL_PREFIX=/home/ubuntu/relBot/install/cam2image_vm2ros
+[1.287s] -- The C compiler identification is GNU 13.3.0
+[3.149s] -- The CXX compiler identification is GNU 13.3.0
+[4.707s] -- Detecting C compiler ABI info
+[5.420s] -- Detecting C compiler ABI info - done
+[5.454s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.457s] -- Detecting C compile features
+[5.457s] -- Detecting C compile features - done
+[5.698s] -- Detecting CXX compiler ABI info
+[6.501s] -- Detecting CXX compiler ABI info - done
+[6.519s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.520s] -- Detecting CXX compile features
+[6.521s] -- Detecting CXX compile features - done
+[6.600s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.080s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.800s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[8.523s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[8.653s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[8.885s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.071s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.749s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[9.798s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[10.347s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[10.675s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[11.058s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.959s] -- Found rclcpp_components: 28.1.6 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[12.263s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[12.442s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[12.516s] -- Found OpenCV: /usr (found version "4.6.0") found components: core highgui imgcodecs imgproc videoio 
+[12.789s] -- Configuring done (12.7s)
+[12.865s] -- Generating done (0.0s)
+[12.883s] -- Build files have been written to: /home/ubuntu/relBot/build/cam2image_vm2ros
+[12.908s] Invoked command in '/home/ubuntu/relBot/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/relBot/src/cam2image_vm2ros -DCMAKE_INSTALL_PREFIX=/home/ubuntu/relBot/install/cam2image_vm2ros
+[12.910s] Invoking command in '/home/ubuntu/relBot/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/cam2image_vm2ros -- -j8 -l8
+[13.043s] [ 20%] [32mBuilding CXX object CMakeFiles/cam2image.dir/rclcpp_components/node_main_cam2image.cpp.o[0m
+[13.062s] [ 40%] [32mBuilding CXX object CMakeFiles/cam2image_vm2ros.dir/src/cam2image.cpp.o[0m
+[13.067s] [ 60%] [32mBuilding CXX object CMakeFiles/cam2image_vm2ros.dir/src/remote_capture.cpp.o[0m
+[28.459s] [ 80%] [32m[1mLinking CXX executable cam2image[0m
+[31.465s] [ 80%] Built target cam2image
+[65.558s] [100%] [32m[1mLinking CXX shared library libcam2image_vm2ros.so[0m
+[67.673s] [100%] Built target cam2image_vm2ros

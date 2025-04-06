@@ -1,0 +1,51 @@
+[0.031s] Invoking command in '/home/ubuntu/relBot/build/relbot_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/relBot/src/relbot_launch -DCMAKE_INSTALL_PREFIX=/home/ubuntu/relBot/install/relbot_launch
+[1.219s] -- The C compiler identification is GNU 13.3.0
+[3.088s] -- The CXX compiler identification is GNU 13.3.0
+[4.745s] -- Detecting C compiler ABI info
+[5.311s] -- Detecting C compiler ABI info - done
+[5.349s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.350s] -- Detecting C compile features
+[5.355s] -- Detecting C compile features - done
+[5.602s] -- Detecting CXX compiler ABI info
+[6.329s] -- Detecting CXX compiler ABI info - done
+[6.371s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.372s] -- Detecting CXX compile features
+[6.373s] -- Detecting CXX compile features - done
+[6.538s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[6.996s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.729s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[8.085s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.085s] -- Configured 'flake8' exclude dirs and/or files: 
+[8.091s] -- Added test 'lint_cmake' to check CMake code style
+[8.097s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.108s] -- Added test 'xmllint' to check XML markup files
+[8.153s] -- Configuring done (8.1s)
+[8.172s] -- Generating done (0.0s)
+[8.187s] -- Build files have been written to: /home/ubuntu/relBot/build/relbot_launch
+[8.207s] Invoked command in '/home/ubuntu/relBot/build/relbot_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/relBot/src/relbot_launch -DCMAKE_INSTALL_PREFIX=/home/ubuntu/relBot/install/relbot_launch
+[8.210s] Invoking command in '/home/ubuntu/relBot/build/relbot_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_launch -- -j8 -l8
+[8.280s] Invoked command in '/home/ubuntu/relBot/build/relbot_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_launch -- -j8 -l8
+[8.298s] Invoking command in '/home/ubuntu/relBot/build/relbot_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_launch
+[8.312s] -- Install configuration: ""
+[8.312s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch
+[8.314s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_cam2image.launch.py
+[8.320s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_sequence_controller.launch.py
+[8.326s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_to_turtle.launch.py
+[8.330s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_system_joystick.launch.py
+[8.335s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_system.launch.py
+[8.340s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/ament_index/resource_index/package_run_dependencies/relbot_launch
+[8.340s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/ament_index/resource_index/parent_prefix_path/relbot_launch
+[8.341s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/environment/ament_prefix_path.sh
+[8.342s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/environment/ament_prefix_path.dsv
+[8.343s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/environment/path.sh
+[8.343s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/environment/path.dsv
+[8.344s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/local_setup.bash
+[8.344s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/local_setup.sh
+[8.344s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/local_setup.zsh
+[8.345s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/local_setup.dsv
+[8.345s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.dsv
+[8.345s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/ament_index/resource_index/packages/relbot_launch
+[8.346s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/cmake/relbot_launchConfig.cmake
+[8.347s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/cmake/relbot_launchConfig-version.cmake
+[8.347s] -- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.xml
+[8.352s] Invoked command in '/home/ubuntu/relBot/build/relbot_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_launch

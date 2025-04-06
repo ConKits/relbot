@@ -1,0 +1,95 @@
+[0.033s] Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/relBot/src/my_image_processor -DCMAKE_INSTALL_PREFIX=/home/ubuntu/relBot/install/my_image_processor
+[1.228s] -- The C compiler identification is GNU 13.3.0
+[3.096s] -- The CXX compiler identification is GNU 13.3.0
+[4.871s] -- Detecting C compiler ABI info
+[5.367s] -- Detecting C compiler ABI info - done
+[5.404s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.405s] -- Detecting C compile features
+[5.407s] -- Detecting C compile features - done
+[5.645s] -- Detecting CXX compiler ABI info
+[6.445s] -- Detecting CXX compiler ABI info - done
+[6.471s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.472s] -- Detecting CXX compile features
+[6.473s] -- Detecting CXX compile features - done
+[6.547s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.021s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.747s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[8.473s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[8.599s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[8.827s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.016s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.695s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[9.744s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[10.294s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[10.621s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[10.999s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.910s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[12.388s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[12.471s] -- Found OpenCV: /usr (found version "4.6.0") 
+[12.477s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[12.758s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.759s] -- Configured cppcheck include dirs: /home/ubuntu/relBot/src/my_image_processor/include
+[12.759s] -- Configured cppcheck exclude dirs and/or files: 
+[12.759s] -- Added test 'lint_cmake' to check CMake code style
+[12.759s] -- Added test 'uncrustify' to check C / C++ code style
+[12.760s] -- Configured uncrustify additional arguments: 
+[12.760s] -- Added test 'xmllint' to check XML markup files
+[12.766s] -- Configuring done (12.7s)
+[12.820s] -- Generating done (0.0s)
+[12.829s] -- Build files have been written to: /home/ubuntu/relBot/build/my_image_processor
+[12.867s] Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/relBot/src/my_image_processor -DCMAKE_INSTALL_PREFIX=/home/ubuntu/relBot/install/my_image_processor
+[12.869s] Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[13.001s] [ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
+[30.011s] In file included from [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:5[m[K:
+[30.011s] [01m[K/home/ubuntu/relBot/src/my_image_processor/include/image_processor.hpp:20:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPointStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[30.011s]    20 |     rclcpp::Publisher<geometry_msgs::msg::[01;31m[KPointStamped[m[K>::SharedPtr cordinatesImage_;
+[30.012s]       |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[30.014s] [01m[K/home/ubuntu/relBot/src/my_image_processor/include/image_processor.hpp:20:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[30.015s]    20 |     rclcpp::Publisher<geometry_msgs::msg::PointStamped[01;31m[K>[m[K::SharedPtr cordinatesImage_;
+[30.015s]       |                                                       [01;31m[K^[m[K
+[30.015s] [01m[K/home/ubuntu/relBot/src/my_image_processor/include/image_processor.hpp:20:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[30.015s]    20 |  rclcpp::Publisher<geometry_msgs::msg::PointStamped>::[01;31m[KSharedPtr[m[K cordinatesImage_;
+[30.016s]       |                                                       [01;31m[K^~~~~~~~~[m[K
+[30.016s]       |                                                                [32m[K;[m[K
+[30.028s] [01m[K/home/ubuntu/relBot/src/my_image_processor/include/image_processor.hpp:20:68:[m[K [01;31m[Kerror: [m[K‘[01m[KcordinatesImage_[m[K’ does not name a type
+[30.028s]    20 | ublisher<geometry_msgs::msg::PointStamped>::SharedPtr [01;31m[KcordinatesImage_[m[K;
+[30.028s]       |                                                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[30.029s] 
+[30.116s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:[m[K In constructor ‘[01m[KImageProcessor::[01;32m[KImageProcessor[m[K()[m[K’:
+[30.116s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcordinatesImage_[m[K’ was not declared in this scope
+[30.116s]    11 |     [01;31m[KcordinatesImage_[m[K=this->create_publisher<geometry_msgs::msg::PointStamped>("/green_object_position",10);
+[30.117s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[30.119s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:11:65:[m[K [01;31m[Kerror: [m[K‘[01m[KPointStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[30.120s]    11 | atesImage_=this->create_publisher<geometry_msgs::msg::[01;31m[KPointStamped[m[K>("/green_object_position",10);
+[30.120s]       |                                                       [01;31m[K^~~~~~~~~~~~[m[K
+[30.120s] 
+[30.121s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:11:78:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KImageProcessor::create_publisher<<expression error> >(const char [23], int)[m[K’
+[30.121s]    11 | [01;31m[Kis->create_publisher<geometry_msgs::msg::PointStamped>("/green_object_position",10)[m[K;
+[30.122s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[30.122s] 
+[30.123s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[30.124s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[30.124s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[30.124s]                  from [01m[K/home/ubuntu/relBot/src/my_image_processor/include/image_processor.hpp:5[m[K:
+[30.125s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[30.125s]   197 |   [01;36m[Kcreate_publisher[m[K(
+[30.126s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[30.127s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[30.127s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:11:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[30.128s]    11 | [01;31m[Kis->create_publisher<geometry_msgs::msg::PointStamped>("/green_object_position",10)[m[K;
+[30.128s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[30.128s] 
+[30.156s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::[01;32m[Ktrack_green_object[m[K(cv::Mat&)[m[K’:
+[30.157s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:60:29:[m[K [01;31m[Kerror: [m[K‘[01m[KPointStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[30.157s]    60 |         geometry_msgs::msg::[01;31m[KPointStamped[m[K center_msg;
+[30.157s]       |                             [01;31m[K^~~~~~~~~~~~[m[K
+[30.199s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter_msg[m[K’ was not declared in this scope
+[30.200s]    61 |         [01;31m[Kcenter_msg[m[K.x = center.x;
+[30.202s]       |         [01;31m[K^~~~~~~~~~[m[K
+[30.268s] [01m[K/home/ubuntu/relBot/src/my_image_processor/src/image_processor.cpp:68:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcordinatesImage_[m[K’ was not declared in this scope
+[30.268s]    68 |         [01;31m[KcordinatesImage_[m[K->publish(center_msg);
+[30.268s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[46.495s] gmake[2]: *** [CMakeFiles/image_processor.dir/build.make:76: CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
+[46.496s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/image_processor.dir/all] Error 2
+[46.498s] gmake: *** [Makefile:146: all] Error 2
+[46.514s] Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
