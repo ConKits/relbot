@@ -39,6 +39,7 @@ void SteerRelbot::moveStraight() {
     // This method is calculating the velocities for each wheel to move straight.
     left_velocity = -(angularVelocity * radius);
     right_velocity = angularVelocity * radius;
+    RCLCPP_INFO(this->get_logger(), "Moving straight");
 }
 
 void SteerRelbot::rotate(int direction) {
@@ -46,7 +47,7 @@ void SteerRelbot::rotate(int direction) {
     // This method is calculating the velocities for each wheel to rotate.
     left_velocity = direction*(-angularVelocity*(radius - (wheelDistance/2)));
     right_velocity = direction*(angularVelocity*(radius + (wheelDistance/2)));
-     
+    RCLCPP_INFO(this->get_logger(), "Rotating");
     
 }
 
@@ -107,8 +108,8 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
         idleState=false;
         x_object=cord->point.x;
         y_object=cord->point.y;
-        area_object=cord->point.z;
-        RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f, area: %.2f", x_object, y_object, area_object);
+        //area_object=cord->point.z;
+        //RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f, area: %.2f", x_object, y_object, area_object);
     }
     else{
         idleState=true;
