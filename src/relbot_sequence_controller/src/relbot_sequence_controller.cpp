@@ -41,11 +41,11 @@ void SteerRelbot::moveStraight() {
     right_velocity = angularVelocity * radius;
 }
 
-void SteerRelbot::rotate() {
+void SteerRelbot::rotate(int direction) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
-    left_velocity = -angularVelocity*(radius - (wheelDistance/2));
-    right_velocity = angularVelocity*(radius + (wheelDistance/2));
+    left_velocity = direction*(-angularVelocity*(radius - (wheelDistance/2)));
+    right_velocity = direction*(angularVelocity*(radius + (wheelDistance/2)));
      
     
 }
@@ -64,13 +64,13 @@ void SteerRelbot::calculate_velocity() {
 
             if (x_error > 0) {
                 // Object is to the right of the center
-                rotate();
+                rotate(1);
                 
             } 
             else if (x_error < 0) {
                 // Object is to the left of the center
                 
-                rotate();
+                rotate(-1);
             }
             else{
                 idle();  
