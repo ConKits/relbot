@@ -68,17 +68,21 @@ void SteerRelbot::timer_callback() {
 
 void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::SharedPtr cord){
     
-    
-    static rclcpp::Time last_time_object = this->get_clock()->now(); // Store the last update time
-    rclcpp::Time current_time_object = this->get_clock()->now();    // Get the current time
-    double time_object=(current_time_object-last_time_object).seconds();
+    // static rclcpp::Time last_time_object = this->get_clock()->now(); // Store the last update time
+    // rclcpp::Time current_time_object = this->get_clock()->now();    // Get the current time
+    // double time_object=(current_time_object-last_time_object).seconds();
 
-    //Check for valid position data for the idle mode.
-    if (time_object>2.0){
+    x_object=cord->point.x;
+    y_object=cord->point.y;
+    area=cord->point.z;
+
+
+    //Check for close green objects.
+    if (area>thresh_area){
         idleState=false;
-        x_object=cord->point.x;
-        y_object=cord->point.y;
-        area=cord->point.z;
+        // Calculate the error between the robot's position and the object's position
+
+        
         RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f", x_object-2.0, y_object-3.0);
     }
 

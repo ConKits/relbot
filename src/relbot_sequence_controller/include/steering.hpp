@@ -45,6 +45,10 @@ private:
     //Object's cordinates from the image processor.
     double x_object;
     double y_object;
+    double area_object;
+    double threshold_area=1000.0; // Area threshold for object detection
+    double x_center=;
+    double y_center;
     bool idleState=true;  
 
     // Times for moving straight and turning
