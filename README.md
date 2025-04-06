@@ -10,3 +10,4 @@
 
 # To run the nodes and the program
     ros2 launch relbot_launch relbot_sequence_controller.launch.py
+    ros2 launch relbot_launch relbot_cam2image.launch.py
