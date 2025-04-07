@@ -24,7 +24,7 @@ void SteerRelbot::create_topics() {
     object_cordinates_ = this->create_subscription<geometry_msgs::msg::PointStamped>("/green_object_position", 1,
             std::bind(&SteerRelbot::position_callback, this, std::placeholders::_1)) ;
     center_cordinates_ = this->create_subscription<geometry_msgs::msg::PointStamped>("output/camera_position", 1,
-        std::bind(&SteerRelbot::position_callback, this, std::placeholders::_1)) ;
+        std::bind(&SteerRelbot::center_callback, this, std::placeholders::_1)) ;
 }
 
 
@@ -45,11 +45,11 @@ void SteerRelbot::moveStraight() {
     RCLCPP_INFO(this->get_logger(), "Moving straight");
 }
 
-void SteerRelbot::rotate(double direction) {
+void SteerRelbot::rotate(double error) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
-    left_velocity = direction*(angularVelocity*(wheelDistance/2))*radius;
-    right_velocity = direction*(angularVelocity* (wheelDistance/2))*radius;
+    left_velocity = error*(angularVelocity*(wheelDistance/2))*radius;
+    right_velocity = error*(angularVelocity* (wheelDistance/2))*radius;
     RCLCPP_INFO(this->get_logger(), "Rotating");
     
 }
@@ -59,16 +59,16 @@ void SteerRelbot::calculate_velocity() {
    
     if (idleState==false){   
         // Calculate the error between the robot's position and the object's position
-        x_error = x_object - x_center;
-
+        x_error = (x_object - x_center)/x_center;
+        th_error= (area-thre)/threshold_area
             if (x_error > 0 && std::abs(x_error) > x_tol) {
                 // Object is to the right of the center
-                rotate(1.0);
+                rotate(x_error);
                 
             } 
             else if (x_error < 0 && std::abs(x_error) > x_tol) {
                 // Object is to the left of the center
-                rotate(-1.0);
+                rotate(x_error);
             }
             else{
                 if (area_object< threshold_area) {
@@ -113,8 +113,8 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
     }
     else{
         idleState=true;
-        x_object=0.0;
-        y_object=0.0;
+        x_object=x_center;
+        y_object=y_center;
         //area_object=0.0;
         //RCLCPP_INFO(this->get_logger(), "No Green Object Detected");
     }
