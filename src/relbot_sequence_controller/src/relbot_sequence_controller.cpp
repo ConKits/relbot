@@ -21,7 +21,7 @@ void SteerRelbot::create_topics() {
     right_wheel_topic_ = this->create_publisher<example_interfaces::msg::Float64>(
         "/input/right_motor/setpoint_vel", 1);
     
-    object_cordinates_ = this->create_subscription<geometry_msgs::msg::PointStamped>("/green_object_position", 1,
+    object_cordinates_ = this->create_subscription<geometry_msgs::msg::PointStamped>("/green_object_position", 1, //Subsribe to the cordinates topic of the camera
             std::bind(&SteerRelbot::position_callback, this, std::placeholders::_1)) ;
     
 }
@@ -151,5 +151,5 @@ Pseudo Code to control the relbot:
     First check the x_error and turn respectively to position the robot at the center. Then move straight is the area is leass than the threshold.
     If the area is greater than the threshold then the robot should be in idle state.
 
-    
+
 */
