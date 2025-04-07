@@ -33,7 +33,7 @@ void SteerRelbot::idle() {
     left_velocity = 0.0;
     right_velocity = 0.0;
     idleState=true;
-    RCLCPP_INFO(this->get_logger(), "Idle");
+    //RCLCPP_INFO(this->get_logger(), "Idle");
 }
 
 void SteerRelbot::moveStraight(double error) {
