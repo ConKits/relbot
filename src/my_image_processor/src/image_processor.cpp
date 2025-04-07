@@ -49,20 +49,17 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
 
         // Mark the center of the detected green object
         cv::Point center(bounding_box.x + bounding_box.width / 2, bounding_box.y + bounding_box.height / 2);
-        cv::circle(cv_image, center, 2, cv::Scalar(0, 0, 255), -1);
+        cv::circle(cv_image, center, 3, cv::Scalar(0, 0, 255), -1);        
         
-        //RCLCPP_INFO(this->get_logger(), "Green object detected at: (%d, %d)", center.x, center.y);
-
         //Publishing the cordinates of the detected green object
         geometry_msgs::msg::PointStamped center_msg;
-        center_msg.point.x = center.x; 
+        center_msg.point.x = center.x; //X cordinate of the tracked object
         center_msg.point.y = frame_width/2; //Center of the frame at the x direction
         double box_area = bounding_box.area();
-        center_msg.point.z = box_area; // This is the area of the bounding box
+        center_msg.point.z = box_area; //Bonding box's area
         center_msg.header.stamp = this->now();
-       
-        
 
+        // Publish the coordinates of the detected object
         cordinatesImage_->publish(center_msg);
     }
 }
