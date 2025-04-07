@@ -33,9 +33,9 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     
     // Attributes    
-    double x_tol = 0.08; // Tolerance for x-axis error
+    double buffer_zone = 0.08; // Tolerance for x-axis error
     double radius=100; // Radius of the wheels
-    double wheelDistance=2; // Distance between the wheels
+    double wheelDistance=1; // Distance between the wheels
     // Times for moving straight and turning
     double timeConstant=3.0;
     // Velocity attributes

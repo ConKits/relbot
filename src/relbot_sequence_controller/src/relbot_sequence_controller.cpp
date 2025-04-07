@@ -61,7 +61,7 @@ void SteerRelbot::calculate_velocity() {
         x_error= (area_object-threshold_area)/threshold_area;
 
         //The x_tol value creates a nutral zone for the robot to not move when the object is close to the center.
-            if (std::abs(th_error) > x_tol) {
+            if (std::abs(th_error) >= buffer_zone) {
                 // Object is to the right of the center
                 rotate(th_error);
                 
