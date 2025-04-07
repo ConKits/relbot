@@ -35,7 +35,7 @@ private:
     // Attributes    
     double x_tol = 20.0; // Tolerance for x-axis error
     double radius=100; // Radius of the wheels
-    double wheelDistance=200; // Distance between the wheels
+    double wheelDistance=2; // Distance between the wheels
 
     // Velocity attributes
     double maxVelocity = 1/timeConstant; // Angular velocity (v = r * ω)
