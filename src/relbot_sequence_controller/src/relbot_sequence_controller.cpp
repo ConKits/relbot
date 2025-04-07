@@ -39,14 +39,14 @@ void SteerRelbot::idle() {
 void SteerRelbot::moveStraight(double error) {
     // Moves the robot straight
     // This method is calculating the velocities for each wheel to move straight.
-    linear_velocity =  error*20.0;
+    linear_velocity =  error*maxVelocity;
    
 }
 
 void SteerRelbot::rotate(double error) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
-    th_velocity = -error*maxVelocity/(wheelDistance/2);
+    th_velocity = error*maxVelocity/(wheelDistance/2);
     
     
 }
@@ -56,14 +56,14 @@ void SteerRelbot::calculate_velocity() {
    
     if (idleState==false){   
         // Calculate the error between the robot's position and the object's position
-        th_error = (x_object - x_center)/x_center;
-        x_error= -(area_object-threshold_area)/threshold_area;
+        th_error = (x_center - x_object)/x_center;
+        x_error= (threshold_area - area_object)/threshold_area;
         RCLCPP_INFO(this->get_logger(),"x_error= %.2f, area_object= %.2f", x_error, area_object);
 
         //The x_tol value creates a nutral zone for the robot to not move when the object is close to the center.
             if (std::abs(th_error) >= buffer_zone) {
                 // Object is to the right of the center
-               // rotate(th_error);
+                rotate(th_error);
                 
             } 
             else{
