@@ -261,3 +261,161 @@
 [8.081202] (-) TimerEvent: {}
 [8.181697] (-) TimerEvent: {}
 [8.282407] (-) TimerEvent: {}
+[8.383126] (-) TimerEvent: {}
+[8.483884] (-) TimerEvent: {}
+[8.584546] (-) TimerEvent: {}
+[8.685223] (-) TimerEvent: {}
+[8.785904] (-) TimerEvent: {}
+[8.886551] (-) TimerEvent: {}
+[8.987028] (-) TimerEvent: {}
+[9.087549] (-) TimerEvent: {}
+[9.188270] (-) TimerEvent: {}
+[9.288993] (-) TimerEvent: {}
+[9.389766] (-) TimerEvent: {}
+[9.490259] (-) TimerEvent: {}
+[9.590767] (-) TimerEvent: {}
+[9.691447] (-) TimerEvent: {}
+[9.792036] (-) TimerEvent: {}
+[9.892671] (-) TimerEvent: {}
+[9.993282] (-) TimerEvent: {}
+[10.093964] (-) TimerEvent: {}
+[10.194594] (-) TimerEvent: {}
+[10.295190] (-) TimerEvent: {}
+[10.395812] (-) TimerEvent: {}
+[10.496489] (-) TimerEvent: {}
+[10.597391] (-) TimerEvent: {}
+[10.698213] (-) TimerEvent: {}
+[10.798671] (-) TimerEvent: {}
+[10.899268] (-) TimerEvent: {}
+[10.999876] (-) TimerEvent: {}
+[11.100373] (-) TimerEvent: {}
+[11.200859] (-) TimerEvent: {}
+[11.301366] (-) TimerEvent: {}
+[11.402002] (-) TimerEvent: {}
+[11.502718] (-) TimerEvent: {}
+[11.603323] (-) TimerEvent: {}
+[11.703909] (-) TimerEvent: {}
+[11.804392] (-) TimerEvent: {}
+[11.904947] (-) TimerEvent: {}
+[12.005542] (-) TimerEvent: {}
+[12.106187] (-) TimerEvent: {}
+[12.206876] (-) TimerEvent: {}
+[12.307503] (-) TimerEvent: {}
+[12.408060] (-) TimerEvent: {}
+[12.508646] (-) TimerEvent: {}
+[12.609181] (-) TimerEvent: {}
+[12.709709] (-) TimerEvent: {}
+[12.810259] (-) TimerEvent: {}
+[12.910879] (-) TimerEvent: {}
+[13.011461] (-) TimerEvent: {}
+[13.112003] (-) TimerEvent: {}
+[13.212515] (-) TimerEvent: {}
+[13.313105] (-) TimerEvent: {}
+[13.413534] (-) TimerEvent: {}
+[13.514093] (-) TimerEvent: {}
+[13.614690] (-) TimerEvent: {}
+[13.715198] (-) TimerEvent: {}
+[13.815639] (-) TimerEvent: {}
+[13.916164] (-) TimerEvent: {}
+[14.016716] (-) TimerEvent: {}
+[14.117350] (-) TimerEvent: {}
+[14.218023] (-) TimerEvent: {}
+[14.318538] (-) TimerEvent: {}
+[14.419114] (-) TimerEvent: {}
+[14.519787] (-) TimerEvent: {}
+[14.620283] (-) TimerEvent: {}
+[14.720859] (-) TimerEvent: {}
+[14.821410] (-) TimerEvent: {}
+[14.922100] (-) TimerEvent: {}
+[15.022641] (-) TimerEvent: {}
+[15.123143] (-) TimerEvent: {}
+[15.223594] (-) TimerEvent: {}
+[15.324279] (-) TimerEvent: {}
+[15.425072] (-) TimerEvent: {}
+[15.525869] (-) TimerEvent: {}
+[15.626883] (-) TimerEvent: {}
+[15.727767] (-) TimerEvent: {}
+[15.828282] (-) TimerEvent: {}
+[15.928736] (-) TimerEvent: {}
+[16.029379] (-) TimerEvent: {}
+[16.129971] (-) TimerEvent: {}
+[16.230598] (-) TimerEvent: {}
+[16.331161] (-) TimerEvent: {}
+[16.431679] (-) TimerEvent: {}
+[16.532303] (-) TimerEvent: {}
+[16.632969] (-) TimerEvent: {}
+[16.733518] (-) TimerEvent: {}
+[16.834016] (-) TimerEvent: {}
+[16.934675] (-) TimerEvent: {}
+[17.035335] (-) TimerEvent: {}
+[17.136113] (-) TimerEvent: {}
+[17.236613] (-) TimerEvent: {}
+[17.337067] (-) TimerEvent: {}
+[17.437653] (-) TimerEvent: {}
+[17.538330] (-) TimerEvent: {}
+[17.638816] (-) TimerEvent: {}
+[17.739431] (-) TimerEvent: {}
+[17.839993] (-) TimerEvent: {}
+[17.940551] (-) TimerEvent: {}
+[18.041147] (-) TimerEvent: {}
+[18.141625] (-) TimerEvent: {}
+[18.242216] (-) TimerEvent: {}
+[18.342789] (-) TimerEvent: {}
+[18.443193] (-) TimerEvent: {}
+[18.543641] (-) TimerEvent: {}
+[18.644070] (-) TimerEvent: {}
+[18.744762] (-) TimerEvent: {}
+[18.845336] (-) TimerEvent: {}
+[18.946065] (-) TimerEvent: {}
+[19.046849] (-) TimerEvent: {}
+[19.147366] (-) TimerEvent: {}
+[19.248063] (-) TimerEvent: {}
+[19.348953] (-) TimerEvent: {}
+[19.449547] (-) TimerEvent: {}
+[19.550213] (-) TimerEvent: {}
+[19.650934] (-) TimerEvent: {}
+[19.751635] (-) TimerEvent: {}
+[19.852249] (-) TimerEvent: {}
+[19.939724] (relbot_sequence_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable relbot_sequence_controller\x1b[0m\n'}
+[19.952498] (-) TimerEvent: {}
+[20.053596] (-) TimerEvent: {}
+[20.155044] (-) TimerEvent: {}
+[20.256552] (-) TimerEvent: {}
+[20.357973] (-) TimerEvent: {}
+[20.458626] (-) TimerEvent: {}
+[20.559337] (-) TimerEvent: {}
+[20.660090] (-) TimerEvent: {}
+[20.760818] (-) TimerEvent: {}
+[20.861669] (-) TimerEvent: {}
+[20.962456] (-) TimerEvent: {}
+[21.063206] (-) TimerEvent: {}
+[21.163804] (-) TimerEvent: {}
+[21.264494] (-) TimerEvent: {}
+[21.365308] (-) TimerEvent: {}
+[21.465896] (-) TimerEvent: {}
+[21.476301] (relbot_sequence_controller) StdoutLine: {'line': b'[100%] Built target relbot_sequence_controller\n'}
+[21.499029] (relbot_sequence_controller) CommandEnded: {'returncode': 0}
+[21.502547] (relbot_sequence_controller) JobProgress: {'identifier': 'relbot_sequence_controller', 'progress': 'install'}
+[21.502693] (relbot_sequence_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/relBot/build/relbot_sequence_controller'], 'cwd': '/home/ubuntu/relBot/build/relbot_sequence_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot_sequence_controller', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[21.518759] (relbot_sequence_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.521122] (relbot_sequence_controller) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/relbot_sequence_controller/lib/relbot_sequence_controller/relbot_sequence_controller\n'}
+[21.539405] (relbot_sequence_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/relBot/install/relbot_sequence_controller/lib/relbot_sequence_controller/relbot_sequence_controller" to ""\n'}
+[21.539911] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/package_run_dependencies/relbot_sequence_controller\n'}
+[21.540387] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/parent_prefix_path/relbot_sequence_controller\n'}
+[21.542316] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/ament_prefix_path.sh\n'}
+[21.543217] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/ament_prefix_path.dsv\n'}
+[21.556644] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/path.sh\n'}
+[21.558390] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/path.dsv\n'}
+[21.558747] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.bash\n'}
+[21.559151] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.sh\n'}
+[21.559383] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.zsh\n'}
+[21.559596] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.dsv\n'}
+[21.559838] (relbot_sequence_controller) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.dsv\n'}
+[21.560048] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/packages/relbot_sequence_controller\n'}
+[21.560284] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/cmake/relbot_sequence_controllerConfig.cmake\n'}
+[21.560511] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/cmake/relbot_sequence_controllerConfig-version.cmake\n'}
+[21.560735] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.xml\n'}
+[21.560961] (relbot_sequence_controller) CommandEnded: {'returncode': 0}
+[21.572435] (-) TimerEvent: {}
+[21.594047] (relbot_sequence_controller) JobEnded: {'identifier': 'relbot_sequence_controller', 'rc': 0}
+[21.600428] (-) EventReactorShutdown: {}
