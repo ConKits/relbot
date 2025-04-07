@@ -60,8 +60,8 @@ void SteerRelbot::calculate_velocity() {
     if (idleState==false){   
         // Calculate the error between the robot's position and the object's position
         x_error = (x_object - x_center)/x_center;
-        th_error= (area-threshold_area)/threshold_area;
-        
+        th_error= (area_object-threshold_area)/threshold_area;
+
         //The x_tol value creates a nutral zone for the robot to not move when the object is close to the center.
             if (x_error > 0 && std::abs(x_error) > x_tol) {
                 // Object is to the right of the center
