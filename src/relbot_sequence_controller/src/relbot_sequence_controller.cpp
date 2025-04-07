@@ -40,16 +40,16 @@ void SteerRelbot::idle() {
 void SteerRelbot::moveStraight(double error) {
     // Moves the robot straight
     // This method is calculating the velocities for each wheel to move straight.
-    left_velocity =  error*angularVelocity;
-    right_velocity = error*angularVelocity;
+    left_velocity =  error*maxVelocity;
+    right_velocity = error*maxVelocity;
     RCLCPP_INFO(this->get_logger(), "Moving straight");
 }
 
 void SteerRelbot::rotate(double error) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
-    left_velocity = error*angularVelocity*(wheelDistance/2);
-    right_velocity = error*angularVelocity* (wheelDistance/2);
+    left_velocity = error*maxVelocity*(wheelDistance/2);
+    right_velocity = error*maxVelocity* (wheelDistance/2);
     RCLCPP_INFO(this->get_logger(), "Rotating");
     
 }

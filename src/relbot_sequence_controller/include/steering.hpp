@@ -28,7 +28,7 @@ private:
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
     rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr object_cordinates_;
-    rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr output/camera_position;
+    rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr center_cordinates_;
     // Timer
     rclcpp::TimerBase::SharedPtr timer_;
     
@@ -38,7 +38,7 @@ private:
     double wheelDistance=200; // Distance between the wheels
 
     // Velocity attributes
-    double angularVelocity = 1/timeConstant; // Angular velocity (v = r * ω)
+    double maxVelocity = 1/timeConstant; // Angular velocity (v = r * ω)
     double left_velocity;
     double right_velocity;
 
