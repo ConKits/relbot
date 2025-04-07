@@ -81,7 +81,7 @@ void SteerRelbot::calculate_velocity() {
             }
        right_velocity= linear_velocity + th_velocity;
        left_velocity= -linear_velocity + th_velocity;
-       //RCLCPP_INFO(this->get_logger(), "Left_vel: %.2f, Right Vel: %.2f", left_velocity, right_velocity);
+       RCLCPP_INFO(this->get_logger(), "Left_vel: %.2f, Right Vel: %.2f", left_velocity, right_velocity);
     }
     else{
         idle();
