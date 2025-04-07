@@ -37,7 +37,7 @@ private:
     double radius=100; // Radius of the wheels
     double wheelDistance=1; // Distance between the wheels
     // Times for moving straight and turning
-    double timeConstant=1.0;
+    double timeConstant=5.0;
     // Velocity attributes
     double maxVelocity = 10.0/timeConstant; // Angular velocity (v = r * ω)
     double left_velocity;

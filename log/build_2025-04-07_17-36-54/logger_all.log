@@ -1,0 +1,469 @@
+[0.297s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.297s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fb51d8ace30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb51d8acb60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb51d8acb60>>, mixin_verb=('build',))
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.356s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/relBot'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extensions ['ignore', 'ignore_ament_install']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'ignore'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'ignore_ament_install'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extensions ['colcon_pkg']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'colcon_pkg'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extensions ['colcon_meta']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'colcon_meta'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extensions ['ros']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'ros'
+[0.402s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cam2image_vm2ros' with type 'ros.ament_cmake' and name 'cam2image_vm2ros'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extensions ['ignore', 'ignore_ament_install']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extension 'ignore'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extension 'ignore_ament_install'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extensions ['colcon_pkg']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extension 'colcon_pkg'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extensions ['colcon_meta']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extension 'colcon_meta'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extensions ['ros']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_image_processor) by extension 'ros'
+[0.404s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_image_processor' with type 'ros.ament_cmake' and name 'my_image_processor'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extensions ['ignore', 'ignore_ament_install']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extension 'ignore'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extension 'ignore_ament_install'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extensions ['colcon_pkg']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extension 'colcon_pkg'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extensions ['colcon_meta']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extension 'colcon_meta'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extensions ['ros']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot2turtlesim) by extension 'ros'
+[0.406s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot2turtlesim' with type 'ros.ament_cmake' and name 'relbot2turtlesim'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extension 'ignore'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extension 'ignore_ament_install'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extensions ['colcon_pkg']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extension 'colcon_pkg'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extensions ['colcon_meta']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extension 'colcon_meta'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extensions ['ros']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_launch) by extension 'ros'
+[0.407s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot_launch' with type 'ros.ament_cmake' and name 'relbot_launch'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extension 'ignore_ament_install'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extensions ['colcon_pkg']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extension 'colcon_pkg'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extensions ['colcon_meta']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extension 'colcon_meta'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extensions ['ros']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_sequence_controller) by extension 'ros'
+[0.409s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot_sequence_controller' with type 'ros.ament_cmake' and name 'relbot_sequence_controller'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ignore'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'colcon_pkg'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['colcon_meta']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'colcon_meta'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['ros']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ros'
+[0.411s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot_simulator' with type 'ros.ament_cmake' and name 'relbot_simulator'
+[0.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.443s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/ubuntu/relBot/install
+[0.446s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_target' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.516s] DEBUG:colcon.colcon_core.verb:Building package 'cam2image_vm2ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/relBot/build/cam2image_vm2ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/relBot/install/cam2image_vm2ros', 'merge_install': False, 'path': '/home/ubuntu/relBot/src/cam2image_vm2ros', 'symlink_install': False, 'test_result_base': None}
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'cmake_target' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'cmake_clean_first' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'cmake_force_configure' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'ament_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'my_image_processor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.517s] DEBUG:colcon.colcon_core.verb:Building package 'my_image_processor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/relBot/build/my_image_processor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/relBot/install/my_image_processor', 'merge_install': False, 'path': '/home/ubuntu/relBot/src/my_image_processor', 'symlink_install': False, 'test_result_base': None}
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'cmake_target' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'cmake_clean_first' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'cmake_force_configure' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'ament_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot2turtlesim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.518s] DEBUG:colcon.colcon_core.verb:Building package 'relbot2turtlesim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/relBot/build/relbot2turtlesim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/relBot/install/relbot2turtlesim', 'merge_install': False, 'path': '/home/ubuntu/relBot/src/relbot2turtlesim', 'symlink_install': False, 'test_result_base': None}
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'cmake_target' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'relbot_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.518s] DEBUG:colcon.colcon_core.verb:Building package 'relbot_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/relBot/build/relbot_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/relBot/install/relbot_launch', 'merge_install': False, 'path': '/home/ubuntu/relBot/src/relbot_launch', 'symlink_install': False, 'test_result_base': None}
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'cmake_target' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_sequence_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.519s] DEBUG:colcon.colcon_core.verb:Building package 'relbot_sequence_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/relBot/build/relbot_sequence_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/relBot/install/relbot_sequence_controller', 'merge_install': False, 'path': '/home/ubuntu/relBot/src/relbot_sequence_controller', 'symlink_install': False, 'test_result_base': None}
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_args' from command line to 'None'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_target' from command line to 'None'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.520s] DEBUG:colcon.colcon_core.verb:Building package 'relbot_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/relBot/build/relbot_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/relBot/install/relbot_simulator', 'merge_install': False, 'path': '/home/ubuntu/relBot/src/relbot_simulator', 'symlink_install': False, 'test_result_base': None}
+[0.520s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.521s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.522s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/relBot/src/cam2image_vm2ros' with build type 'ament_cmake'
+[0.522s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/relBot/src/cam2image_vm2ros'
+[0.528s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.528s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.529s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.535s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/relBot/src/my_image_processor' with build type 'ament_cmake'
+[0.536s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/relBot/src/my_image_processor'
+[0.536s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.537s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.544s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/relBot/src/relbot2turtlesim' with build type 'ament_cmake'
+[0.544s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/relBot/src/relbot2turtlesim'
+[0.546s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.546s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.553s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/relBot/src/relbot_launch' with build type 'ament_cmake'
+[0.554s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/relBot/src/relbot_launch'
+[0.555s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.555s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.564s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/relBot/src/relbot_sequence_controller' with build type 'ament_cmake'
+[0.565s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/relBot/src/relbot_sequence_controller'
+[0.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.567s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/relBot/src/relbot_simulator' with build type 'ament_cmake'
+[0.576s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/relBot/src/relbot_simulator'
+[0.577s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.577s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/cam2image_vm2ros -- -j8 -l8
+[0.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[0.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot2turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot2turtlesim -- -j8 -l8
+[0.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_launch -- -j8 -l8
+[0.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot_sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
+[0.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_simulator -- -j8 -l8
+[0.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_launch -- -j8 -l8
+[0.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_launch
+[0.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_launch)
+[0.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_launch
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch' for CMake module files
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch' for CMake config files
+[0.810s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_launch', 'cmake_prefix_path')
+[0.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/hook/cmake_prefix_path.ps1'
+[0.819s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/hook/cmake_prefix_path.dsv'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/hook/cmake_prefix_path.sh'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch/bin'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch/lib/pkgconfig/relbot_launch.pc'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch/lib/python3.12/site-packages'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch/bin'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.ps1'
+[0.832s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.dsv'
+[0.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.sh'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.bash'
+[0.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.zsh'
+[0.840s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_launch/share/colcon-core/packages/relbot_launch)
+[0.842s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_launch)
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch' for CMake module files
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch' for CMake config files
+[0.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_launch', 'cmake_prefix_path')
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/hook/cmake_prefix_path.ps1'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/hook/cmake_prefix_path.dsv'
+[0.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/hook/cmake_prefix_path.sh'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch/bin'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch/lib/pkgconfig/relbot_launch.pc'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch/lib/python3.12/site-packages'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_launch/bin'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.ps1'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.dsv'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.sh'
+[0.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.bash'
+[0.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.zsh'
+[0.859s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_launch/share/colcon-core/packages/relbot_launch)
+[0.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot2turtlesim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot2turtlesim -- -j8 -l8
+[0.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot2turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot2turtlesim
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/cam2image_vm2ros -- -j8 -l8
+[0.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/cam2image_vm2ros
+[0.875s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[0.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/my_image_processor
+[0.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_simulator -- -j8 -l8
+[0.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_simulator
+[0.916s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot2turtlesim)
+[0.917s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim' for CMake module files
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim' for CMake config files
+[0.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot2turtlesim', 'cmake_prefix_path')
+[0.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/hook/cmake_prefix_path.ps1'
+[0.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot2turtlesim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot2turtlesim
+[0.954s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/hook/cmake_prefix_path.dsv'
+[0.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/hook/cmake_prefix_path.sh'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/lib'
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/bin'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/lib/pkgconfig/relbot2turtlesim.pc'
+[0.968s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/lib/python3.12/site-packages'
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/bin'
+[0.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.ps1'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.dsv'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.sh'
+[1.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.bash'
+[1.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.zsh'
+[1.004s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot2turtlesim/share/colcon-core/packages/relbot2turtlesim)
+[1.006s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot2turtlesim)
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim' for CMake module files
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim' for CMake config files
+[1.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot2turtlesim', 'cmake_prefix_path')
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/hook/cmake_prefix_path.ps1'
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/hook/cmake_prefix_path.dsv'
+[1.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/hook/cmake_prefix_path.sh'
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/lib'
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/bin'
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/lib/pkgconfig/relbot2turtlesim.pc'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/lib/python3.12/site-packages'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot2turtlesim/bin'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.ps1'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.dsv'
+[1.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.sh'
+[1.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.bash'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.zsh'
+[1.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot2turtlesim/share/colcon-core/packages/relbot2turtlesim)
+[1.031s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_image_processor)
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor' for CMake module files
+[1.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/my_image_processor
+[1.036s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor' for CMake config files
+[1.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_image_processor', 'cmake_prefix_path')
+[1.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.ps1'
+[1.039s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.dsv'
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.sh'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib/pkgconfig/my_image_processor.pc'
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib/python3.12/site-packages'
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.ps1'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv'
+[1.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.sh'
+[1.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.bash'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.zsh'
+[1.052s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/my_image_processor/share/colcon-core/packages/my_image_processor)
+[1.054s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_image_processor)
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor' for CMake module files
+[1.057s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor' for CMake config files
+[1.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_image_processor', 'cmake_prefix_path')
+[1.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.ps1'
+[1.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.dsv'
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.sh'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib/pkgconfig/my_image_processor.pc'
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib/python3.12/site-packages'
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
+[1.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.ps1'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv'
+[1.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.sh'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.bash'
+[1.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.zsh'
+[1.076s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/my_image_processor/share/colcon-core/packages/my_image_processor)
+[1.082s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cam2image_vm2ros)
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros' for CMake module files
+[1.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/cam2image_vm2ros
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros' for CMake config files
+[1.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('cam2image_vm2ros', 'cmake_prefix_path')
+[1.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.ps1'
+[1.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.dsv'
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.sh'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/lib'
+[1.096s] Level 1:colcon.colcon_core.shell:create_environment_hook('cam2image_vm2ros', 'ld_library_path_lib')
+[1.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.ps1'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.dsv'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.sh'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/bin'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/lib/pkgconfig/cam2image_vm2ros.pc'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/lib/python3.12/site-packages'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/bin'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.ps1'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.dsv'
+[1.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.sh'
+[1.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.bash'
+[1.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.zsh'
+[1.111s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/cam2image_vm2ros/share/colcon-core/packages/cam2image_vm2ros)
+[1.115s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cam2image_vm2ros)
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros' for CMake module files
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros' for CMake config files
+[1.119s] Level 1:colcon.colcon_core.shell:create_environment_hook('cam2image_vm2ros', 'cmake_prefix_path')
+[1.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.dsv'
+[1.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.sh'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/lib'
+[1.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('cam2image_vm2ros', 'ld_library_path_lib')
+[1.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.ps1'
+[1.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.dsv'
+[1.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.sh'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/bin'
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/lib/pkgconfig/cam2image_vm2ros.pc'
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/lib/python3.12/site-packages'
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/cam2image_vm2ros/bin'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.ps1'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.dsv'
+[1.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.sh'
+[1.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.bash'
+[1.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.zsh'
+[1.142s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/cam2image_vm2ros/share/colcon-core/packages/cam2image_vm2ros)
+[1.142s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_simulator)
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator' for CMake module files
+[1.149s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator' for CMake config files
+[1.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_simulator
+[1.151s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_simulator', 'cmake_prefix_path')
+[1.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.ps1'
+[1.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.dsv'
+[1.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.sh'
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/lib'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/bin'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/lib/pkgconfig/relbot_simulator.pc'
+[1.157s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/lib/python3.12/site-packages'
+[1.157s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/bin'
+[1.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.ps1'
+[1.159s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.dsv'
+[1.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.sh'
+[1.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.bash'
+[1.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.zsh'
+[1.166s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_simulator/share/colcon-core/packages/relbot_simulator)
+[1.167s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_simulator)
+[1.168s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator' for CMake module files
+[1.170s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator' for CMake config files
+[1.171s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_simulator', 'cmake_prefix_path')
+[1.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.ps1'
+[1.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.dsv'
+[1.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.sh'
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/lib'
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/bin'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/lib/pkgconfig/relbot_simulator.pc'
+[1.179s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/lib/python3.12/site-packages'
+[1.180s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_simulator/bin'
+[1.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.ps1'
+[1.182s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.dsv'
+[1.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.sh'
+[1.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.bash'
+[1.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.zsh'
+[1.186s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_simulator/share/colcon-core/packages/relbot_simulator)
+[16.092s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot_sequence_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
+[16.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/relbot_sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_sequence_controller
+[16.128s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_sequence_controller)
+[16.128s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller' for CMake module files
+[16.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/relbot_sequence_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_sequence_controller
+[16.130s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller' for CMake config files
+[16.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_sequence_controller', 'cmake_prefix_path')
+[16.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.ps1'
+[16.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.dsv'
+[16.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.sh'
+[16.133s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib'
+[16.134s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/bin'
+[16.134s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib/pkgconfig/relbot_sequence_controller.pc'
+[16.134s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib/python3.12/site-packages'
+[16.135s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/bin'
+[16.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.ps1'
+[16.136s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.dsv'
+[16.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.sh'
+[16.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.bash'
+[16.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.zsh'
+[16.139s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_sequence_controller/share/colcon-core/packages/relbot_sequence_controller)
+[16.140s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_sequence_controller)
+[16.140s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller' for CMake module files
+[16.141s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller' for CMake config files
+[16.141s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_sequence_controller', 'cmake_prefix_path')
+[16.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.ps1'
+[16.143s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.dsv'
+[16.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/hook/cmake_prefix_path.sh'
+[16.145s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib'
+[16.145s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/bin'
+[16.145s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib/pkgconfig/relbot_sequence_controller.pc'
+[16.145s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/lib/python3.12/site-packages'
+[16.146s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/relbot_sequence_controller/bin'
+[16.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.ps1'
+[16.147s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.dsv'
+[16.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.sh'
+[16.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.bash'
+[16.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.zsh'
+[16.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/relbot_sequence_controller/share/colcon-core/packages/relbot_sequence_controller)
+[16.150s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.151s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.151s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.151s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.293s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[16.293s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.293s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.293s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.296s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[16.297s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.297s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.ps1'
+[16.299s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/relBot/install/_local_setup_util_ps1.py'
+[16.301s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.ps1'
+[16.303s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.sh'
+[16.304s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/relBot/install/_local_setup_util_sh.py'
+[16.305s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.sh'
+[16.308s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.bash'
+[16.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.bash'
+[16.314s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.zsh'
+[16.316s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.zsh'
