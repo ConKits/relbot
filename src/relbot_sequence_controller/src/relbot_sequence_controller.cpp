@@ -42,7 +42,7 @@ void SteerRelbot::moveStraight(double error) {
     // This method is calculating the velocities for each wheel to move straight.
     left_velocity =  error*maxVelocity;
     right_velocity = error*maxVelocity;
-    RCLCPP_INFO(this->get_logger(), "Moving straight");
+    RCLCPP_INFO(this->get_logger(), "Moving straight with: %.2f, error: %.2f", left_velocity, error);
 }
 
 void SteerRelbot::rotate(double error) {
@@ -50,7 +50,7 @@ void SteerRelbot::rotate(double error) {
     // This method is calculating the velocities for each wheel to rotate.
     left_velocity = error*maxVelocity*(wheelDistance/2);
     right_velocity = error*maxVelocity* (wheelDistance/2);
-    RCLCPP_INFO(this->get_logger(), "Rotating");
+    RCLCPP_INFO(this->get_logger(), "Rotating with: %.2f, error: %.2f", left_velocity, error);
     
 }
 
@@ -93,9 +93,9 @@ void SteerRelbot::timer_callback() {
 
     // publish velocity to simulator
     example_interfaces::msg::Float64 left_wheel;
-    left_wheel.data = -left_velocity;
+    left_wheel.data = 0.0; //-left_velocity;
     example_interfaces::msg::Float64 right_wheel;
-    right_wheel.data = right_velocity;
+    right_wheel.data = 0.0; //right_velocity;
     left_wheel_topic_->publish(left_wheel);
     right_wheel_topic_->publish(right_wheel);
 }
