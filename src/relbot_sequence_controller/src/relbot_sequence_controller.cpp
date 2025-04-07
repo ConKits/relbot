@@ -73,14 +73,15 @@ void SteerRelbot::calculate_velocity() {
                 rotate(x_error);
             }
             else{
-                if (area_object< threshold_area) {
-                    // Object is far from the robot
-                    moveStraight(th_error);
-                } 
-                else {
-                    // Object is close to the robot
-                    idle();
-                }
+
+            }
+            if (area_object< threshold_area) {
+                // Object is far from the robot
+                moveStraight(th_error);
+            } 
+            else {
+                // Object is close to the robot
+                idle();
             }
     }
 }
@@ -122,9 +123,9 @@ void SteerRelbot::timer_callback() {
 
     // publish velocity to simulator
     example_interfaces::msg::Float64 left_wheel;
-    left_wheel.data = -left_velocity;
+    left_wheel.data = 1.0;//-left_velocity;
     example_interfaces::msg::Float64 right_wheel;
-    right_wheel.data = right_velocity;
+    right_wheel.data = 1.0;//right_velocity;
     left_wheel_topic_->publish(left_wheel);
     right_wheel_topic_->publish(right_wheel);
 }

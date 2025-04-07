@@ -39,7 +39,7 @@ private:
     // Times for moving straight and turning
     double timeConstant=1.0;
     // Velocity attributes
-    double maxVelocity = 1/timeConstant; // Angular velocity (v = r * ω)
+    double maxVelocity = 10/timeConstant; // Angular velocity (v = r * ω)
     double left_velocity;
     double right_velocity;
 
