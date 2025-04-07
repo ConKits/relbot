@@ -2,7 +2,12 @@
 # To remove building folders
     rm -r build/ install/ log/
 
+# To run the the video streamer on the host machine
+    cd Documents/cam
+    python videoserver.py
+
 # To build the packages
+    cd relBot
     colcon build
 
 # To sourcing the package
