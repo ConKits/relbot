@@ -55,8 +55,8 @@ void ImageProcessor::track_green_object(cv::Mat &cv_image) {
 
         //Publishing the cordinates of the detected green object
         geometry_msgs::msg::PointStamped center_msg;
-        center_msg.point.x = center.x;
-        center_msg.point.y = frame_width/2;
+        center_msg.point.x = center.x; 
+        center_msg.point.y = frame_width/2; //Center of the frame at the x direction
         double box_area = bounding_box.area();
         center_msg.point.z = box_area; // This is the area of the bounding box
         center_msg.header.stamp = this->now();
@@ -72,6 +72,7 @@ void ImageProcessor::image_callback(const sensor_msgs::msg::Image::SharedPtr msg
         // Convert ROS2 Image message to OpenCV format
         cv::Mat cv_image = cv_bridge::toCvCopy(msg, "bgr8")->image;
         frame_width = msg->width;
+
         // Process the image to track the green object
         track_green_object(cv_image);
 

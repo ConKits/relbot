@@ -58,7 +58,7 @@ void SteerRelbot::calculate_velocity() {
         th_error = (x_center - x_object)/x_center;
         x_error= (threshold_area - area_object)/threshold_area;
         
-        if (std::abs(th_error) < buffer_zone && std::abs(x_error) < buffer_zone ){
+        if (std::abs(th_error) <= buffer_zone && std::abs(x_error) <= buffer_zone ){
             //Set idle mode when the object is in the buffer zone.      
             idle();
         }
