@@ -1,0 +1,574 @@
+[0.000000] (-) TimerEvent: {}
+[0.000404] (cam2image_vm2ros) JobQueued: {'identifier': 'cam2image_vm2ros', 'dependencies': OrderedDict()}
+[0.000875] (my_image_processor) JobQueued: {'identifier': 'my_image_processor', 'dependencies': OrderedDict()}
+[0.000968] (relbot2turtlesim) JobQueued: {'identifier': 'relbot2turtlesim', 'dependencies': OrderedDict()}
+[0.001047] (relbot_launch) JobQueued: {'identifier': 'relbot_launch', 'dependencies': OrderedDict()}
+[0.001727] (relbot_sequence_controller) JobQueued: {'identifier': 'relbot_sequence_controller', 'dependencies': OrderedDict()}
+[0.001937] (relbot_simulator) JobQueued: {'identifier': 'relbot_simulator', 'dependencies': OrderedDict()}
+[0.002294] (cam2image_vm2ros) JobStarted: {'identifier': 'cam2image_vm2ros'}
+[0.014680] (my_image_processor) JobStarted: {'identifier': 'my_image_processor'}
+[0.023263] (relbot2turtlesim) JobStarted: {'identifier': 'relbot2turtlesim'}
+[0.032540] (relbot_launch) JobStarted: {'identifier': 'relbot_launch'}
+[0.040067] (relbot_sequence_controller) JobStarted: {'identifier': 'relbot_sequence_controller'}
+[0.048302] (relbot_simulator) JobStarted: {'identifier': 'relbot_simulator'}
+[0.057431] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'cmake'}
+[0.058685] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'build'}
+[0.061633] (cam2image_vm2ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/relBot/build/cam2image_vm2ros', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/relBot/build/cam2image_vm2ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/cam2image_vm2ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.067320] (my_image_processor) JobProgress: {'identifier': 'my_image_processor', 'progress': 'cmake'}
+[0.069328] (my_image_processor) JobProgress: {'identifier': 'my_image_processor', 'progress': 'build'}
+[0.069435] (my_image_processor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/relBot/build/my_image_processor', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/relBot/build/my_image_processor', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/my_image_processor', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.075720] (relbot2turtlesim) JobProgress: {'identifier': 'relbot2turtlesim', 'progress': 'cmake'}
+[0.075844] (relbot2turtlesim) JobProgress: {'identifier': 'relbot2turtlesim', 'progress': 'build'}
+[0.075964] (relbot2turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/relBot/build/relbot2turtlesim', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/relBot/build/relbot2turtlesim', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot2turtlesim', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.085091] (relbot_launch) JobProgress: {'identifier': 'relbot_launch', 'progress': 'cmake'}
+[0.085164] (relbot_launch) JobProgress: {'identifier': 'relbot_launch', 'progress': 'build'}
+[0.085214] (relbot_launch) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/relBot/build/relbot_launch', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/relBot/build/relbot_launch', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot_launch', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.097497] (relbot_sequence_controller) JobProgress: {'identifier': 'relbot_sequence_controller', 'progress': 'cmake'}
+[0.097644] (relbot_sequence_controller) JobProgress: {'identifier': 'relbot_sequence_controller', 'progress': 'build'}
+[0.097710] (relbot_sequence_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/relBot/build/relbot_sequence_controller', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/relBot/build/relbot_sequence_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot_sequence_controller', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.105722] (-) TimerEvent: {}
+[0.123786] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'cmake'}
+[0.125934] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'build'}
+[0.126808] (relbot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/relBot/build/relbot_simulator', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/relBot/build/relbot_simulator', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot_simulator', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.206438] (relbot_launch) CommandEnded: {'returncode': 0}
+[0.207150] (-) TimerEvent: {}
+[0.207515] (relbot_launch) JobProgress: {'identifier': 'relbot_launch', 'progress': 'install'}
+[0.231013] (cam2image_vm2ros) StdoutLine: {'line': b'[ 40%] Built target cam2image\n'}
+[0.236703] (relbot_launch) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/relBot/build/relbot_launch'], 'cwd': '/home/ubuntu/relBot/build/relbot_launch', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot_launch', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.246419] (my_image_processor) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o\x1b[0m\n'}
+[0.258282] (relbot_launch) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.259590] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch\n'}
+[0.259934] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_cam2image.launch.py\n'}
+[0.260163] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_sequence_controller.launch.py\n'}
+[0.260373] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_to_turtle.launch.py\n'}
+[0.260598] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_system_joystick.launch.py\n'}
+[0.260808] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch//launch/relbot_system.launch.py\n'}
+[0.261368] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/ament_index/resource_index/package_run_dependencies/relbot_launch\n'}
+[0.261668] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/ament_index/resource_index/parent_prefix_path/relbot_launch\n'}
+[0.261883] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/environment/ament_prefix_path.sh\n'}
+[0.262139] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/environment/ament_prefix_path.dsv\n'}
+[0.262386] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/environment/path.sh\n'}
+[0.262636] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/environment/path.dsv\n'}
+[0.262868] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/local_setup.bash\n'}
+[0.263153] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/local_setup.sh\n'}
+[0.263376] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/local_setup.zsh\n'}
+[0.263631] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/local_setup.dsv\n'}
+[0.264635] (relbot_launch) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.dsv\n'}
+[0.267904] (relbot2turtlesim) StdoutLine: {'line': b'[100%] Built target relbot2turtlesim\n'}
+[0.271427] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/ament_index/resource_index/packages/relbot_launch\n'}
+[0.272746] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/cmake/relbot_launchConfig.cmake\n'}
+[0.273229] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/cmake/relbot_launchConfig-version.cmake\n'}
+[0.273500] (relbot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_launch/share/relbot_launch/package.xml\n'}
+[0.273840] (relbot_launch) CommandEnded: {'returncode': 0}
+[0.277880] (cam2image_vm2ros) StdoutLine: {'line': b'[100%] Built target cam2image_vm2ros\n'}
+[0.296205] (relbot_sequence_controller) StdoutLine: {'line': b'[100%] Built target relbot_sequence_controller\n'}
+[0.307540] (-) TimerEvent: {}
+[0.312424] (relbot_simulator) StdoutLine: {'line': b'[100%] Built target relbot_simulator\n'}
+[0.320501] (relbot_launch) JobEnded: {'identifier': 'relbot_launch', 'rc': 0}
+[0.326041] (relbot2turtlesim) CommandEnded: {'returncode': 0}
+[0.327441] (relbot2turtlesim) JobProgress: {'identifier': 'relbot2turtlesim', 'progress': 'install'}
+[0.328404] (relbot2turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/relBot/build/relbot2turtlesim'], 'cwd': '/home/ubuntu/relBot/build/relbot2turtlesim', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot2turtlesim', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.330801] (cam2image_vm2ros) CommandEnded: {'returncode': 0}
+[0.332197] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'install'}
+[0.333399] (cam2image_vm2ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/relBot/build/cam2image_vm2ros'], 'cwd': '/home/ubuntu/relBot/build/cam2image_vm2ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/cam2image_vm2ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.336320] (relbot_sequence_controller) CommandEnded: {'returncode': 0}
+[0.340625] (relbot_sequence_controller) JobProgress: {'identifier': 'relbot_sequence_controller', 'progress': 'install'}
+[0.341575] (relbot_sequence_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/relBot/build/relbot_sequence_controller'], 'cwd': '/home/ubuntu/relBot/build/relbot_sequence_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot_sequence_controller', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.344968] (relbot2turtlesim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.346750] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/lib/relbot2turtlesim/relbot2turtlesim\n'}
+[0.347294] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/ament_index/resource_index/package_run_dependencies/relbot2turtlesim\n'}
+[0.348705] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/ament_index/resource_index/parent_prefix_path/relbot2turtlesim\n'}
+[0.350181] (relbot_simulator) CommandEnded: {'returncode': 0}
+[0.351030] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/environment/ament_prefix_path.sh\n'}
+[0.351528] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/environment/ament_prefix_path.dsv\n'}
+[0.352478] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/environment/path.sh\n'}
+[0.353547] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/environment/path.dsv\n'}
+[0.354108] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/local_setup.bash\n'}
+[0.355396] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/local_setup.sh\n'}
+[0.358423] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/local_setup.zsh\n'}
+[0.371960] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/local_setup.dsv\n'}
+[0.372603] (relbot2turtlesim) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.dsv\n'}
+[0.373162] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/ament_index/resource_index/packages/relbot2turtlesim\n'}
+[0.373764] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/cmake/relbot2turtlesimConfig.cmake\n'}
+[0.374239] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/cmake/relbot2turtlesimConfig-version.cmake\n'}
+[0.374711] (relbot2turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot2turtlesim/share/relbot2turtlesim/package.xml\n'}
+[0.375182] (relbot_simulator) JobProgress: {'identifier': 'relbot_simulator', 'progress': 'install'}
+[0.375294] (cam2image_vm2ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.375918] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/lib/cam2image_vm2ros/cam2image\n'}
+[0.377336] (relbot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/relBot/build/relbot_simulator'], 'cwd': '/home/ubuntu/relBot/build/relbot_simulator', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/relbot_simulator', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.378645] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/lib/libcam2image_vm2ros.so\n'}
+[0.380988] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros\n'}
+[0.381938] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros/cam2image.hpp\n'}
+[0.382713] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros/base64.hpp\n'}
+[0.383136] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros/visibility_control.h\n'}
+[0.383527] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/include/cam2image_vm2ros/remote_capture.hpp\n'}
+[0.383893] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/library_path.sh\n'}
+[0.384233] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/library_path.dsv\n'}
+[0.384572] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/ament_index/resource_index/package_run_dependencies/cam2image_vm2ros\n'}
+[0.384901] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/ament_index/resource_index/parent_prefix_path/cam2image_vm2ros\n'}
+[0.385228] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/ament_prefix_path.sh\n'}
+[0.385554] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/ament_prefix_path.dsv\n'}
+[0.385881] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/path.sh\n'}
+[0.388313] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/path.dsv\n'}
+[0.389147] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.bash\n'}
+[0.390083] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.sh\n'}
+[0.390448] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.zsh\n'}
+[0.390789] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.dsv\n'}
+[0.391124] (cam2image_vm2ros) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.dsv\n'}
+[0.391747] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/ament_index/resource_index/packages/cam2image_vm2ros\n'}
+[0.392152] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/ament_index/resource_index/rclcpp_components/cam2image_vm2ros\n'}
+[0.392546] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosExport.cmake\n'}
+[0.392966] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosExport-noconfig.cmake\n'}
+[0.393398] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.393780] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.394712] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.395151] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosConfig.cmake\n'}
+[0.395492] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosConfig-version.cmake\n'}
+[0.395825] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.xml\n'}
+[0.396157] (relbot_sequence_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.396762] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/lib/relbot_sequence_controller/relbot_sequence_controller\n'}
+[0.397107] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/package_run_dependencies/relbot_sequence_controller\n'}
+[0.397446] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/parent_prefix_path/relbot_sequence_controller\n'}
+[0.397841] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/ament_prefix_path.sh\n'}
+[0.398221] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/ament_prefix_path.dsv\n'}
+[0.398610] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/path.sh\n'}
+[0.399072] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/path.dsv\n'}
+[0.399415] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.bash\n'}
+[0.400042] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.sh\n'}
+[0.400374] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.zsh\n'}
+[0.400702] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.dsv\n'}
+[0.401031] (relbot_sequence_controller) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.dsv\n'}
+[0.401359] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/packages/relbot_sequence_controller\n'}
+[0.402214] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/cmake/relbot_sequence_controllerConfig.cmake\n'}
+[0.403548] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/cmake/relbot_sequence_controllerConfig-version.cmake\n'}
+[0.405843] (relbot_sequence_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.xml\n'}
+[0.407008] (relbot2turtlesim) CommandEnded: {'returncode': 0}
+[0.408278] (-) TimerEvent: {}
+[0.408869] (relbot_simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.409520] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/lib/relbot_simulator/relbot_simulator\n'}
+[0.410031] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include\n'}
+[0.411570] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxinverse.cpp\n'}
+[0.412405] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxmodel.h\n'}
+[0.412866] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxtypes.h\n'}
+[0.413265] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxmatrix.cpp\n'}
+[0.413625] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxinverse.h\n'}
+[0.414266] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/MotionProfiles.h\n'}
+[0.414633] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxfuncs.cpp\n'}
+[0.415205] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxfuncs.h\n'}
+[0.415554] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/MotionProfiles.cpp\n'}
+[0.415886] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxinteg.cpp\n'}
+[0.416244] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/EulerAngles.cpp\n'}
+[0.416597] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxinteg.h\n'}
+[0.416990] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/EulerAngles.h\n'}
+[0.417349] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/include/xxmatrix.h\n'}
+[0.417677] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/ament_index/resource_index/package_run_dependencies/relbot_simulator\n'}
+[0.418003] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/ament_index/resource_index/parent_prefix_path/relbot_simulator\n'}
+[0.419496] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.sh\n'}
+[0.420175] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.dsv\n'}
+[0.420710] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/environment/path.sh\n'}
+[0.421169] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/environment/path.dsv\n'}
+[0.421723] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/local_setup.bash\n'}
+[0.422673] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/local_setup.sh\n'}
+[0.423342] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/local_setup.zsh\n'}
+[0.423723] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/local_setup.dsv\n'}
+[0.424225] (relbot_simulator) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.dsv\n'}
+[0.424682] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/ament_index/resource_index/packages/relbot_simulator\n'}
+[0.425066] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig.cmake\n'}
+[0.425897] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig-version.cmake\n'}
+[0.426431] (relbot_simulator) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/relbot_simulator/share/relbot_simulator/package.xml\n'}
+[0.444200] (relbot2turtlesim) JobEnded: {'identifier': 'relbot2turtlesim', 'rc': 0}
+[0.448955] (cam2image_vm2ros) CommandEnded: {'returncode': 0}
+[0.483688] (cam2image_vm2ros) JobEnded: {'identifier': 'cam2image_vm2ros', 'rc': 0}
+[0.488109] (relbot_sequence_controller) CommandEnded: {'returncode': 0}
+[0.508707] (-) TimerEvent: {}
+[0.522542] (relbot_sequence_controller) JobEnded: {'identifier': 'relbot_sequence_controller', 'rc': 0}
+[0.526697] (relbot_simulator) CommandEnded: {'returncode': 0}
+[0.558010] (relbot_simulator) JobEnded: {'identifier': 'relbot_simulator', 'rc': 0}
+[0.608858] (-) TimerEvent: {}
+[0.709319] (-) TimerEvent: {}
+[0.809760] (-) TimerEvent: {}
+[0.910221] (-) TimerEvent: {}
+[1.010855] (-) TimerEvent: {}
+[1.111377] (-) TimerEvent: {}
+[1.212208] (-) TimerEvent: {}
+[1.313060] (-) TimerEvent: {}
+[1.413644] (-) TimerEvent: {}
+[1.514417] (-) TimerEvent: {}
+[1.615071] (-) TimerEvent: {}
+[1.715916] (-) TimerEvent: {}
+[1.817277] (-) TimerEvent: {}
+[1.918805] (-) TimerEvent: {}
+[2.020467] (-) TimerEvent: {}
+[2.122174] (-) TimerEvent: {}
+[2.223424] (-) TimerEvent: {}
+[2.324770] (-) TimerEvent: {}
+[2.426261] (-) TimerEvent: {}
+[2.527234] (-) TimerEvent: {}
+[2.628618] (-) TimerEvent: {}
+[2.729793] (-) TimerEvent: {}
+[2.831036] (-) TimerEvent: {}
+[2.932463] (-) TimerEvent: {}
+[3.033513] (-) TimerEvent: {}
+[3.134736] (-) TimerEvent: {}
+[3.236213] (-) TimerEvent: {}
+[3.337790] (-) TimerEvent: {}
+[3.439447] (-) TimerEvent: {}
+[3.540601] (-) TimerEvent: {}
+[3.642226] (-) TimerEvent: {}
+[3.743525] (-) TimerEvent: {}
+[3.844970] (-) TimerEvent: {}
+[3.945887] (-) TimerEvent: {}
+[4.046519] (-) TimerEvent: {}
+[4.147671] (-) TimerEvent: {}
+[4.249110] (-) TimerEvent: {}
+[4.350077] (-) TimerEvent: {}
+[4.451211] (-) TimerEvent: {}
+[4.552059] (-) TimerEvent: {}
+[4.653449] (-) TimerEvent: {}
+[4.754242] (-) TimerEvent: {}
+[4.855754] (-) TimerEvent: {}
+[4.957068] (-) TimerEvent: {}
+[5.058214] (-) TimerEvent: {}
+[5.159372] (-) TimerEvent: {}
+[5.260186] (-) TimerEvent: {}
+[5.361119] (-) TimerEvent: {}
+[5.462536] (-) TimerEvent: {}
+[5.563972] (-) TimerEvent: {}
+[5.665567] (-) TimerEvent: {}
+[5.766674] (-) TimerEvent: {}
+[5.867814] (-) TimerEvent: {}
+[5.969129] (-) TimerEvent: {}
+[6.070203] (-) TimerEvent: {}
+[6.171099] (-) TimerEvent: {}
+[6.271981] (-) TimerEvent: {}
+[6.372871] (-) TimerEvent: {}
+[6.474164] (-) TimerEvent: {}
+[6.575376] (-) TimerEvent: {}
+[6.676806] (-) TimerEvent: {}
+[6.777707] (-) TimerEvent: {}
+[6.878849] (-) TimerEvent: {}
+[6.979993] (-) TimerEvent: {}
+[7.081249] (-) TimerEvent: {}
+[7.182103] (-) TimerEvent: {}
+[7.283041] (-) TimerEvent: {}
+[7.383903] (-) TimerEvent: {}
+[7.484641] (-) TimerEvent: {}
+[7.585389] (-) TimerEvent: {}
+[7.686095] (-) TimerEvent: {}
+[7.786736] (-) TimerEvent: {}
+[7.887453] (-) TimerEvent: {}
+[7.988200] (-) TimerEvent: {}
+[8.088902] (-) TimerEvent: {}
+[8.189634] (-) TimerEvent: {}
+[8.290382] (-) TimerEvent: {}
+[8.391073] (-) TimerEvent: {}
+[8.491839] (-) TimerEvent: {}
+[8.592475] (-) TimerEvent: {}
+[8.693533] (-) TimerEvent: {}
+[8.798718] (-) TimerEvent: {}
+[8.900385] (-) TimerEvent: {}
+[9.001142] (-) TimerEvent: {}
+[9.101822] (-) TimerEvent: {}
+[9.202445] (-) TimerEvent: {}
+[9.303066] (-) TimerEvent: {}
+[9.403555] (-) TimerEvent: {}
+[9.504191] (-) TimerEvent: {}
+[9.604779] (-) TimerEvent: {}
+[9.705362] (-) TimerEvent: {}
+[9.805974] (-) TimerEvent: {}
+[9.906660] (-) TimerEvent: {}
+[10.007361] (-) TimerEvent: {}
+[10.107994] (-) TimerEvent: {}
+[10.208500] (-) TimerEvent: {}
+[10.309168] (-) TimerEvent: {}
+[10.409850] (-) TimerEvent: {}
+[10.510510] (-) TimerEvent: {}
+[10.611056] (-) TimerEvent: {}
+[10.711789] (-) TimerEvent: {}
+[10.812372] (-) TimerEvent: {}
+[10.913202] (-) TimerEvent: {}
+[11.013855] (-) TimerEvent: {}
+[11.114469] (-) TimerEvent: {}
+[11.214973] (-) TimerEvent: {}
+[11.315676] (-) TimerEvent: {}
+[11.416422] (-) TimerEvent: {}
+[11.517088] (-) TimerEvent: {}
+[11.617751] (-) TimerEvent: {}
+[11.718276] (-) TimerEvent: {}
+[11.819130] (-) TimerEvent: {}
+[11.920168] (-) TimerEvent: {}
+[12.020984] (-) TimerEvent: {}
+[12.121664] (-) TimerEvent: {}
+[12.222329] (-) TimerEvent: {}
+[12.323133] (-) TimerEvent: {}
+[12.423858] (-) TimerEvent: {}
+[12.524585] (-) TimerEvent: {}
+[12.625459] (-) TimerEvent: {}
+[12.726177] (-) TimerEvent: {}
+[12.826915] (-) TimerEvent: {}
+[12.927579] (-) TimerEvent: {}
+[13.028104] (-) TimerEvent: {}
+[13.128694] (-) TimerEvent: {}
+[13.229491] (-) TimerEvent: {}
+[13.330674] (-) TimerEvent: {}
+[13.431938] (-) TimerEvent: {}
+[13.532572] (-) TimerEvent: {}
+[13.633172] (-) TimerEvent: {}
+[13.733820] (-) TimerEvent: {}
+[13.834702] (-) TimerEvent: {}
+[13.935464] (-) TimerEvent: {}
+[14.037121] (-) TimerEvent: {}
+[14.137816] (-) TimerEvent: {}
+[14.238571] (-) TimerEvent: {}
+[14.339363] (-) TimerEvent: {}
+[14.439931] (-) TimerEvent: {}
+[14.540495] (-) TimerEvent: {}
+[14.641057] (-) TimerEvent: {}
+[14.741784] (-) TimerEvent: {}
+[14.842477] (-) TimerEvent: {}
+[14.943207] (-) TimerEvent: {}
+[15.043868] (-) TimerEvent: {}
+[15.144611] (-) TimerEvent: {}
+[15.245438] (-) TimerEvent: {}
+[15.346155] (-) TimerEvent: {}
+[15.446756] (-) TimerEvent: {}
+[15.547303] (-) TimerEvent: {}
+[15.647884] (-) TimerEvent: {}
+[15.748712] (-) TimerEvent: {}
+[15.849572] (-) TimerEvent: {}
+[15.950135] (-) TimerEvent: {}
+[16.050937] (-) TimerEvent: {}
+[16.151568] (-) TimerEvent: {}
+[16.252576] (-) TimerEvent: {}
+[16.353308] (-) TimerEvent: {}
+[16.454039] (-) TimerEvent: {}
+[16.554728] (-) TimerEvent: {}
+[16.655346] (-) TimerEvent: {}
+[16.756062] (-) TimerEvent: {}
+[16.856837] (-) TimerEvent: {}
+[16.957606] (-) TimerEvent: {}
+[17.058365] (-) TimerEvent: {}
+[17.159900] (-) TimerEvent: {}
+[17.261151] (-) TimerEvent: {}
+[17.362516] (-) TimerEvent: {}
+[17.463211] (-) TimerEvent: {}
+[17.564213] (-) TimerEvent: {}
+[17.665168] (-) TimerEvent: {}
+[17.765939] (-) TimerEvent: {}
+[17.866723] (-) TimerEvent: {}
+[17.967474] (-) TimerEvent: {}
+[18.068406] (-) TimerEvent: {}
+[18.169680] (-) TimerEvent: {}
+[18.271242] (-) TimerEvent: {}
+[18.372500] (-) TimerEvent: {}
+[18.473539] (-) TimerEvent: {}
+[18.574416] (-) TimerEvent: {}
+[18.675378] (-) TimerEvent: {}
+[18.776386] (-) TimerEvent: {}
+[18.877953] (-) TimerEvent: {}
+[18.979610] (-) TimerEvent: {}
+[19.080857] (-) TimerEvent: {}
+[19.181805] (-) TimerEvent: {}
+[19.282603] (-) TimerEvent: {}
+[19.383314] (-) TimerEvent: {}
+[19.483871] (-) TimerEvent: {}
+[19.584606] (-) TimerEvent: {}
+[19.685337] (-) TimerEvent: {}
+[19.786034] (-) TimerEvent: {}
+[19.886902] (-) TimerEvent: {}
+[19.987730] (-) TimerEvent: {}
+[20.088767] (-) TimerEvent: {}
+[20.189651] (-) TimerEvent: {}
+[20.290463] (-) TimerEvent: {}
+[20.390987] (-) TimerEvent: {}
+[20.491607] (-) TimerEvent: {}
+[20.592339] (-) TimerEvent: {}
+[20.693107] (-) TimerEvent: {}
+[20.793799] (-) TimerEvent: {}
+[20.894438] (-) TimerEvent: {}
+[20.994895] (-) TimerEvent: {}
+[21.095497] (-) TimerEvent: {}
+[21.196087] (-) TimerEvent: {}
+[21.296930] (-) TimerEvent: {}
+[21.397711] (-) TimerEvent: {}
+[21.498534] (-) TimerEvent: {}
+[21.599385] (-) TimerEvent: {}
+[21.700202] (-) TimerEvent: {}
+[21.800766] (-) TimerEvent: {}
+[21.901448] (-) TimerEvent: {}
+[22.002131] (-) TimerEvent: {}
+[22.102875] (-) TimerEvent: {}
+[22.203540] (-) TimerEvent: {}
+[22.304172] (-) TimerEvent: {}
+[22.404649] (-) TimerEvent: {}
+[22.505318] (-) TimerEvent: {}
+[22.606021] (-) TimerEvent: {}
+[22.706653] (-) TimerEvent: {}
+[22.807286] (-) TimerEvent: {}
+[22.907765] (-) TimerEvent: {}
+[23.008300] (-) TimerEvent: {}
+[23.108973] (-) TimerEvent: {}
+[23.209791] (-) TimerEvent: {}
+[23.310498] (-) TimerEvent: {}
+[23.411449] (-) TimerEvent: {}
+[23.512152] (-) TimerEvent: {}
+[23.612761] (-) TimerEvent: {}
+[23.713703] (-) TimerEvent: {}
+[23.814302] (-) TimerEvent: {}
+[23.914959] (-) TimerEvent: {}
+[24.015649] (-) TimerEvent: {}
+[24.116252] (-) TimerEvent: {}
+[24.216864] (-) TimerEvent: {}
+[24.318047] (-) TimerEvent: {}
+[24.419248] (-) TimerEvent: {}
+[24.520234] (-) TimerEvent: {}
+[24.621384] (-) TimerEvent: {}
+[24.722403] (-) TimerEvent: {}
+[24.823349] (-) TimerEvent: {}
+[24.924482] (-) TimerEvent: {}
+[25.025463] (-) TimerEvent: {}
+[25.126129] (-) TimerEvent: {}
+[25.226836] (-) TimerEvent: {}
+[25.327377] (-) TimerEvent: {}
+[25.428126] (-) TimerEvent: {}
+[25.528803] (-) TimerEvent: {}
+[25.629892] (-) TimerEvent: {}
+[25.730999] (-) TimerEvent: {}
+[25.831441] (-) TimerEvent: {}
+[25.931961] (-) TimerEvent: {}
+[26.032387] (-) TimerEvent: {}
+[26.132888] (-) TimerEvent: {}
+[26.233437] (-) TimerEvent: {}
+[26.334056] (-) TimerEvent: {}
+[26.434658] (-) TimerEvent: {}
+[26.535394] (-) TimerEvent: {}
+[26.635829] (-) TimerEvent: {}
+[26.736506] (-) TimerEvent: {}
+[26.837038] (-) TimerEvent: {}
+[26.937873] (-) TimerEvent: {}
+[27.038393] (-) TimerEvent: {}
+[27.138976] (-) TimerEvent: {}
+[27.239811] (-) TimerEvent: {}
+[27.340622] (-) TimerEvent: {}
+[27.441506] (-) TimerEvent: {}
+[27.542158] (-) TimerEvent: {}
+[27.642823] (-) TimerEvent: {}
+[27.743497] (-) TimerEvent: {}
+[27.844176] (-) TimerEvent: {}
+[27.944673] (-) TimerEvent: {}
+[28.045167] (-) TimerEvent: {}
+[28.145886] (-) TimerEvent: {}
+[28.246337] (-) TimerEvent: {}
+[28.346902] (-) TimerEvent: {}
+[28.447720] (-) TimerEvent: {}
+[28.548433] (-) TimerEvent: {}
+[28.649810] (-) TimerEvent: {}
+[28.751315] (-) TimerEvent: {}
+[28.852763] (-) TimerEvent: {}
+[28.953957] (-) TimerEvent: {}
+[29.055600] (-) TimerEvent: {}
+[29.156851] (-) TimerEvent: {}
+[29.258023] (-) TimerEvent: {}
+[29.358644] (-) TimerEvent: {}
+[29.459620] (-) TimerEvent: {}
+[29.560503] (-) TimerEvent: {}
+[29.661336] (-) TimerEvent: {}
+[29.762540] (-) TimerEvent: {}
+[29.863348] (-) TimerEvent: {}
+[29.964543] (-) TimerEvent: {}
+[30.065367] (-) TimerEvent: {}
+[30.166129] (-) TimerEvent: {}
+[30.266843] (-) TimerEvent: {}
+[30.367512] (-) TimerEvent: {}
+[30.468446] (-) TimerEvent: {}
+[30.570061] (-) TimerEvent: {}
+[30.671255] (-) TimerEvent: {}
+[30.772507] (-) TimerEvent: {}
+[30.873634] (-) TimerEvent: {}
+[30.974348] (-) TimerEvent: {}
+[31.074950] (-) TimerEvent: {}
+[31.175624] (-) TimerEvent: {}
+[31.276159] (-) TimerEvent: {}
+[31.376609] (-) TimerEvent: {}
+[31.477270] (-) TimerEvent: {}
+[31.577871] (-) TimerEvent: {}
+[31.678767] (-) TimerEvent: {}
+[31.779537] (-) TimerEvent: {}
+[31.880167] (-) TimerEvent: {}
+[31.980724] (-) TimerEvent: {}
+[32.081337] (-) TimerEvent: {}
+[32.182097] (-) TimerEvent: {}
+[32.282758] (-) TimerEvent: {}
+[32.383312] (-) TimerEvent: {}
+[32.484017] (-) TimerEvent: {}
+[32.584617] (-) TimerEvent: {}
+[32.685364] (-) TimerEvent: {}
+[32.786087] (-) TimerEvent: {}
+[32.886788] (-) TimerEvent: {}
+[32.987440] (-) TimerEvent: {}
+[33.088084] (-) TimerEvent: {}
+[33.153187] (my_image_processor) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_processor\x1b[0m\n'}
+[33.188501] (-) TimerEvent: {}
+[33.289396] (-) TimerEvent: {}
+[33.390265] (-) TimerEvent: {}
+[33.491625] (-) TimerEvent: {}
+[33.592310] (-) TimerEvent: {}
+[33.692893] (-) TimerEvent: {}
+[33.793491] (-) TimerEvent: {}
+[33.894273] (-) TimerEvent: {}
+[33.995065] (-) TimerEvent: {}
+[34.096207] (-) TimerEvent: {}
+[34.197904] (-) TimerEvent: {}
+[34.299382] (-) TimerEvent: {}
+[34.400813] (-) TimerEvent: {}
+[34.502453] (-) TimerEvent: {}
+[34.603842] (-) TimerEvent: {}
+[34.704766] (-) TimerEvent: {}
+[34.805393] (-) TimerEvent: {}
+[34.906398] (-) TimerEvent: {}
+[35.007704] (-) TimerEvent: {}
+[35.109463] (-) TimerEvent: {}
+[35.210865] (-) TimerEvent: {}
+[35.311618] (-) TimerEvent: {}
+[35.412362] (-) TimerEvent: {}
+[35.513188] (-) TimerEvent: {}
+[35.613915] (-) TimerEvent: {}
+[35.714629] (-) TimerEvent: {}
+[35.815256] (-) TimerEvent: {}
+[35.916219] (-) TimerEvent: {}
+[36.018118] (-) TimerEvent: {}
+[36.119810] (-) TimerEvent: {}
+[36.221000] (-) TimerEvent: {}
+[36.322049] (-) TimerEvent: {}
+[36.423026] (-) TimerEvent: {}
+[36.523981] (-) TimerEvent: {}
+[36.624729] (-) TimerEvent: {}
+[36.725454] (-) TimerEvent: {}
+[36.826088] (-) TimerEvent: {}
+[36.926762] (-) TimerEvent: {}
+[36.968992] (my_image_processor) StdoutLine: {'line': b'[100%] Built target image_processor\n'}
+[36.998476] (my_image_processor) CommandEnded: {'returncode': 0}
+[37.000216] (my_image_processor) JobProgress: {'identifier': 'my_image_processor', 'progress': 'install'}
+[37.001722] (my_image_processor) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/relBot/build/my_image_processor'], 'cwd': '/home/ubuntu/relBot/build/my_image_processor', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/relBot/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/relBot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Kaikkis01PC', 'WSL_INTEROP': '/run/WSL/512_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2018a/runtime/win64:/mnt/c/Program Files/MATLAB/R2018a/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/User/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '80861cb1-d49b-4806-a7af-a4c07db7d3a9', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/relBot/build/my_image_processor', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/relBot/install/relbot_simulator:/home/ubuntu/relBot/install/relbot_sequence_controller:/home/ubuntu/relBot/install/relbot_launch:/home/ubuntu/relBot/install/relbot2turtlesim:/home/ubuntu/relBot/install/my_image_processor:/home/ubuntu/relBot/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[37.016900] (my_image_processor) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[37.017763] (my_image_processor) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/my_image_processor/lib/my_image_processor/image_processor\n'}
+[37.026944] (-) TimerEvent: {}
+[37.060393] (my_image_processor) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/relBot/install/my_image_processor/lib/my_image_processor/image_processor" to ""\n'}
+[37.061273] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/package_run_dependencies/my_image_processor\n'}
+[37.061634] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/parent_prefix_path/my_image_processor\n'}
+[37.061989] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/ament_prefix_path.sh\n'}
+[37.062759] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/ament_prefix_path.dsv\n'}
+[37.063173] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/path.sh\n'}
+[37.063669] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/path.dsv\n'}
+[37.064105] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.bash\n'}
+[37.064604] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.sh\n'}
+[37.064938] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.zsh\n'}
+[37.065151] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.dsv\n'}
+[37.065518] (my_image_processor) StdoutLine: {'line': b'-- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv\n'}
+[37.066218] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/packages/my_image_processor\n'}
+[37.066486] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/cmake/my_image_processorConfig.cmake\n'}
+[37.066697] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/cmake/my_image_processorConfig-version.cmake\n'}
+[37.066953] (my_image_processor) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.xml\n'}
+[37.071186] (my_image_processor) CommandEnded: {'returncode': 0}
+[37.113209] (my_image_processor) JobEnded: {'identifier': 'my_image_processor', 'rc': 0}
+[37.117050] (-) EventReactorShutdown: {}
