@@ -23,8 +23,7 @@ void SteerRelbot::create_topics() {
     
     object_cordinates_ = this->create_subscription<geometry_msgs::msg::PointStamped>("/green_object_position", 1,
             std::bind(&SteerRelbot::position_callback, this, std::placeholders::_1)) ;
-    center_cordinates_ = this->create_subscription<geometry_msgs::msg::PointStamped>("output/camera_position", 1,
-        std::bind(&SteerRelbot::center_callback, this, std::placeholders::_1)) ;
+    
 }
 
 
@@ -70,20 +69,11 @@ void SteerRelbot::calculate_velocity() {
                 th_velocity=0.0;
             }
             
-            if (area_object>=threshold_area) {
+            if (std::abs(x_error) >= buffer_zone) {
                 // Object is far from the robot
                 moveStraight(x_error);
                 //RCLCPP_INFO(this->get_logger(), "straight");
             } 
-            else if (area_object<threshold_area && area_object>minimum_area) {
-                // Object is far from the robot
-                moveStraight(x_error);
-                //RCLCPP_INFO(this->get_logger(), "straight");
-            } 
-            else if (area_object<=minimum_area){
-                // Object is very close to the robot
-                idle();
-            }
             else {
                 // Object is close to the robot
                 linear_velocity= 0.0;

@@ -1,0 +1,14 @@
+[0.042s] Invoking command in '/home/ubuntu/relBot/build/relbot_sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
+[0.231s] [ 50%] [32mBuilding CXX object CMakeFiles/relbot_sequence_controller.dir/src/relbot_sequence_controller.cpp.o[0m
+[3.591s] [01m[K/home/ubuntu/relBot/src/relbot_sequence_controller/src/relbot_sequence_controller.cpp:[m[K In member function ‘[01m[Kvoid SteerRelbot::[01;32m[Kcreate_topics[m[K()[m[K’:
+[3.592s] [01m[K/home/ubuntu/relBot/src/relbot_sequence_controller/src/relbot_sequence_controller.cpp:27:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter_callback[m[K’ is not a member of ‘[01m[KSteerRelbot[m[K’
+[3.592s]    27 |         std::bind(&SteerRelbot::[01;31m[Kcenter_callback[m[K, this, std::placeholders::_1)) ;
+[3.592s]       |                                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.592s] [01m[K/home/ubuntu/relBot/src/relbot_sequence_controller/src/relbot_sequence_controller.cpp:[m[K In member function ‘[01m[Kvoid SteerRelbot::[01;32m[KmoveStraight[m[K(double)[m[K’:
+[3.592s] [01m[K/home/ubuntu/relBot/src/relbot_sequence_controller/src/relbot_sequence_controller.cpp:43:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[3.592s]    43 |     linear_velocity =  error*maxVelocity*[01;31m[K;[m[K
+[3.593s]       |                                          [01;31m[K^[m[K
+[6.531s] gmake[2]: *** [CMakeFiles/relbot_sequence_controller.dir/build.make:76: CMakeFiles/relbot_sequence_controller.dir/src/relbot_sequence_controller.cpp.o] Error 1
+[6.531s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/relbot_sequence_controller.dir/all] Error 2
+[6.532s] gmake: *** [Makefile:146: all] Error 2
+[6.535s] Invoked command in '/home/ubuntu/relBot/build/relbot_sequence_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
