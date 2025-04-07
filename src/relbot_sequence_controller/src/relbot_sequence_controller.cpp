@@ -75,6 +75,7 @@ void SteerRelbot::calculate_velocity() {
                 idle();
             }
     }
+    right_velocity=
 }
 
 
