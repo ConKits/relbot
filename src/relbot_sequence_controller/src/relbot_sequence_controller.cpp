@@ -84,6 +84,7 @@ void SteerRelbot::calculate_velocity() {
     }
     else{
         idle();
+
     }
 
 }
@@ -101,8 +102,7 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
         x_center=cord->point.y;
 
     }
-    else{
-        idleState=true;
+    else{        
         idle();
     }
 }

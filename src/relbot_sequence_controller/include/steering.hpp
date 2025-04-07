@@ -54,7 +54,7 @@ private:
 
     // Thresholds
     double threshold_area=1000.0; // Area threshold for object detection
-    double minimum_area=50.0; // Minimum area for object detection
+    double minimum_area=500.0; // Minimum area for object detection
  
 
    
