@@ -40,17 +40,15 @@ void SteerRelbot::idle() {
 void SteerRelbot::moveStraight(double error) {
     // Moves the robot straight
     // This method is calculating the velocities for each wheel to move straight.
-    left_velocity =  error*maxVelocity;
-    right_velocity = error*maxVelocity;
-    RCLCPP_INFO(this->get_logger(), "Moving straight with: %.2f, error: %.2f", left_velocity, error);
+    x_velocity =  error*maxVelocity;
+    RCLCPP_INFO(this->get_logger(), "Moving straight with: %.2f, error: %.2f", x_velocity, error);
 }
 
 void SteerRelbot::rotate(double error) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
-    left_velocity = error*maxVelocity*(wheelDistance/2);
-    right_velocity = error*maxVelocity* (wheelDistance/2);
-    RCLCPP_INFO(this->get_logger(), "Rotating with: %.2f, error: %.2f", left_velocity, error);
+    th_velocity = error*maxVelocity*(wheelDistance/2);
+    RCLCPP_INFO(this->get_logger(), "Rotating with: %.2f, error: %.2f", th_velocity, error);
     
 }
 
@@ -59,25 +57,18 @@ void SteerRelbot::calculate_velocity() {
    
     if (idleState==false){   
         // Calculate the error between the robot's position and the object's position
-        x_error = (x_object - x_center)/x_center;
-        th_error= (area_object-threshold_area)/threshold_area;
+        th_error = (x_object - x_center)/x_center;
+        x_error= (area_object-threshold_area)/threshold_area;
 
         //The x_tol value creates a nutral zone for the robot to not move when the object is close to the center.
-            if (x_error > 0 && std::abs(x_error) > x_tol) {
+            if (x_error > 0 && std::abs(th_error) > x_tol) {
                 // Object is to the right of the center
                 rotate(x_error);
                 
             } 
-            else if (x_error < 0 && std::abs(x_error) > x_tol) {
-                // Object is to the left of the center
-                rotate(x_error);
-            }
-            else{
-
-            }
-            if (area_object< threshold_area) {
+            else if (area_object< threshold_area) {
                 // Object is far from the robot
-                moveStraight(th_error);
+                moveStraight(x_error);
             } 
             else {
                 // Object is close to the robot

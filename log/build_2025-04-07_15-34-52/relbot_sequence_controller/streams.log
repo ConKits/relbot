@@ -1,2 +1,25 @@
 [0.057s] Invoking command in '/home/ubuntu/relBot/build/relbot_sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
 [0.285s] [ 50%] [32mBuilding CXX object CMakeFiles/relbot_sequence_controller.dir/src/relbot_sequence_controller.cpp.o[0m
+[21.213s] [100%] [32m[1mLinking CXX executable relbot_sequence_controller[0m
+[22.844s] [100%] Built target relbot_sequence_controller
+[22.869s] Invoked command in '/home/ubuntu/relBot/build/relbot_sequence_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/relbot_sequence_controller -- -j8 -l8
+[22.872s] Invoking command in '/home/ubuntu/relBot/build/relbot_sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_sequence_controller
+[22.887s] -- Install configuration: ""
+[22.888s] -- Installing: /home/ubuntu/relBot/install/relbot_sequence_controller/lib/relbot_sequence_controller/relbot_sequence_controller
+[22.907s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/relBot/install/relbot_sequence_controller/lib/relbot_sequence_controller/relbot_sequence_controller" to ""
+[22.908s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/package_run_dependencies/relbot_sequence_controller
+[22.909s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/parent_prefix_path/relbot_sequence_controller
+[22.909s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/ament_prefix_path.sh
+[22.910s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/ament_prefix_path.dsv
+[22.910s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/path.sh
+[22.911s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/environment/path.dsv
+[22.912s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.bash
+[22.912s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.sh
+[22.913s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.zsh
+[22.914s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/local_setup.dsv
+[22.914s] -- Installing: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.dsv
+[22.915s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/ament_index/resource_index/packages/relbot_sequence_controller
+[22.920s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/cmake/relbot_sequence_controllerConfig.cmake
+[22.921s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/cmake/relbot_sequence_controllerConfig-version.cmake
+[22.921s] -- Up-to-date: /home/ubuntu/relBot/install/relbot_sequence_controller/share/relbot_sequence_controller/package.xml
+[22.921s] Invoked command in '/home/ubuntu/relBot/build/relbot_sequence_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/relbot_sequence_controller
