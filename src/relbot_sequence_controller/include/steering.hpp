@@ -33,7 +33,7 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     
     // Attributes    
-    double buffer_zone = 1; // Buffer zone where the robot is idle
+    double buffer_zone = 0.08; // Buffer zone where the robot is idle
     double wheelDistance=1; // Distance between the wheels
     // Times for moving straight and turning
     double timeConstant=5.0;
@@ -53,7 +53,7 @@ private:
     bool idleState=true; 
 
     // Thresholds
-    double threshold_area=100.0; // Area threshold for object detection
+    double threshold_area=1000.0; // Area threshold for object detection
     double minimum_area=50.0; // Minimum area for object detection
  
 
