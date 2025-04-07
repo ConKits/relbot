@@ -51,20 +51,20 @@ void SteerRelbot::rotate(double error) {
 }
 
 void SteerRelbot::calculate_velocity() {
-    // Calculate the velocities for each wheel based on the robot's position and the object's position    
-   
+    
+    //The navigation logic to track the object.
     if (idleState==false){   
         // Calculate the error between the robot's position and the object's position
         th_error = (x_center - x_object)/x_center;
         x_error= (threshold_area - area_object)/threshold_area;
         
         if (std::abs(th_error) < buffer_zone && std::abs(x_error) < buffer_zone ){
-            //Set idle mode when is object in the buffer zone.      
+            //Set idle mode when the object is in the buffer zone.      
             idle();
         }
         else{
 
-             //The buffer_zone value creates a nutral zone for the robot to not move when the object is close to the center.
+            //The buffer_zone value creates a nutral zone for the robot to not move when the object is close to the center.
             if (std::abs(th_error) >= buffer_zone) {
                 // Object is to the right of the center
                 rotate(th_error);
