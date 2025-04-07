@@ -98,14 +98,14 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
     if (area_object>minimum_area){
         idleState=false;
         x_object=cord->point.x;
-        y_object=cord->point.y;
+        x_center=cord->point.y;
         //area_object=cord->point.z;
         //RCLCPP_INFO(this->get_logger(), "Received Green Object Position -> x: %.2f, y: %.2f, area: %.2f", x_object, y_object, area_object);
     }
     else{
         idleState=true;
-        x_object=x_center;
-        y_object=y_center;
+        // x_object=x_center;
+        // y_object=y_center;
         idle();
         //area_object=0.0;
         //RCLCPP_INFO(this->get_logger(), "No Green Object Detected");
@@ -114,7 +114,7 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
 // Callback function to receive the center of the image
 void SteerRelbot::center_callback(const geometry_msgs::msg::PointStamped::SharedPtr center){
     // Get the center of the image
-    x_center=center->point.x;
+    //x_center=center->point.x;
     y_center=center->point.y;
     //RCLCPP_INFO(this->get_logger(), "Received Center Position -> x: %.2f, y: %.2f", x_center, y_center);
 }

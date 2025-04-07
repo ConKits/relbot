@@ -71,7 +71,7 @@ void ImageProcessor::image_callback(const sensor_msgs::msg::Image::SharedPtr msg
     try {
         // Convert ROS2 Image message to OpenCV format
         cv::Mat cv_image = cv_bridge::toCvCopy(msg, "bgr8")->image;
-        frame_width = msg->width;
+        double frame_width = msg->width;
         // Process the image to track the green object
         track_green_object(cv_image);
 
