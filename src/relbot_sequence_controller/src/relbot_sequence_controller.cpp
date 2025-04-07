@@ -61,19 +61,20 @@ void SteerRelbot::calculate_velocity() {
         
 
         //The x_tol value creates a nutral zone for the robot to not move when the object is close to the center.
-            if (std::abs(th_error) >= buffer_zone) {
+            if (std::abs(th_error) > buffer_zone) {
                 // Object is to the right of the center
                 rotate(th_error);
                 
             } 
             else{
                 th_velocity=0.0;
+                
             }
             
-            if (std::abs(x_error) >= buffer_zone) {
+            if (std::abs(x_error) > buffer_zone) {
                 // Object is far from the robot
                 moveStraight(x_error);
-                RCLCPP_INFO(this->get_logger(),"x_error= %.2f, area_object= %.2f", x_error, area_object);
+                //RCLCPP_INFO(this->get_logger(),"x_error= %.2f, area_object= %.2f", x_error, area_object);
             } 
             else {
                 // Object is close to the robot
@@ -81,6 +82,7 @@ void SteerRelbot::calculate_velocity() {
             }
        right_velocity= linear_velocity + th_velocity;
        left_velocity= -linear_velocity + th_velocity;
+       idleState=true;
        //RCLCPP_INFO(this->get_logger(), "Left_vel: %.2f, Right Vel: %.2f", left_velocity, right_velocity);
     }
     else{

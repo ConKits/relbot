@@ -1,0 +1,22 @@
+[0.035s] Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[0.152s] [100%] Built target image_processor
+[0.200s] Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[0.202s] Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/my_image_processor
+[0.215s] -- Install configuration: ""
+[0.215s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/lib/my_image_processor/image_processor
+[0.215s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/package_run_dependencies/my_image_processor
+[0.216s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/parent_prefix_path/my_image_processor
+[0.216s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/ament_prefix_path.sh
+[0.216s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/ament_prefix_path.dsv
+[0.217s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/path.sh
+[0.217s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/environment/path.dsv
+[0.217s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.bash
+[0.218s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.sh
+[0.219s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.zsh
+[0.219s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/local_setup.dsv
+[0.220s] -- Installing: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv
+[0.220s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/ament_index/resource_index/packages/my_image_processor
+[0.222s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/cmake/my_image_processorConfig.cmake
+[0.223s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/cmake/my_image_processorConfig-version.cmake
+[0.224s] -- Up-to-date: /home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.xml
+[0.243s] Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/my_image_processor
