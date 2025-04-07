@@ -85,20 +85,6 @@ void SteerRelbot::calculate_velocity() {
     }
 }
 
-    
-
-void SteerRelbot::timer_callback() {
-    // calculate velocity
-    calculate_velocity();
-
-    // publish velocity to simulator
-    example_interfaces::msg::Float64 left_wheel;
-    left_wheel.data = 0.0; //-left_velocity;
-    example_interfaces::msg::Float64 right_wheel;
-    right_wheel.data = 0.0; //right_velocity;
-    left_wheel_topic_->publish(left_wheel);
-    right_wheel_topic_->publish(right_wheel);
-}
 
 // Callback function to receive the position of the green object
 // This function is called when a new message is received on the subscribed topic
@@ -122,13 +108,27 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
         //RCLCPP_INFO(this->get_logger(), "No Green Object Detected");
     }
 }
-
+// Callback function to receive the center of the image
 void SteerRelbot::center_callback(const geometry_msgs::msg::PointStamped::SharedPtr center){
     // Get the center of the image
     x_center=center->point.x;
     y_center=center->point.y;
     //RCLCPP_INFO(this->get_logger(), "Received Center Position -> x: %.2f, y: %.2f", x_center, y_center);
 }
+
+void SteerRelbot::timer_callback() {
+    // calculate velocity
+    calculate_velocity();
+
+    // publish velocity to simulator
+    example_interfaces::msg::Float64 left_wheel;
+    left_wheel.data = -left_velocity;
+    example_interfaces::msg::Float64 right_wheel;
+    right_wheel.data = right_velocity;
+    left_wheel_topic_->publish(left_wheel);
+    right_wheel_topic_->publish(right_wheel);
+}
+
 
 
 int main(int argc, char *argv[]) {
