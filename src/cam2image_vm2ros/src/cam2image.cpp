@@ -107,8 +107,8 @@ namespace cam2image_vm2ros
     // optionally show the image
     if (show_camera_)
     {
-      cv::imshow("cam2image", frame);
-      cv::waitKey(1);
+      //cv::imshow("cam2image", frame);
+      //cv::waitKey(1);
     }
 
     std_msgs::msg::Header header;
