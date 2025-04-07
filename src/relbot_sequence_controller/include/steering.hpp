@@ -33,11 +33,11 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     
     // Attributes    
-    double buffer_zone = 0.08; // Tolerance for x-axis error
+    double buffer_zone = 1; // Tolerance for x-axis error
     double radius=100; // Radius of the wheels
     double wheelDistance=1; // Distance between the wheels
     // Times for moving straight and turning
-    double timeConstant=3.0;
+    double timeConstant=1.0;
     // Velocity attributes
     double maxVelocity = 10.0/timeConstant; // Angular velocity (v = r * ω)
     double left_velocity;
@@ -51,8 +51,8 @@ private:
     double area_object;
 
     // Thresholds
-    double threshold_area=350.0; // Area threshold for object detection
-    double minimum_area=300.0; // Minimum area for object detection
+    double threshold_area=100.0; // Area threshold for object detection
+    double minimum_area=50.0; // Minimum area for object detection
     double x_center; // Center of the image
     double y_center; // Center of the image
     double x_error;
