@@ -47,7 +47,7 @@ void SteerRelbot::moveStraight(double error) {
 void SteerRelbot::rotate(double error) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
-    th_velocity = error*maxVelocity/(wheelDistance/2);
+    th_velocity = -error*maxVelocity/(wheelDistance/2);
     //RCLCPP_INFO(this->get_logger(), "Rotating with: %.2f, error: %.2f", th_velocity, error);
     
 }
