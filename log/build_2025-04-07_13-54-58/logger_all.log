@@ -408,3 +408,62 @@
 [1.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.bash'
 [1.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/cam2image_vm2ros/share/cam2image_vm2ros/package.zsh'
 [1.363s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/cam2image_vm2ros/share/colcon-core/packages/cam2image_vm2ros)
+[16.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/relBot/build/my_image_processor -- -j8 -l8
+[16.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/relBot/build/my_image_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/my_image_processor
+[16.671s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_image_processor)
+[16.671s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor' for CMake module files
+[16.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/relBot/build/my_image_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ubuntu/relBot/build/my_image_processor
+[16.673s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor' for CMake config files
+[16.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_image_processor', 'cmake_prefix_path')
+[16.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.ps1'
+[16.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.dsv'
+[16.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.sh'
+[16.675s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib'
+[16.675s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
+[16.675s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib/pkgconfig/my_image_processor.pc'
+[16.675s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib/python3.12/site-packages'
+[16.675s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
+[16.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.ps1'
+[16.676s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv'
+[16.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.sh'
+[16.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.bash'
+[16.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.zsh'
+[16.679s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/my_image_processor/share/colcon-core/packages/my_image_processor)
+[16.680s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_image_processor)
+[16.681s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor' for CMake module files
+[16.682s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor' for CMake config files
+[16.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_image_processor', 'cmake_prefix_path')
+[16.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.ps1'
+[16.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.dsv'
+[16.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/hook/cmake_prefix_path.sh'
+[16.686s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib'
+[16.686s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
+[16.686s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib/pkgconfig/my_image_processor.pc'
+[16.686s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/lib/python3.12/site-packages'
+[16.687s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
+[16.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.ps1'
+[16.688s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv'
+[16.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.sh'
+[16.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.bash'
+[16.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.zsh'
+[16.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/my_image_processor/share/colcon-core/packages/my_image_processor)
+[16.692s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.692s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.693s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.694s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.771s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[16.771s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.771s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.771s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.775s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[16.776s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.776s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.ps1'
+[16.777s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/relBot/install/_local_setup_util_ps1.py'
+[16.779s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.ps1'
+[16.780s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.sh'
+[16.781s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/relBot/install/_local_setup_util_sh.py'
+[16.782s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.sh'
+[16.783s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.bash'
+[16.784s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.bash'
+[16.785s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.zsh'
+[16.786s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.zsh'

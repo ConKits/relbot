@@ -46,7 +46,7 @@ void SteerRelbot::moveStraight() {
 void SteerRelbot::rotate(double direction) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
-    left_velocity = direction*(-angularVelocity*(radius - (wheelDistance/2)));
+    left_velocity = direction*(-angularVelocity*( (wheelDistance/2)));
     right_velocity = direction*(angularVelocity*(radius + (wheelDistance/2)));
     RCLCPP_INFO(this->get_logger(), "Rotating");
     
@@ -89,7 +89,7 @@ void SteerRelbot::timer_callback() {
 
     // publish velocity to simulator
     example_interfaces::msg::Float64 left_wheel;
-    left_wheel.data = left_velocity;
+    left_wheel.data = -left_velocity;
     example_interfaces::msg::Float64 right_wheel;
     right_wheel.data = right_velocity;
     left_wheel_topic_->publish(left_wheel);
