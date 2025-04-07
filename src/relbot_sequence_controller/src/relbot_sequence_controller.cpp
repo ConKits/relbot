@@ -92,6 +92,10 @@ void SteerRelbot::calculate_velocity() {
         
         }
     }
+    else{
+        //Set idle mode when is no object detected.      
+        idle();
+    }
 
 }
 
