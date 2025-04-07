@@ -53,8 +53,8 @@ private:
     bool idleState=true; 
 
     // Thresholds
-    double threshold_area=800.0; // Area threshold for object detection
-    double minimum_area=50.0; // Minimum area for object detection
+    double threshold_area=1000.0; // Area threshold for object detection
+    double minimum_area=100.0; // Minimum area for object detection
  
 
    

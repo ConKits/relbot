@@ -58,7 +58,7 @@ void SteerRelbot::calculate_velocity() {
         // Calculate the error between the robot's position and the object's position
         th_error = (x_center - x_object)/x_center;
         x_error= (threshold_area - area_object)/threshold_area;
-        RCLCPP_INFO(this->get_logger(),"x_error= %.2f, area_object= %.2f", x_error, area_object);
+        
 
         //The x_tol value creates a nutral zone for the robot to not move when the object is close to the center.
             if (std::abs(th_error) >= buffer_zone) {
@@ -73,7 +73,7 @@ void SteerRelbot::calculate_velocity() {
             if (std::abs(x_error) >= buffer_zone) {
                 // Object is far from the robot
                 moveStraight(x_error);
-                
+                RCLCPP_INFO(this->get_logger(),"x_error= %.2f, area_object= %.2f", x_error, area_object);
             } 
             else {
                 // Object is close to the robot
