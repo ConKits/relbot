@@ -3,7 +3,7 @@
 
 ImageProcessor::ImageProcessor() : Node("image_processor") {
     receivedImage_ = this->create_subscription<sensor_msgs::msg::Image>(
-        "/image", 10, std::bind(&ImageProcessor::image_callback, this, std::placeholders::_1));
+        "/output/moving_camera", 1, std::bind(&ImageProcessor::image_callback, this, std::placeholders::_1));
 
     cordinatesImage_=this->create_publisher<geometry_msgs::msg::PointStamped>("/green_object_position",10);
 
