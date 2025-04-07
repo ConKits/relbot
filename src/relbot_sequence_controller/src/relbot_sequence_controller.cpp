@@ -75,6 +75,15 @@ void SteerRelbot::calculate_velocity() {
                 moveStraight(x_error);
                 //RCLCPP_INFO(this->get_logger(), "straight");
             } 
+            else if (area_object<threshold_area && area_object>minimum_area) {
+                // Object is far from the robot
+                moveStraight(x_error);
+                //RCLCPP_INFO(this->get_logger(), "straight");
+            } 
+            else if (area_object<=minimum_area){
+                // Object is very close to the robot
+                idle();
+            }
             else {
                 // Object is close to the robot
                 linear_velocity= 0.0;

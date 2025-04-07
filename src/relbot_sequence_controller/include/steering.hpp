@@ -33,8 +33,7 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     
     // Attributes    
-    double buffer_zone = 1; // Tolerance for x-axis error
-    double radius=100; // Radius of the wheels
+    double buffer_zone = 1; // Buffer zone where the robot is idle
     double wheelDistance=1; // Distance between the wheels
     // Times for moving straight and turning
     double timeConstant=5.0;
@@ -47,17 +46,16 @@ private:
 
     //Object's cordinates from the image processor.
     double x_object;
-    double y_object;
     double area_object;
+    double x_center; // Center of the image
+    double x_error;
+    double th_error;
+    bool idleState=true; 
 
     // Thresholds
     double threshold_area=100.0; // Area threshold for object detection
     double minimum_area=50.0; // Minimum area for object detection
-    double x_center; // Center of the image
-    double y_center; // Center of the image
-    double x_error;
-    double th_error;
-    bool idleState=true;  
+ 
 
    
    
@@ -73,8 +71,7 @@ private:
     void calculate_velocity();
 
     void position_callback(const geometry_msgs::msg::PointStamped::SharedPtr msg);
-    void center_callback(const geometry_msgs::msg::PointStamped::SharedPtr msg);
-  
+    
 };
 
 #endif /*STEER_RELBOT_HPP_*/
