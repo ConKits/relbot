@@ -70,6 +70,7 @@ private:
     void calculate_velocity();
 
     void position_callback(const geometry_msgs::msg::PointStamped::SharedPtr msg);
+    void center_callback(const geometry_msgs::msg::PointStamped::SharedPtr msg);
   
 };
 

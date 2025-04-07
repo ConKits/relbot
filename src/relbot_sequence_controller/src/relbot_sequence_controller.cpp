@@ -120,6 +120,14 @@ void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::Shar
     }
 }
 
+void SteerRelbot::center_callback(const geometry_msgs::msg::PointStamped::SharedPtr center){
+    // Get the center of the image
+    x_center=center->point.x;
+    y_center=center->point.y;
+    //RCLCPP_INFO(this->get_logger(), "Received Center Position -> x: %.2f, y: %.2f", x_center, y_center);
+}
+
+
 int main(int argc, char *argv[]) {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<SteerRelbot>());
