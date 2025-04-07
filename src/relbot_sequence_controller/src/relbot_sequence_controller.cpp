@@ -39,7 +39,7 @@ void SteerRelbot::idle() {
 void SteerRelbot::moveStraight(double error) {
     // Moves the robot straight
     // This method is calculating the velocities for each wheel to move straight.
-    linear_velocity =  error*maxVelocity;
+    linear_velocity =  error*maxVelocity*5;
    
 }
 
@@ -151,9 +151,5 @@ Pseudo Code to control the relbot:
     First check the x_error and turn respectively to position the robot at the center. Then move straight is the area is leass than the threshold.
     If the area is greater than the threshold then the robot should be in idle state.
 
--To Do:
-    *Find the correct valus of threshold and minimum area.
-    *Corect the time_constant based on the robot's speed.
-    *Test the code in the simulator.
-    *Test the code in the real robot.
+    
 */

@@ -36,7 +36,7 @@ private:
     double buffer_zone = 0.08; // Buffer zone where the robot is idle
     double wheelDistance=1; // Distance between the wheels
     // Times for moving straight and turning
-    double timeConstant=0.5;
+    double timeConstant=2.0;
     // Velocity attributes
     double maxVelocity = 10.0/timeConstant; // Maximum velocity of the robot
     double left_velocity;
