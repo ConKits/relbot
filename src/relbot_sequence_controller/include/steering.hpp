@@ -53,6 +53,7 @@ private:
     double x_center; // Center of the image
     double y_center; // Center of the image
     double x_error;
+    double th_error;
     bool idleState=true;  
 
     // Times for moving straight and turning
