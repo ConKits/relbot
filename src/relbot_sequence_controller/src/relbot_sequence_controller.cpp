@@ -79,6 +79,9 @@ void SteerRelbot::calculate_velocity() {
                 linear_velocity= 0.0;
             }
     }
+    else{
+        idle();
+    }
     right_velocity= linear_velocity + th_velocity;
     left_velocity= -linear_velocity + th_velocity;
 }
