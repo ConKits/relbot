@@ -58,8 +58,13 @@ void SteerRelbot::calculate_velocity() {
         th_error = (x_center - x_object)/x_center;
         x_error= (threshold_area - area_object)/threshold_area;
         
-        if (std::abs(th_error) >= buffer_zone && std::abs(x_error) >= buffer_zone )
-        //The x_tol value creates a nutral zone for the robot to not move when the object is close to the center.
+        if (std::abs(th_error) < buffer_zone && std::abs(x_error) < buffer_zone ){
+            //Set idle mode when is object in the buffer zone.      
+            idle();
+        }
+        else{
+
+             //The buffer_zone value creates a nutral zone for the robot to not move when the object is close to the center.
             if (std::abs(th_error) >= buffer_zone) {
                 // Object is to the right of the center
                 rotate(th_error);
@@ -73,24 +78,21 @@ void SteerRelbot::calculate_velocity() {
             if (std::abs(x_error) >= buffer_zone) {
                 // Object is far from the robot
                 moveStraight(x_error);
-                //RCLCPP_INFO(this->get_logger(),"x_error= %.2f, area_object= %.2f", x_error, area_object);
+                
             } 
             else {
                 // Object is close to the robot
                 linear_velocity= 0.0;
+
             }
 
         // Calculate the velocities for each wheel
         right_velocity= linear_velocity + th_velocity;
         left_velocity= -linear_velocity + th_velocity;
-        idleState=true;
-       
+        
+        }
     }
-    else{
-        //Entering to idle mode
-        idle();
 
-    }
 }
 
 // Callback function to receive the position of the tracked object
