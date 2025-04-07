@@ -28,7 +28,7 @@ private:
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_wheel_topic_;
     rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_wheel_topic_;
     rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr object_cordinates_;
-    
+    rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr output/camera_position;
     // Timer
     rclcpp::TimerBase::SharedPtr timer_;
     
@@ -50,8 +50,8 @@ private:
     // Thresholds
     double threshold_area=600.0; // Area threshold for object detection
     double minimum_area=500.0; // Minimum area for object detection
-    double x_center=150.0; // Center of the image
-    double y_center=100.0; // Center of the image
+    double x_center; // Center of the image
+    double y_center; // Center of the image
     double x_error;
     bool idleState=true;  
 
