@@ -18,6 +18,7 @@ private:
     
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr receivedImage_;
     rclcpp::Publisher<geometry_msgs::msg::PointStamped>::SharedPtr cordinatesImage_;
+    double frame_width;
 };
 
 #endif // IMAGE_PROCESSOR_HPP

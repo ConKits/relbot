@@ -362,3 +362,67 @@
 [19.470063] (my_image_processor) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/image_processor.dir/all] Error 2\n'}
 [19.470587] (my_image_processor) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
 [19.474191] (my_image_processor) CommandEnded: {'returncode': 2}
+[19.490987] (my_image_processor) JobEnded: {'identifier': 'my_image_processor', 'rc': 2}
+[19.506029] (-) TimerEvent: {}
+[19.606415] (-) TimerEvent: {}
+[19.706816] (-) TimerEvent: {}
+[19.807372] (-) TimerEvent: {}
+[19.907917] (-) TimerEvent: {}
+[20.008447] (-) TimerEvent: {}
+[20.108976] (-) TimerEvent: {}
+[20.209526] (-) TimerEvent: {}
+[20.310137] (-) TimerEvent: {}
+[20.410866] (-) TimerEvent: {}
+[20.511649] (-) TimerEvent: {}
+[20.612142] (-) TimerEvent: {}
+[20.712674] (-) TimerEvent: {}
+[20.813601] (-) TimerEvent: {}
+[20.914228] (-) TimerEvent: {}
+[21.014765] (-) TimerEvent: {}
+[21.115222] (-) TimerEvent: {}
+[21.215767] (-) TimerEvent: {}
+[21.316185] (-) TimerEvent: {}
+[21.416820] (-) TimerEvent: {}
+[21.517417] (-) TimerEvent: {}
+[21.618067] (-) TimerEvent: {}
+[21.718567] (-) TimerEvent: {}
+[21.819121] (-) TimerEvent: {}
+[21.919551] (-) TimerEvent: {}
+[22.019989] (-) TimerEvent: {}
+[22.120472] (-) TimerEvent: {}
+[22.221185] (-) TimerEvent: {}
+[22.321798] (-) TimerEvent: {}
+[22.422391] (-) TimerEvent: {}
+[22.523136] (-) TimerEvent: {}
+[22.623821] (-) TimerEvent: {}
+[22.724288] (-) TimerEvent: {}
+[22.824925] (-) TimerEvent: {}
+[22.925525] (-) TimerEvent: {}
+[23.026212] (-) TimerEvent: {}
+[23.126809] (-) TimerEvent: {}
+[23.227198] (-) TimerEvent: {}
+[23.327864] (-) TimerEvent: {}
+[23.428522] (-) TimerEvent: {}
+[23.529196] (-) TimerEvent: {}
+[23.630017] (-) TimerEvent: {}
+[23.730630] (-) TimerEvent: {}
+[23.831312] (-) TimerEvent: {}
+[23.931837] (-) TimerEvent: {}
+[24.032509] (-) TimerEvent: {}
+[24.124694] (relbot_sequence_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable relbot_sequence_controller\x1b[0m\n'}
+[24.132690] (-) TimerEvent: {}
+[24.233264] (-) TimerEvent: {}
+[24.333924] (-) TimerEvent: {}
+[24.434434] (-) TimerEvent: {}
+[24.535524] (-) TimerEvent: {}
+[24.636441] (-) TimerEvent: {}
+[24.737084] (-) TimerEvent: {}
+[24.837660] (-) TimerEvent: {}
+[24.938266] (-) TimerEvent: {}
+[25.038878] (-) TimerEvent: {}
+[25.139587] (-) TimerEvent: {}
+[25.240346] (-) TimerEvent: {}
+[25.341031] (-) TimerEvent: {}
+[25.359152] (relbot_sequence_controller) StdoutLine: {'line': b'[100%] Built target relbot_sequence_controller\n'}
+[25.386333] (relbot_sequence_controller) JobEnded: {'identifier': 'relbot_sequence_controller', 'rc': 'SIGINT'}
+[25.398698] (-) EventReactorShutdown: {}

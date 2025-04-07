@@ -384,3 +384,27 @@
 [21.316s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/relBot/install/my_image_processor/bin'
 [21.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.ps1'
 [21.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.dsv'
+[21.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.sh'
+[21.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.bash'
+[21.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/relBot/install/my_image_processor/share/my_image_processor/package.zsh'
+[21.323s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/relBot/install/my_image_processor/share/colcon-core/packages/my_image_processor)
+[27.230s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[27.230s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[27.231s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[27.231s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[27.451s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[27.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[27.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[27.452s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[27.456s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[27.457s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[27.458s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.ps1'
+[27.462s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/relBot/install/_local_setup_util_ps1.py'
+[27.466s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.ps1'
+[27.470s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.sh'
+[27.471s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/relBot/install/_local_setup_util_sh.py'
+[27.473s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.sh'
+[27.476s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.bash'
+[27.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.bash'
+[27.481s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/relBot/install/local_setup.zsh'
+[27.483s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/relBot/install/setup.zsh'
