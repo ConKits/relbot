@@ -245,7 +245,7 @@ cv::Mat RELbotSimulator::CreateCVSubimage(const sensor_msgs::msg::Image::SharedP
   RCLCPP_INFO_ONCE(get_logger(), "Image is has been received and processed!");
 
   cv::imshow("relbot_simulator sub-image", resized_frame);
-  cv::waitKey(1);
+ // cv::waitKey(1);
 
   return resized_frame;
 }
