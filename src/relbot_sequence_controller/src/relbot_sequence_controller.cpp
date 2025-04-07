@@ -41,14 +41,14 @@ void SteerRelbot::moveStraight(double error) {
     // Moves the robot straight
     // This method is calculating the velocities for each wheel to move straight.
     linear_velocity =  error*maxVelocity;
-    RCLCPP_INFO(this->get_logger(), "Moving straight with: %.2f, error: %.2f", linear_velocity, error);
+    //RCLCPP_INFO(this->get_logger(), "Moving straight with: %.2f, error: %.2f", linear_velocity, error);
 }
 
 void SteerRelbot::rotate(double error) {
     // Rotates the robot
     // This method is calculating the velocities for each wheel to rotate.
     th_velocity = error*maxVelocity/(wheelDistance/2);
-    RCLCPP_INFO(this->get_logger(), "Rotating with: %.2f, error: %.2f", th_velocity, error);
+    //RCLCPP_INFO(this->get_logger(), "Rotating with: %.2f, error: %.2f", th_velocity, error);
     
 }
 
@@ -78,9 +78,9 @@ void SteerRelbot::calculate_velocity() {
                 // Object is close to the robot
                 linear_velocity= 0.0;
             }
-       right_velocity= -linear_velocity + th_velocity;
-       left_velocity= linear_velocity + th_velocity;
-    
+       right_velocity= linear_velocity + th_velocity;
+       left_velocity= -linear_velocity + th_velocity;
+       RCLCPP_INFO(this->get_logger(), "Rotating with: %.2f, error: %.2f", th_velocity, error);
     }
     else{
         idle();
