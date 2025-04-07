@@ -42,7 +42,7 @@ private:
     double maxVelocity = 10/timeConstant; // Angular velocity (v = r * ω)
     double left_velocity;
     double right_velocity;
-    double x_velocity;
+    double linear_velocity;
     double th_velocity;
 
     //Object's cordinates from the image processor.
