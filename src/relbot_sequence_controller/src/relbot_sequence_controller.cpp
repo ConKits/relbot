@@ -58,7 +58,7 @@ void SteerRelbot::calculate_velocity() {
         th_error = (x_center - x_object)/x_center;
         x_error= (threshold_area - area_object)/threshold_area;
         
-
+        if (std::abs(th_error) >= buffer_zone && std::abs(x_error) >= buffer_zone )
         //The x_tol value creates a nutral zone for the robot to not move when the object is close to the center.
             if (std::abs(th_error) >= buffer_zone) {
                 // Object is to the right of the center
@@ -87,27 +87,26 @@ void SteerRelbot::calculate_velocity() {
        
     }
     else{
-        //Entering to
+        //Entering to idle mode
         idle();
 
     }
-
 }
 
-
-// Callback function to receive the position of the green object
+// Callback function to receive the position of the tracked object
 // This function is called when a new message is received on the subscribed topic
 void SteerRelbot::position_callback(const geometry_msgs::msg::PointStamped::SharedPtr cord){
    
     area_object=cord->point.z;
-    //Check for close green objects.
+    //Check for close tracked objects.
     if (area_object>minimum_area){
         idleState=false;
-        x_object=cord->point.x;
-        x_center=cord->point.y;
+        x_object=cord->point.x; // X cordinate of the object
+        x_center=cord->point.y; // X cordinaate of frame's center
 
     }
-    else{        
+    else{  
+        //Set idle mode when is no object detected.      
         idle();
     }
 }
@@ -121,7 +120,7 @@ void SteerRelbot::timer_callback() {
     example_interfaces::msg::Float64 left_wheel;
     left_wheel.data = left_velocity;
     example_interfaces::msg::Float64 right_wheel;
-    right_wheel.data =right_velocity;
+    right_wheel.data = right_velocity;
     left_wheel_topic_->publish(left_wheel);
     right_wheel_topic_->publish(right_wheel);
 }
