@@ -78,12 +78,14 @@ void SteerRelbot::calculate_velocity() {
                 // Object is close to the robot
                 linear_velocity= 0.0;
             }
+        right_velocity= -linear_velocity + th_velocity;
+        left_velocity= linear_velocity + th_velocity;
+    
     }
     else{
         idle();
     }
-    right_velocity= linear_velocity + th_velocity;
-    left_velocity= -linear_velocity + th_velocity;
+
 }
 
 
