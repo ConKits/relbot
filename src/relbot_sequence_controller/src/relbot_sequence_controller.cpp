@@ -39,7 +39,7 @@ void SteerRelbot::idle() {
 void SteerRelbot::moveStraight(double error) {
     // Moves the robot straight
     // This method is calculating the velocities for each wheel to move straight.
-    linear_velocity =  error*maxVelocity*5;
+    linear_velocity =  error*maxVelocity;
    
 }
 

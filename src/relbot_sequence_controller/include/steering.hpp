@@ -34,7 +34,7 @@ private:
     
     // Attributes    
     double buffer_zone = 0.08; // Buffer zone where the robot is idle
-    double wheelDistance=1; // Distance between the wheels
+    double wheelDistance=10; // Distance between the wheels
     // Times for moving straight and turning
     double timeConstant=2.0;
     // Velocity attributes
